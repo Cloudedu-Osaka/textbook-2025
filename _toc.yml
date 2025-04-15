@@ -2,8 +2,18 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: chapters/intro.md
+parts:
+- caption: 2025/04/16
+  numbered: false
+  chapters:
+  - file: chapters/01/010_intro.ipynb
+    title: Introduction
+  - file: chapters/01/011_jupyter_ai.ipynb
+    title: Jupyter AI
+  - file: chapters/01/012_draw.ipynb
+    title: Draw a circle
+  - file: chapters/01/013_geogebra.ipynb
+    title: Introduction to GeoGebra
+  - file: chapters/01/014_geogebra.ipynb
+    title: GeoGebra
