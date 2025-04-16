@@ -16,4 +16,6 @@ parts:
   - file: chapters/01/013_geogebra.ipynb
     title: Introduction to GeoGebra
   - file: chapters/01/014_geogebra.ipynb
-    title: GeoGebra
+    title: GeoGebra (1)
+  - file: chapters/01/015_geogebra.ipynb
+    title: GeoGebra (2)
