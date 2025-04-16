@@ -1,11 +1,9 @@
-# Welcome to your Jupyter Book
+# プログラミングで遡る科学史
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+FY2025 Edition by Manabu Higashida.
 
-Check out the content pages bundled with this sample book to see more.
+The contents of this book are licensed for free consumption under the following license:
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ```{tableofcontents}
 ```

@@ -8,7 +8,7 @@ parts:
   numbered: false
   chapters:
   - file: chapters/01/010_intro.ipynb
-    title: Introduction
+    title: JupyterHub
   - file: chapters/01/011_jupyter_ai.ipynb
     title: Jupyter AI
   - file: chapters/01/012_draw.ipynb
