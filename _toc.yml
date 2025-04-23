@@ -4,6 +4,17 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/04/23
+  numbered: false
+  chapters:
+  - file: chapters/02/02_01.ipynb
+    title: View a circle (1)
+  - file: chapters/02/02_01x.ipynb
+    title: View a circle (1')
+  - file: chapters/02/02_02.ipynb
+    title: View a circle (2)
+  - file: chapters/02/02_02x.ipynb
+    title: View a circle (2')
 - caption: 2025/04/16
   numbered: false
   chapters:
