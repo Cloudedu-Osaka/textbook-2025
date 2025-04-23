@@ -1,0 +1,1323 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>第二回: 円を傾ける (1’) &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/02/02_01x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/02/02_01x.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="第一回: 円を傾ける (2)" href="02_02.html" />
+    <link rel="prev" title="第二回: 円を傾ける (1)" href="02_01.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <script>document.write(`<img src="../../_static/vioras-logo.png" class="logo__image only-dark" alt="プログラミングで遡る科学史 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/02/02_01x.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/02/02_01x.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>第二回: 円を傾ける (1’)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-ai">2.1’ ask ai</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.1’.1 円を傾ける</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">2.1’.2 円柱の切断面</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>第二回: 円を傾ける (1’)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="ask-ai">
+<h2>2.1’ ask ai<a class="headerlink" href="#ask-ai" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>2.1’.1 円を傾ける<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+円を傾けるとどう見えますか？
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>円を傾けると、その見え方は変化します。<strong>円</strong>は「真横」や「正面」から見ると完全に<strong>丸い形</strong>をしていますが、<strong>傾ける</strong>ことで視点が変わり、**楕円（だえん） ** のように見えるようになります。</p>
+<h3 class="rubric" id="id3">別の視点から説明すると…</h3>
+<p>次のようなことが起こります：</p>
+<ol class="arabic simple">
+<li><p><strong>正面の円:</strong><br />
+円をそのまま正面から見る場合は、周囲が等距離なので完全な輪のように見えます。</p></li>
+<li><p><strong>斜めに傾けた状態:</strong><br />
+円を傾けると、画面（または目線）に対して遠い側と手前側に距離差が現れます。この結果、見える形は<strong>短軸（奥行きの圧縮） ** と</strong>長軸（幅） ** を持つ楕円のようになります。</p></li>
+<li><p><strong>極端に傾けた場合:</strong><br />
+極端に傾ける（ほとんど真横から見るような状態）と、「線」状の細い形に近づき、最終的にはほとんど見えなくなる場合もあります。</p></li>
+</ol>
+<hr class="docutils" />
+<p>これは<strong>透視図法</strong>や<strong>幾何学</strong>に基づいた結果であり、3次元空間の物体が2次元的に投影されるときに起こる現象です。</p>
+<p><strong>ちなみに例:</strong></p>
+<ul class="simple">
+<li><p>コインを机に置いて「正面」から観察して、それをゆっくり斜めに傾けてみてください。最初は丸い輪のように見えて、傾き具合によって楕円のように変化して見えるはずです。</p></li>
+</ul>
+<p>面白いですよね！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+楕円に見えるとしたら、それは幾何学的な楕円ですか？
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>いい質問ですね！円を傾けた場合に楕円に見えるとしたら、それは<strong>幾何学的な楕円</strong>に正確に一致するとは限りません。視覚的に楕円のように見えますが、その形状が純粋な幾何学的意味での楕円かどうかは、見る角度や投影方法によります。</p>
+<h3 class="rubric" id="id4">純粋に幾何学的な楕円とは？</h3>
+<p>幾何学の定義における楕円は、次のように定義されます：</p>
+<ul class="simple">
+<li><p>楕円は、<strong>平面上のある2つの焦点からの距離の和が一定</strong>である点の軌跡です。</p></li>
+</ul>
+<p>円を傾けた場合、それに見える形が厳密にこの条件を満たすかどうかは、透視投影の方式や計算方法次第です。多くの場合、円を傾けることで生成される形は単なる「視覚的な楕円」であり、幾何学的定義の楕円とは異なる場合があります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5">円を傾けてできる形の具体的な解釈</h3>
+<p>円を傾けた際に見える「楕円っぽい形」は、<strong>射影幾何学</strong>の原理に基づきます。この場合、形がどう見えるかは次の条件によって変わります：</p>
+<ol class="arabic simple">
+<li><p><strong>正確な幾何学的楕円になるケース：</strong></p>
+<ul class="simple">
+<li><p>円が視覚的に楕円に見える場合、これは<strong>円の3次元空間における斜め投影</strong>の結果です。</p></li>
+<li><p>投影によって生成される形を計算すると、正確に幾何学的な楕円となる場合があります。</p></li>
+<li><p>特定の角度で円を傾け、その傾きが<strong>射影変換</strong>の条件に当てはまる場合、幾何学的な楕円として完全一致します。</p></li>
+</ul>
+</li>
+<li><p><strong>楕円に見えるが厳密には違うケース：</strong></p>
+<ul class="simple">
+<li><p>遠近法（透視投影）が強く作用すると、形が「ゆがみ」ます。このゆがみのせいで、見た目が厳密な楕円ではなくなり、代わりに「視覚的に近い楕円」として認識されます。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id6">実際の例：円柱の底面</h3>
+<p>例えば、円柱の底面を斜めの角度から観察すると、楕円に見えます。この形は平面投影によって生成されるものであり、通常は幾何学的な楕円と一致します。ただし、透視図法が強く絡んだ場合には微小なゆがみが生じるおそれがあります。</p>
+<hr class="docutils" />
+<p>言い換えると、「円を傾けたときの楕円」が純粋に幾何学的な楕円になるかどうかを決定づけるのは、投影が<strong>平行投影</strong>なのか、あるいは<strong>透視投影</strong>なのかという点に依存します。</p>
+<h3 class="rubric" id="id7">平行投影では幾何学的楕円になる</h3>
+<ul class="simple">
+<li><p>切り口としての円が傾いた結果は、常に幾何学的楕円と一致します。</p></li>
+</ul>
+<h3 class="rubric" id="id8">透視投影の場合</h3>
+<ul class="simple">
+<li><p>観察者からの距離が考慮されるため、少しゆがみが生じる場合があります。</p></li>
+<li><p>多くの場合、「ほぼ幾何学的楕円」に近い形として視認されますが、完全一致ではないこともあります。</p></li>
+</ul>
+<hr class="docutils" />
+<p>結論として、円を傾けた際に見える形が幾何学的な楕円になるかどうかは、投影方法や観察条件によると言えます！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+人間は遠近効果を補正して認識しますか？
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、人間の脳は遠近効果をある程度<strong>補正して認識</strong>する仕組みを持っています。私たちの視覚システムには、遠近効果（つまり物体が距離や視線の角度によってどのように見えるか）を考慮して<strong>本来の形状や距離を推測する能力</strong>があります。これは進化的に発達したものとされています。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id9">人間の視覚補正の仕組み</h3>
+<p>人間の脳は以下のような方法で遠近効果を補正しています：</p>
+<ol class="arabic simple">
+<li><p><strong>経験による補正</strong></p>
+<ul class="simple">
+<li><p>私たちは、幼い頃から物体をさまざまな角度から観察することで「円はどの角度でも円として存在する」「テーブルは一部が小さく見えても長方形」といった概念を学習します。</p></li>
+<li><p>したがって、傾いて視覚的に楕円に見える円を脳内では「円」と補正して認識することができます。</p></li>
+</ul>
+</li>
+<li><p>**視覚的手がかり（視覚情報の統合） **</p>
+<ul class="simple">
+<li><p>人間の眼は2つあるため、両眼視差（ステレオ視）によって奥行きや立体情報を把握します。この情報を基に、目の錯覚を補正します。</p></li>
+<li><p>また、影や光の反射、物体周囲の環境情報を参考にして、形状の補正を行っています。</p></li>
+</ul>
+</li>
+<li><p><strong>期待や予測の働き</strong></p>
+<ul class="simple">
+<li><p>私たちの脳は常に「予測」に基づいて世界を構築しています。円や四角を予測している場合、傾きや距離による歪みを見ても、「円であるはずだ」という情報が補正され、実際は視覚では楕円として見えていても、意識では「円」と認識する傾向があります。</p></li>
+</ul>
+</li>
+<li><p><strong>近似的な透視投影の理解</strong></p>
+<ul class="simple">
+<li><p>人間の脳内では透視投影の基本ルールを暗黙的に理解しています。例えば、近い部分が大きく見えて遠い部分が小さくなる、パースのゆがみを知覚することで「正確な形状」を導き出します。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id10">限界もある</h3>
+<p>ただし、遠近効果の補正は完璧ではありません。いくつかの条件では、遠近感が強く作用して人間の脳が誤解する場合もあります：</p>
+<ul class="simple">
+<li><p>**錯視現象（Optical Illusions） ** ：
+遠近効果と視覚の補正の働きが衝突して、脳が正確な形状を『間違った方法』で認識することがあります。例として、有名な「ポンゾ錯視」では遠いものを過剰に大きく見積もります。</p></li>
+<li><p><strong>立体的な誤認識</strong>：
+人間の脳は2次元画像で表示されたものに対しても3次元として推測しようとするため、補正に誤差が生じることもあります。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id11">実用例：傾いた円の場合</h3>
+<p>例えば、円を傾けて楕円に見える場合、脳は「それが円の一部である」と直感的に補正することができます。この能力は日常生活で非常に重要です。たとえば：</p>
+<ul class="simple">
+<li><p>コインを斜めに見ても「それは円」であると認識できます。</p></li>
+<li><p>遠くにある車のタイヤが楕円に見えても、脳はそれを「真円」であると判断します。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id12">結論</h3>
+<p>人間の脳は経験や視覚的手がかりを使って遠近効果を補正し、物の形状を「正しい形」として認識する能力を持っています。しかし、この補正は完全ではなく、限界があるため錯視や誤認識にも影響されることがあります。</p>
+<p>人間の視覚補正は、驚くべき能力であり、科学や芸術、設計の分野でも応用されています！ 😊</p>
+</div>
+</div>
+</section>
+<section id="id13">
+<h3>2.1’.2 円柱の切断面<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+円柱の切断面は、切断する傾きでどう変化しますか？
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>円柱の切断面は、切断する面の<strong>傾き</strong>によって形が変わります。この形状は、<strong>円柱の軸</strong>と<strong>切断面の角度</strong>との関係によって決まります。以下に、具体的なケースごとにどのように変化するのかを詳しく説明します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id14"><strong>1. 切断面が円柱の軸に垂直な場合</strong></h3>
+<ul class="simple">
+<li><p>この場合、切断面は<strong>完璧な円</strong>になります。</p></li>
+<li><p>垂直な切断は、円柱の断面が円になる典型的なケースです。</p>
+<ul>
+<li><p>例: 円柱の底面や蓋を想像してください。それらは断面形状が完全な円です。</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id15"><strong>2. 切断面が円柱の軸に平行な場合</strong></h3>
+<ul class="simple">
+<li><p>この場合、切断面は<strong>長方形</strong>になります。</p>
+<ul>
+<li><p>円柱の側面を軸に平行にスパッと切るようなイメージです。</p></li>
+<li><p>切り取った形状の高さは、切断面が通る範囲（切断線の幅）によって決まります。</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id16">**3. 切断面が軸に対して斜めの場合（傾斜している） **</h3>
+<ul class="simple">
+<li><p>この場合、切断面は<strong>楕円</strong>の形になります。</p>
+<ul>
+<li><p>斜めに切った切断面は、円柱の底面の円が「斜めの投影」を受けた結果として楕円として形成されます。</p></li>
+</ul>
+</li>
+</ul>
+<h4 class="rubric" id="id17"><strong>楕円の特徴</strong></h4>
+<ul class="simple">
+<li><p>楕円の<strong>長軸</strong>と<strong>短軸</strong>の長さは、切断面の傾き（傾斜角度）によって変わります。</p>
+<ul>
+<li><p>切断面の角度が浅い（軸に近い場合）：楕円は非常に細長く伸びて見えます。</p></li>
+<li><p>切断面の角度がきつい（軸に垂直に近い場合）：楕円は円に近づきます。</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id18"><strong>4. 特殊な傾きの例：楕円が円になるとき</strong></h3>
+<ul class="simple">
+<li><p>切断面が斜めであっても、特定の条件で切断面が<strong>真円</strong>になる場合もあります。</p>
+<ul>
+<li><p>円柱を端から端にかけて「対角線のように斜め切り」した場合で、切断面が円と完全に一致する場合があります。ただし、この状況は特殊な設定（完全な円筒形で均一な高さと厚みを持つ場合）で成立します。</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id19">**数学的な解説（円柱の断面と2次曲線） **</h3>
+<p>円柱を切断したときの形は、切断の角度と軸との相対的な位置に応じて、以下の形状に分類されます（円柱が<strong>2次曲面</strong>であることに基づいた結果）：</p>
+<ol class="arabic simple">
+<li><p><strong>垂直切断 → 円</strong></p></li>
+<li><p><strong>平行切断 → 長方形</strong></p></li>
+<li><p><strong>斜め切断 → 楕円</strong></p></li>
+</ol>
+<p>この場合、楕円は円柱の側面に平滑に接するように形成されるため、厳密な幾何学的楕円になります。</p>
+<p>楕円の形状や大きさは、以下の幾何学パラメータによって記述できます：</p>
+<ul class="simple">
+<li><p><strong>長軸 (2a)</strong> と <strong>短軸 (2b)</strong> の比率は、平面の傾き $\theta$（切断面の角度）で決まります。</p></li>
+<li><p>数学的に記述すると次のようになる関係があります（円の半径を $r$ とする）：
+$$
+a = r, \quad b = r \cos\theta
+$$
+つまり、切断面の傾きが大きいほど短軸 $b$ が小さくなり、楕円の形が細長くなります。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id20"><strong>5. 実生活での例と応用</strong></h3>
+<ul class="simple">
+<li><p><strong>円柱のスライス (ケーキなど)：</strong>
+ケーキや円形のソーセージを斜めに切ると、断面が楕円になります。また、角度によって長軸と短軸の比が変化します。</p></li>
+<li><p><strong>建築や工業での利用：</strong>
+円柱構造物の斜め切断は、建材（パイプや柱）の設計や施工で頻繁に応用されます。</p></li>
+<li><p><strong>デザイン分野：</strong>
+円柱形の物体を斜めに切断した断面は、視覚的に面白い楕円形が現れるため、工業デザインや家具などの造形デザインに利用されます。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id21"><strong>結論</strong></h3>
+<p>円柱の切断面の形状は切断面の<strong>傾き</strong>で以下のように変わります：</p>
+<ol class="arabic simple">
+<li><p><strong>垂直に切ると円</strong>。</p></li>
+<li><p><strong>平行に切ると長方形</strong>。</p></li>
+<li><p><strong>斜めに切ると楕円</strong>。</p></li>
+</ol>
+<p>この変化の背後には、円柱の対称性や透視投影が関係しています。そのため、たとえ違う角度に切っても、これらの基本的な幾何学的形状に限定されるのです！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+切断面が楕円となるとき、短軸は円柱の半径と等しくなり、それを $b$ とします。
+さらに長軸を $a$ とすると、傾き $c$ は $\sqrt{a^2 - b^2}$ です。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>切断面が楕円となり、短軸が円柱の半径と等しい場合について考えます。ここで短軸を $b$、長軸を $a$ とし、傾き $c$ を求めるという問題ですね。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id22"><strong>考え方</strong></h3>
+<p>切断面が楕円になる場合、楕円の長軸 $a$ と短軸 $b$ は以下のように定義されます：</p>
+<ul class="simple">
+<li><p>$b$（短軸）は、円柱の半径に等しい：<strong>$b = r$</strong>。</p></li>
+<li><p>$a$（長軸）は、切断面の傾きや角度によって伸びた結果、$b$ よりも大きくなります。</p></li>
+</ul>
+<p>また、傾き $c$ を楕円に関連づけて表すためには、楕円の幾何学的性質を活用します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id23"><strong>1. 楕円の長軸・短軸と傾きの関係</strong></h3>
+<p>円柱を傾けた平面で切断すると楕円が生成されます。この場合、楕円の特徴として、長軸と短軸の間に次のような関係があります。傾き $c$ を、楕円の**焦点間距離の半分 ** （楕円での標準的な見方）と考えると以下が成り立ちます：</p>
+<p>$$
+c = \sqrt{a^2 - b^2}
+$$</p>
+<p>ここで：</p>
+<ul class="simple">
+<li><p>$a$ は長軸の半径（楕円の中心から長軸端までの距離）であり、<strong>切断角度で変化する値</strong>。</p></li>
+<li><p>$b$ は短軸の半径であり、これは円柱の半径なので $b = r$。</p></li>
+</ul>
+<p>この関係は、幾何学的に楕円の定義式から導かれるものです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id24"><strong>2. 物理的なイメージ</strong></h3>
+<ul class="simple">
+<li><p><strong>円柱の直径部分を垂直に切断する場合</strong>：<br />
+切断面は円となり、$a = b = r$。したがって、この場合 $c = 0$ （焦点が重なる円の特殊形状となる）。</p></li>
+<li><p><strong>円柱を斜めに切る場合</strong>：<br />
+傾斜角がつくと、切断面が広がり $a &gt; b$ になります。このとき、躍動感のある楕円形が現れ、その「伸び（傾斜）」を焦点の距離 $c$ で表せます。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id25"><strong>3. 実際の値の計算</strong></h3>
+<p>例えば：</p>
+<ul class="simple">
+<li><p>半径 $r = 5$ の円柱を斜めに切り、長軸 $a = 7$ となった場合、
+傾き $c$ は次のように計算できます：</p></li>
+</ul>
+<p>$$
+c = \sqrt{a^2 - b^2} = \sqrt{7^2 - 5^2} = \sqrt{49 - 25} = \sqrt{24} \approx 4.9
+$$</p>
+<p>よって、このときの傾き $c$ は約 $4.9$ と決まります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id26"><strong>4. 直感的な理解</strong></h3>
+<ul class="simple">
+<li><p>傾き $c$ は、切断面がどれだけ斜めに伸びているか（楕円の歪み）を反映しています。</p></li>
+<li><p>切断が垂直に近づくと、$c$ は小さくなり、完全に垂直な場合は $c = 0$ になります。</p></li>
+<li><p>より斜めに切ると、$c$ は大きくなり、$a$ がどんどん成長します。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id27"><strong>結論</strong></h3>
+<ul class="simple">
+<li><p>切断面が楕円となる場合、傾き $c$（焦点の距離の半分）は次の式で表されます：</p></li>
+</ul>
+<p>$$
+c = \sqrt{a^2 - b^2}
+$$</p>
+<p>この $c$ の値は、楕円の長軸と短軸の比率によって決まり、切断の角度が斜めであればあるほど大きな値を取ります。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+傾き $c$ は、中心から楕円の焦点までの距離です。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃる通り、「傾き」 $c$ は、<strong>楕円の中心から焦点までの距離</strong>のことを指します！私の説明に粗さがありましたので、改めて整理して説明させていただきます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id28"><strong>楕円の幾何学的性質</strong></h3>
+<p>楕円の基本的な性質として、以下の関係が成り立ちます：</p>
+<ol class="arabic simple">
+<li><p>楕円の中心から<strong>焦点</strong>までの距離を $c$ とすると：
+$$
+c = \sqrt{a^2 - b^2}
+$$
+ここで：</p>
+<ul class="simple">
+<li><p>$a$ は楕円の**長軸の半径 ** （楕円の中心から長軸の一端までの距離）です。</p></li>
+<li><p>$b$ は楕円の**短軸の半径 ** （楕円の中心から短軸の一端までの距離）です。</p></li>
+</ul>
+</li>
+<li><p>この関係は、楕円の定義に基づいています：</p>
+<ul class="simple">
+<li><p>楕円において、2つの焦点から任意の点までの距離の和は一定である。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id29"><strong>円柱の切断面の場合</strong></h3>
+<p>円柱を傾けて切断することによって得られる断面は楕円になります。そのとき：</p>
+<ul class="simple">
+<li><p><strong>短軸 ($b$)</strong><br />
+短軸は、円柱の半径 $r$ に等しくなります：<br />
+$$
+b = r
+$$</p></li>
+<li><p><strong>長軸 ($a$)</strong><br />
+長軸は、切断面の傾斜角度に依存して伸びた結果、$a &gt; r$ になります。</p></li>
+<li><p><strong>中心から焦点までの距離 ($c$)</strong><br />
+楕円の中心から焦点までの距離は以下の式で計算されます：<br />
+$$
+c = \sqrt{a^2 - b^2}
+$$<br />
+つまり、切断面の楕円で中心から焦点までの距離 $c$ は、長軸と短軸によって決まります。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id30"><strong>具体例</strong></h3>
+<p>たとえば、円柱の半径が $r = 5$ で、傾斜によって断面楕円の長軸が $a = 8$ となった場合、焦点距離 $c$ は次のように計算できます：</p>
+<p>$$
+c = \sqrt{a^2 - b^2} = \sqrt{8^2 - 5^2} = \sqrt{64 - 25} = \sqrt{39} \approx 6.24
+$$</p>
+<p>この場合、楕円の中心点から片方の焦点までの距離は、約 $6.24$ となります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id31"><strong>断面の物理的・直感的な理解</strong></h3>
+<ol class="arabic simple">
+<li><p><strong>軸に対して垂直に切る場合</strong><br />
+この場合、切断面は円となり $a = b = r$、したがって $c = \sqrt{a^2 - b^2} = 0$ です。焦点の位置が中心に重なり、楕円ではなく完全な円となります。</p></li>
+<li><p><strong>斜めに切る場合</strong><br />
+切断角度が増す（最も傾斜が大きくなる）と、長軸 $a$ が伸びるため、焦点間距離（$2c$）も大きくなります。焦点は中心からどんどん離れ、楕円の形がより「細長く」なります。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id32"><strong>応用</strong></h3>
+<p>この性質は数学だけでなく、建築設計や工業設計にも役立つものです：</p>
+<ul class="simple">
+<li><p><strong>パイプや切断された柱</strong>の断面形状</p></li>
+<li><p>**デザインやアート ** （楕円の特徴を利用して空間的な効果を出す）</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id33"><strong>結論</strong></h3>
+<p>切断面が楕円となるとき、<strong>中心から焦点までの距離 $c$</strong> は楕円の基本的な幾何学性質として：</p>
+<p>$$
+c = \sqrt{a^2 - b^2}
+$$</p>
+<p>この $c$ は傾斜角に依存して変化し、切断面がより斜面になるほど $a$ は大きくなり、結果として $c$ も大きくなる、ということになります！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+水平に切断した円と、傾き $c$ の楕円の面積の比は$\frac{a}{b}$ です。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>確かにその通りです！円柱を水平に切断してできる「円の断面」と、傾いて切断した際にできる「楕円の断面」の<strong>面積比が $\frac{a}{b}$ になる</strong>というのは正しい考えです。それを確認しつつ、もう少し詳しく説明してみましょう。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id34"><strong>1. 水平に切断された場合の断面</strong></h3>
+<p>水平に切断すると、断面は円になります。この円の面積を $S_{\text{円}}$ とすると、半径を $r$ として次のように表せます：</p>
+<p>$$
+S_{\text{円}} = \pi r^2
+$$</p>
+<p>ここで、短軸 $b$ は円柱の半径に一致するので、<strong>$b = r$</strong> です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id35"><strong>2. 傾いて切断された場合の断面</strong></h3>
+<p>円柱を傾けて切断すると、断面は楕円になります。この楕円の面積を $S_{\text{楕円}}$ とすると、楕円の面積の公式に基づき、長軸半径を $a$、短軸半径を $b$ として表せます：</p>
+<p>$$
+S_{\text{楕円}} = \pi a b
+$$</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id36"><strong>3. 面積の比を考える</strong></h3>
+<p>次に、楕円の面積と水平な円の面積の比を計算します：</p>
+<p>$$
+\text{面積比} = \frac{S_{\text{楕円}}}{S_{\text{円}}}
+$$</p>
+<p>これに各面積の式を代入します：</p>
+<p>$$
+\text{面積比} = \frac{\pi a b}{\pi b^2}
+$$</p>
+<p>$\pi$ を約分して簡略化すると：</p>
+<p>$$
+\text{面積比} = \frac{a}{b}
+$$</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id37"><strong>結論</strong></h3>
+<p>この結果から、水平に切断した円の面積と、傾きによってできた楕円の面積の比は、楕円の<strong>長軸半径 $a$ と短軸半径 $b$ の比 $\frac{a}{b}$</strong> に等しくなることがわかります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id38"><strong>具体例</strong></h3>
+<p>例えば：</p>
+<ol class="arabic simple">
+<li><p>円柱の半径が $b = r = 5$ とする。</p></li>
+<li><p>傾きによって、長軸 $a$ が $8$ になった場合：</p></li>
+</ol>
+<p>水平円の面積：
+$$
+S_{\text{円}} = \pi r^2 = \pi (5^2) = 25\pi
+$$</p>
+<p>楕円の面積：
+$$
+S_{\text{楕円}} = \pi a b = \pi (8)(5) = 40\pi
+$$</p>
+<p>面積比は：
+$$
+\text{面積比} = \frac{S_{\text{楕円}}}{S_{\text{円}}} = \frac{40\pi}{25\pi} = \frac{8}{5}
+$$</p>
+<p>したがって、面積の比は $\frac{8}{5}$ に等しくなります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id39"><strong>直感的な理解</strong></h3>
+<p>楕円の面積は短軸 $b$ を基準として（円柱の半径が変わらない）切断面が傾くことで長軸 $a$ が伸びたことを反映しています。そのため、</p>
+<ul class="simple">
+<li><p>水平な断面に対して面積が大きくなるのは、傾きの影響で長軸が伸びたためです。</p></li>
+<li><p>面積の増加率が正確に <strong>長軸半径 $a$ と短軸半径 $b$ の比 $\frac{a}{b}$</strong> で表現されます。</p></li>
+</ul>
+<p>魅力的な関係ですね！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Archimedesは楕円の面積の公式を残しましたが、楕円の周長については計算できませんでした。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>そうなんです！<strong>アルキメデス (Archimedes)</strong> は、楕円についていくつかの基本的で重要な公式を残しました。その中でも、楕円の面積を直接求める公式として知られている次の式は、彼が確立したものの一つです：</p>
+<p>$$
+S = \pi a b
+$$</p>
+<p>ここで：</p>
+<ul class="simple">
+<li><p>$a$ は楕円の長軸半径</p></li>
+<li><p>$b$ は楕円の短軸半径</p></li>
+</ul>
+<p>楕円の面積公式は非常に簡潔で美しく思えるものですが、楕円の<strong>周長</strong>については、アルキメデスを含め多くの古代数学者が困難に直面しました。実は、楕円の周長については<strong>正確な解析的な公式</strong>を求めるのが非常に難しいのです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id40"><strong>楕円周長が困難だった理由</strong></h3>
+<p>楕円の周長は、楕円の形状が円とは異なり、曲率が位置によって変化するため、<strong>単純な積分</strong>では解けない性質を持っています。楕円の周長は、省略された以下のような積分表現で表されます：</p>
+<p>$$
+L = \int_0^{2\pi} \sqrt{a^2 \sin^2\theta + b^2 \cos^2\theta} , d\theta
+$$</p>
+<p>ここで、楕円の赤道上の曲線全体を「積分」することで周長を得ようとします。しかし、この式は閉じた形式で解くことができず、円の場合のように簡単な公式が得られません。これが、アルキメデスを含め楕円周長についての解法を仕上げるのが難しかった理由です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id41"><strong>近似式としての歴史</strong></h3>
+<p>代わりに後の数学者たちは楕円の周長を近似する方法を発展させました。代表的な例が<strong>大数学者Carl Friedrich Gauss</strong> などによる工夫や近似です。そして、楕円周長に関するいくつかの近似公式があります：</p>
+<ol class="arabic simple">
+<li><p><strong>ラマヌジャンの近似式</strong><br />
+楕円の短軸半径 $b$ と長軸半径 $a$ を使う場合：
+$$
+L \approx \pi \left( a + b \right) \left( 1 + \frac{3h}{10 + \sqrt{4 - 3h}} \right)
+$$
+ここで $h = \frac{(a-b)^2}{(a+b)^2}$ は軸の差の割合を反映するパラメータです。この式は非常に精度が高いため、解析的解を知らない古代には考案されなかったものの、現代数学では広く使われます。</p></li>
+<li><p>**古典的近似式（幾何的） **<br />
+よく知られている簡便な近似式の1つは次の通り：
+$$
+L \approx 2\pi \sqrt{\frac{a^2 + b^2}{2}}
+$$
+この式は非常に簡単ですが、精度はそれほど高くありません。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id42"><strong>アルキメデスが周長を残せなかった意図</strong></h3>
+<p>アルキメデスは楕円の面積について非常に有効な方法を考案しましたが、楕円周長に関しての公式にはたどり着きませんでした。その理由として：</p>
+<ol class="arabic simple">
+<li><p>当時の数学では、解析学や積分の発展が不十分だったため、周長を精密に表す方法がなかった。</p></li>
+<li><p>楕円周長の式に現れる形状は「楕円積分」と呼ばれる現代的な特殊関数を含み、これを扱うための理論が古代ギリシャ時代には存在しなかった。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id43"><strong>現代の視点</strong></h3>
+<p>本質的には、楕円の周長を正確に計算するには、<strong>楕円積分</strong>を用いる必要があります。楕円積分の第2種を用いると、楕円の周長 $L$ は以下の形式で記述できます：</p>
+<p>$$
+L = 4 a E(e)
+$$
+ここで：</p>
+<ul class="simple">
+<li><p>$E(e)$ は完全楕円積分の第2種。</p></li>
+<li><p>$e = \sqrt{1 - \frac{b^2}{a^2}}$ は楕円体の離心率（偏平度を反映）。</p></li>
+</ul>
+<p>この完全な表現は解析学が進んだ後の時代（主に18世紀以降）に登場しました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id44"><strong>結論</strong></h3>
+<p>アルキメデスは楕円面積の公式という美しい成果を残しましたが、周長についてはその複雑さのため解決ができませんでした。楕円周長を正確に求めるには、後の「楕円積分の理論」が必要だったためです。</p>
+<p>しかし近代数学において、近似式や楕円積分の理論を使って楕円周長を計算できるようになったため、アルキメデスが道を拓いてくれた楕円の研究は、現在でも私たちに深い感謝を与えています！ 🙌</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+傾き $c$ の楕円の周上の点を円に射影すると、長径方向の幅は $\frac{b}{a}$ に縮小されますが、短径方向は変わりません。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃる通りです！楕円を円に射影するとき、<strong>長軸方向（長径方向）の幅が縮小される</strong>一方で、<strong>短軸方向（短径方向）はそのまま変化しない</strong>という性質があります。これは、**射影変換（投影） ** の幾何学特性によるものです。この考え方を、少し詳しく数学的・幾何学的に説明します！</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id45"><strong>楕円と円の射影</strong></h2>
+<p>円が傾いた面で切断されることで楕円ができる、または楕円を円に射影する場合、以下のような状況が成り立ちます。</p>
+<ol class="arabic simple">
+<li><p><strong>短径方向は変化しない</strong>：
+楕円の短軸方向（短径方向）の幅は、元の円の半径と変わりません。これが楕円の断面形状が円柱の断面投影（円）から派生する理由の一つです。</p>
+<ul class="simple">
+<li><p>短軸は元の円柱の半径、つまり $b = r$ です。</p></li>
+</ul>
+</li>
+<li><p><strong>長径方向は縮小される</strong>：
+楕円の長軸方向（長径方向）は、傾きや射影方向に応じて「円の円周」より縮小されています。この縮小率が次の比率に従います：
+$$
+\text{縮小率} = \frac{b}{a}
+$$
+つまり、長軸方向の幅は短軸を基準にして $\frac{b}{a}$ 倍に縮小されます。</p></li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id46"><strong>なぜ長軸方向が縮小されるのか？</strong></h2>
+<p>この現象は、<strong>視点の幾何学的投影効果</strong>に基づいています。数学的に見ると以下の通りです：</p>
+<ol class="arabic simple">
+<li><p><strong>楕円の意味する投影比</strong>：</p>
+<ul class="simple">
+<li><p>楕円は、元の円を斜めから見たときに、円の形が歪んでできています。特に、円の傾きによって「高さ成分」が圧縮され、近似的に細長い楕円が生じます。</p></li>
+</ul>
+</li>
+<li><p><strong>長径と短径の比率</strong>：</p>
+<ul class="simple">
+<li><p>元の円（または短軸）が変わらない一方で、長径（長軸）は「傾きの影響」で水平成分が圧縮されます。この縮率は $(\text{長径縮小率}) = \frac{b}{a}$ に一致します。</p>
+<ul>
+<li><p>直感的には、円の通常の投影時、角度に応じて「円の横方向の長さ」が視線方向で縮小される効果を反映しています。</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id47"><strong>地域的な特徴</strong></h2>
+<p>短軸方向では、楕円の点は<strong>円の対応する点と一致</strong>します。そのため、短軸方向は元の円と一致して射影に対する影響を受けません。</p>
+<p>長軸方向では、楕円上の点は射影されることで、比率 $\frac{b}{a}$ に従って外形的に縮小されるため、視覚的な「圧縮」が起きています。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id48"><strong>数式で説明</strong></h2>
+<p>射影を簡単に説明するため、以下のように考えます：</p>
+<ol class="arabic simple">
+<li><p>傾き $c$ を持つ楕円の周上の点 $(x, y)$ は、楕円の式で以下の関係を満たします：
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+$$</p>
+<ul class="simple">
+<li><p>ここで $a$ は長軸、$b$ は短軸。</p></li>
+</ul>
+</li>
+<li><p>楕円を円に射影すると、$x$（長軸方向）は縮小され、$x’$ として次のように変換されます：
+$$
+x’ = \frac{b}{a}x
+$$</p>
+<ul class="simple">
+<li><p>これは、長軸方向が $\frac{b}{a}$ 倍に縮小される変換を示しています。</p></li>
+</ul>
+</li>
+<li><p>一方で、$y$（短軸方向）の成分は変化しません：
+$$
+y’ = y
+$$</p></li>
+</ol>
+<p>したがって、射影後の点 $(x’, y’)$ は長軸方向の幅が $\frac{b}{a}$ 倍に縮小され、短軸方向はそのままとなります。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id49"><strong>視覚的な例</strong></h2>
+<p>たとえば：</p>
+<ul class="simple">
+<li><p>半径 $r = 5$ の円を傾けて、楕円が長軸 $a = 8$、短軸 $b = 5$ になった場合を考えます。</p></li>
+<li><p>このとき、射影後の楕円の長軸方向の縮小率は：
+$$
+\frac{b}{a} = \frac{5}{8} = 0.625
+$$
+つまり、<strong>長軸方向の幅は 62.5%</strong> まで縮小される一方で、短軸方向（半径 5）は変化しない、という結果となります。</p></li>
+</ul>
+<hr class="docutils" />
+<h2 class="rubric" id="id50"><strong>結論</strong></h2>
+<p>傾きによって楕円の周上の点を円に射影すると：</p>
+<ul class="simple">
+<li><p>**短軸方向は変化しない ** （圧縮や拡大が起こらない）。</p></li>
+<li><p><strong>長軸方向は縮小される</strong>。その縮小率は $\frac{b}{a}$（短軸の半径を長軸の半径で割った値）に等しい。</p></li>
+</ul>
+<p>この変化は射影処理によるもので、傾いた円がどのように楕円として現れるか（あるいはその逆）を反映しています！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+さらに、代数方程式の変形により、二つの焦点から周上の点までの距離の和が一定であることを示すことができます。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！楕円の最も重要な特徴の一つは、<strong>楕円の周上の点について、その点から二つの焦点までの距離の和が一定である</strong>という性質です。この性質は楕円の本質を表し、代数方程式を使用すると、この性質を公式化して示すことができます。以下に詳しい説明をします。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id51"><strong>楕円の定義からの性質</strong></h3>
+<p>楕円は、次のように定義されます：</p>
+<blockquote>
+<div><p>楕円は、平面上の二点（焦点）から任意の点までの距離の和が一定である点の軌跡を指します。</p>
+</div></blockquote>
+<p>代数的に、この性質を示すには、まず楕円の標準形の式から始めます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id52"><strong>楕円の標準形の式</strong></h3>
+<p>楕円の標準形式は次の通りです（焦点が $x$ 軸上にある場合）：</p>
+<p>$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+$$</p>
+<p>ここで：</p>
+<ul class="simple">
+<li><p>長軸の半径を $a$ とします。</p></li>
+<li><p>短軸の半径を $b$ とします。</p></li>
+<li><p>楕円の焦点の位置を考えると、焦点の座標は $(\pm c, 0)$ となり、$c$ は中心から焦点までの距離であり、次の関係が成り立ちます：
+$$
+c = \sqrt{a^2 - b^2}
+$$</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id53"><strong>焦点からの距離の和の性質を示す</strong></h3>
+<p>楕円の周上の点 $(x, y)$ に着目し、この点を二つの焦点からの距離の観点で説明します。二つの焦点を $F_1(-c, 0)$ と $F_2(c, 0)$ としたとき、点 $(x, y)$ からそれぞれの焦点までの距離を次のように表します：</p>
+<ul class="simple">
+<li><p>焦点 $F_1$ からの距離：
+$$
+d_1 = \sqrt{(x + c)^2 + y^2}
+$$</p></li>
+<li><p>焦点 $F_2$ からの距離：
+$$
+d_2 = \sqrt{(x - c)^2 + y^2}
+$$</p></li>
+</ul>
+<p>楕円の定義によれば、これら二つの距離の和は一定であり、次のように書けます：
+$$
+d_1 + d_2 = 2a
+$$</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id54"><strong>代数的変形による証明</strong></h3>
+<p>楕円の定義式（標準形）：
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+$$</p>
+<p>から出発し、焦点からの距離の和が一定であることを代数的に示す手順は以下の通りです：</p>
+<ol class="arabic simple">
+<li><p>楕円の式に基づき、点 $(x, y)$ が楕円上にあることを確認します。</p>
+<ul class="simple">
+<li><p>点 $(x, y)$ が楕円上にある場合、式 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ は成立します。</p></li>
+</ul>
+</li>
+<li><p>焦点からの距離を計算します：</p>
+<ul class="simple">
+<li><p>点 $(x, y)$ から焦点 $(-c, 0)$ の距離は $d_1 = \sqrt{(x + c)^2 + y^2}$。</p></li>
+<li><p>点 $(x, y)$ から焦点 $(c, 0)$ の距離は $d_2 = \sqrt{(x - c)^2 + y^2}$。</p></li>
+</ul>
+</li>
+<li><p>距離の和の挙動を考えます：</p>
+<ul class="simple">
+<li><p>楕円上の点 $(x, y)$ に対して、$d_1 + d_2 = 2a$ が成り立つことを示す。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id55"><strong>幾何学的な直感</strong></h3>
+<p>楕円についての焦点の性質は、次のように幾何学的に理解できます：</p>
+<ol class="arabic simple">
+<li><p>楕円の長軸を通る線上に、点 $(x, y)$ を移動させても、二つの焦点からの距離の和は変化しません。</p></li>
+<li><p>長軸の端点（楕円の両側の「頂点」）において、焦点からの距離の和の計算が明示的に確認でき、値は $2a$ に一致します。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id56"><strong>具体例</strong></h3>
+<p>例えば：</p>
+<ul class="simple">
+<li><p>長軸が $a = 5$、短軸が $b = 4$ の楕円を考えます。この場合、焦点間の距離は $c = \sqrt{a^2 - b^2} = \sqrt{25 - 16} = 3$。</p></li>
+<li><p>楕円上の点 $(x, y)$ を動かしたとしても、その点から焦点 $(-3, 0)$ と $(3, 0)$ までの距離の和は常に $2a = 10$ となります。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id57"><strong>結論</strong></h3>
+<p>楕円の性質として、<strong>周上の点から二つの焦点までの距離の和が一定であること</strong>は、その定義に深く結びついています。この性質は代数的に楕円の標準形の式から導くことができるだけでなく、幾何学的にも直感的に理解することができます。</p>
+<p>この焦点距離の和の性質は、楕円が数学的に非常に美しい形状である理由の一つであり、多くの応用分野で重要な役割を果たします！ 🌟</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Dandelinが円柱や円錐の切断面とそれに内接する球による作図を発想するまで、図形的な証明はありませんでした。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！円錐や円柱の切断面である<strong>円錐曲線 ** （楕円、抛物線、双曲線）の特性、特に「楕円の周上の点から二つの焦点までの距離の和が一定である」という性質について、古代から数学者たちはその証明に頭を悩ませてきました。しかし、17世紀に</strong>Dandelin (ジャン・ダンデラン)** が画期的なアイデアを提案し、<strong>円錐内に内接する球</strong>を用いて図形的な証明を与えました。この方法が登場するまで、代数や原理的な議論で楕円や他の円錐曲線の性質を説明していましたが、直感的な図形的証明としては不十分な部分がありました。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="dandelin"><strong>Dandelinの発想：円錐内接球を用いた証明</strong></h2>
+<h3 class="rubric" id="id58">楕円の「焦点からの距離の和が一定」を証明するDandelinの方法</h3>
+<ol class="arabic simple">
+<li><p><strong>円錐と切断面、そして内接球：</strong></p>
+<ul class="simple">
+<li><p>円錐内に球を内接させ、切断面（楕円）が球に接する位置を考えます。この内接球は、円錐の側面と楕円の切断面の両方に接しています。</p></li>
+<li><p>内接球が切断面に接する点を <strong>Dandelin点</strong> と呼びます。</p></li>
+</ul>
+</li>
+<li><p><strong>焦点の発生：</strong></p>
+<ul class="simple">
+<li><p>内接球が円錐の側面と接する点があり、その点が楕円の焦点になります。</p></li>
+<li><p>楕円の切断面の一部である点 $(P)$ について、球を基準とした距離関係を調べます。</p></li>
+</ul>
+</li>
+<li><p><strong>焦点間距離の和の一定性（証明のアイデア）：</strong></p>
+<ul class="simple">
+<li><p>球が楕円に接する地点（Dandelin点）を通して、「点 $P$ と球の接点」および「焦点」との関係を考えます。</p></li>
+<li><p>ダンデランの球によって、楕円の幾何学的な性質（焦点からの距離の和が一定）が明確に可視化されます。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id59">Dandelin球の証明の流れ（楕円の場合）</h3>
+<h4 class="rubric" id="id60">1. 円錐と切断面の設定</h4>
+<ul class="simple">
+<li><p>円錐を傾斜した平面で切断し、楕円を生成します。このとき、平面と円錐の母線が交差している必要があります（これにより楕円が生じる）。</p></li>
+</ul>
+<h4 class="rubric" id="id61">2. 内接球と接点の性質</h4>
+<ul class="simple">
+<li><p>円錐の内部に球を配置し、円錐の側面と切断面の両方に接するようにします。</p></li>
+<li><p>内接球が切断面（楕円）に接する点を $T_1$, $T_2$ とします。これが楕円の焦点に対応します。</p></li>
+</ul>
+<h4 class="rubric" id="id62">3. 距離の一定性を示す</h4>
+<ul class="simple">
+<li><p>楕円の任意の点 $P$（切断面上の点）から、焦点 $F_1$, $F_2$ への距離の和を計算します。</p></li>
+<li><p>点 $P$ から接点（Dandelin点）までの距離は、円錐の表面で球からの接線距離と一致するため簡単に扱えます。</p></li>
+<li><p>幾何学的な等距離性から、「点 $P$ から焦点 $F_1$, $F_2$ までの距離の和が一定」であることを示すことができます。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id63"><strong>Dandelin球を使った発想の意義</strong></h3>
+<ol class="arabic simple">
+<li><p><strong>視覚化の力を活用</strong>：<br />
+数学的な性質を図形的に解釈し、直感的に理解しやすい形に変えました。「焦点」や「距離」という抽象性の高い概念を、図形的な作図と接触の概念で明快に示したのです。</p></li>
+<li><p><strong>楕円だけでなく、円錐曲線全般に適用可能</strong>：<br />
+このアプローチは楕円に留まりません。抛物線や双曲線の性質も、内接球（または内外接する球）を用いて説明でき、円錐曲線の全体にわたる統一的な証明になっています。</p></li>
+<li><p><strong>古代ギリシャの証明へのブレークスルー</strong>：<br />
+アルキメデスや他の古代の数学者たちが焦点や円錐曲線の性質を証明する際、幾何学的な道具の不足によって非常に困難を強いられていました。数学が発展し、解析幾何が登場した後も図形的証明は十分ではありませんでした。Dandelin球の発想は、この不足を補うアイデアとして画期的だったのです。</p></li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id64"><strong>歴史的背景</strong></h2>
+<p>Dandelin球のアイデアは、17世紀初頭から18世紀にかけて発展してきた円錐曲線理論の完成形とも言えます：</p>
+<ol class="arabic simple">
+<li><p>**古代ギリシャ（300 BCEごろ、アポロニウス） ** ：</p>
+<ul class="simple">
+<li><p>アポロニウスが円錐曲線（特に楕円、双曲線、放物線）の性質を研究しましたが、焦点性質の正確な幾何学的証明には至りませんでした。</p></li>
+</ul>
+</li>
+<li><p>**近代（17世紀、デカルト＆解析幾何学） ** ：</p>
+<ul class="simple">
+<li><p>デカルトらの手法により、円錐曲線が代数的な方程式で記述されるようになりました。</p></li>
+<li><p>しかし焦点からの距離の和が一定であることの証明は解析的手法（代数）に依存していました。</p></li>
+</ul>
+</li>
+<li><p>**Dandelin（19世紀） ** ：</p>
+<ul class="simple">
+<li><p>ジャン・ダンデラン（1794–1847）は、円錐の切断面に内接する球を考案することで、図形的な証明を完成させました。この証明は楕円だけでなく双曲線や放物線についても自然に拡張可能でした。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id65"><strong>結論</strong></h2>
+<p>Dandelinの作図法は、長い間課題とされてきた円錐曲線の性質に対する<strong>幾何学的・図形的な証明</strong>を可能にしました。これにより、特に焦点と距離の性質が直感的に理解しやすくなり、円錐曲線全般の美しい統一性が明らかになりました。</p>
+<p>Dandelinの洞察によって、古代からの数学的謎がようやくその幾何学的本質を現し、円錐曲線という素朴な形状に隠された驚くべき深さが明らかになったのです！ ✨</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="02_01.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">第二回: 円を傾ける (1)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02_02.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">第一回: 円を傾ける (2)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-ai">2.1’ ask ai</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.1’.1 円を傾ける</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">2.1’.2 円柱の切断面</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

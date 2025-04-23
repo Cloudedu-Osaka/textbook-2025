@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>第一回: 円を描く (1) &#8212; プログラミングで遡る科学史</title>
+    <title>第二回: 円を傾ける (1) &#8212; プログラミングで遡る科学史</title>
   
   
   
@@ -57,12 +57,14 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/01/011_jupyter_ai';</script>
-    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/01/011_jupyter_ai.html" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/02/02_01';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/02/02_01.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="第一回: 円を描く (2)" href="012_draw.html" />
-    <link rel="prev" title="第一回: 円を描く" href="010_intro.html" />
+    <link rel="next" title="第二回: 円を傾ける (1’)" href="02_01x.html" />
+    <link rel="prev" title="プログラミングで遡る科学史" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,20 +175,20 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_02x.html">View a circle (2')</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="010_intro.html">JupyterHub</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Jupyter AI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="012_draw.html">Draw a circle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="013_geogebra.html">Introduction to GeoGebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="014_geogebra.html">GeoGebra (1)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="015_geogebra.html">GeoGebra (2)</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
 </ul>
 
     </div>
@@ -241,7 +243,7 @@
       
       
       
-      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/01/011_jupyter_ai.ipynb&branch=main" target="_blank"
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/02/02_01.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +289,7 @@
       
       
       
-      <li><a href="../../_sources/chapters/01/011_jupyter_ai.ipynb" target="_blank"
+      <li><a href="../../_sources/chapters/02/02_01.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>第一回: 円を描く (1)</h1>
+    <h1>第二回: 円を傾ける (1)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,7 +383,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-ai">1.2 Jupyter AI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-ai">2.1 ask ai</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.1.1 円を傾ける</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.1.2 円柱の切断面</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -393,52 +399,184 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>第一回: 円を描く (1)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="jupyter-ai">
-<h2>1.2 Jupyter AI<a class="headerlink" href="#jupyter-ai" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://openai.com/ja-JP/index/gpt-4o-mini-advancing-cost-efficient-intelligence/">GPT-4o mini：費用効率の高いインテリジェンスの推進 | OpenAI</a></p></li>
-</ul>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/4c8f006d-bc33-4ac5-af68-400467dfb598.png"><img alt="../../_images/4c8f006d-bc33-4ac5-af68-400467dfb598.png" src="../../_images/4c8f006d-bc33-4ac5-af68-400467dfb598.png" style="width: 100%;" />
-</a>
-</figure>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/df604b8e-fae3-4e48-9517-a901b8dbf2fc.png"><img alt="../../_images/df604b8e-fae3-4e48-9517-a901b8dbf2fc.png" src="../../_images/df604b8e-fae3-4e48-9517-a901b8dbf2fc.png" style="width: 100%;" />
-</a>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Jupyter AIのシステムプロンプトは次のように設定されています:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CHAT_SYSTEM_PROMPT</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">You are Jupyternaut, a conversational assistant living in JupyterLab to help users.</span>
-<span class="s2">You are not a language model, but rather an application built on a foundation model from </span><span class="si">{provider_name}</span><span class="s2"> called </span><span class="si">{local_model_id}</span><span class="s2">.</span>
-<span class="s2">You are talkative and you provide lots of specific details from the foundation model&#39;s context.</span>
-<span class="s2">You may use Markdown to format your response.</span>
-<span class="s2">If your response includes code, they must be enclosed in Markdown fenced code blocks (with triple backticks before and after).</span>
-<span class="s2">If your response includes mathematical notation, they must be expressed in LaTeX markup and enclosed in LaTeX delimiters.</span>
-<span class="s2">All dollar quantities (of USD) must be formatted in LaTeX, with the `$` symbol escaped by a single backslash `</span><span class="se">\\</span><span class="s2">`.</span>
-<span class="s2">- Example prompt: `If I have </span><span class="se">\\\\</span><span class="s2">$100 and spend </span><span class="se">\\\\</span><span class="s2">$20, how much money do I have left?`</span>
-<span class="s2">- **Correct** response: `You have </span><span class="se">\\</span><span class="s2">(</span><span class="se">\\</span><span class="s2">$80</span><span class="se">\\</span><span class="s2">) remaining.`</span>
-<span class="s2">- **Incorrect** response: `You have $80 remaining.`</span>
-<span class="s2">If you do not know the answer to a question, answer truthfully by responding that you do not know.</span>
-<span class="s2">The following is a friendly conversation between you and a human.</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">IFrame</span>
 </pre></div>
 </div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>あなたはJupyternautという、JupyterLab内でユーザーを助ける対話型アシスタントです。
-あなたは言語モデルではなく、VIORASが提供するAzure OpenAI GPT-4という基盤モデルを使用したアプリケーションです。
-あなたはおしゃべり好きであり、基盤モデルのコンテキストから具体的な詳細を多く提供します。
-回答にはMarkdown形式を使用しても構いません。
-コードブロックはMarkdown形式でフォーマットする必要があります。
-数学的な内容は、インラインでTeX記法を使用し、$で囲んで表現する必要があります。
-質問の答えがわからない場合は、正直に答えを知らないと述べる必要があります。
-以下はあなたと人間との親しみやすい会話です。</p>
 </div>
 </div>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>第二回: 円を傾ける (1)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="ask-ai">
+<h2>2.1 ask ai<a class="headerlink" href="#ask-ai" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>2.1.1 円を傾ける<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<p>円を傾けるとどう見えますか？</p>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<ul class="simple">
+<li><p>楕円に見えるとしたら、それは幾何学的な楕円ですか？</p></li>
+<li><p>人間は遠近効果を補正して認識しますか？</p></li>
+</ul>
+</div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/cxjr4y9c">https://www.geogebra.org/m/cxjr4y9c</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/cxjr4y9c/width/1196/height/805&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/cxjr4y9c/width/1196/height/805"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+<ul class="simple">
+<li><p>補足</p>
+<ul>
+<li><p>直径 (diameter) による計測</p>
+<ul>
+<li><p>半径 (radius) の幅と高さ</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id3">
+<h3>2.1.2 円柱の切断面<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<p>円柱の切断面は、切断する傾きでどう変化しますか？</p>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<p>切断面が楕円となるとき、短軸は円柱の半径と等しくなり、それを <span class="math notranslate nohighlight">\(b\)</span> とします。
+さらに長軸を <span class="math notranslate nohighlight">\(a\)</span> とすると、傾き <span class="math notranslate nohighlight">\(c\)</span> は <span class="math notranslate nohighlight">\(\sqrt{a^2 - b^2}\)</span> です。</p>
+</div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/ryuszndc">https://www.geogebra.org/m/ryuszndc</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/ryuszndc/width/1196/height/805&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/ryuszndc/width/1196/height/805"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<p>傾き <span class="math notranslate nohighlight">\(c\)</span> は、中心から楕円の焦点までの距離です。</p>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<ul class="simple">
+<li><p>水平に切断した円と、傾き <span class="math notranslate nohighlight">\(c\)</span> の楕円の面積の比は<span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> です。</p></li>
+<li><p>Archimedesは楕円の面積の公式を残しましたが、楕円の周長については計算できませんでした。</p></li>
+</ul>
+</div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<p>傾き <span class="math notranslate nohighlight">\(c\)</span> の楕円の周上の点を円に射影すると、長径方向の幅は <span class="math notranslate nohighlight">\(\frac{b}{a}\)</span> に縮小されますが、短径方向は変わりません。</p>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<ul class="simple">
+<li><p>この射影を円の公式に当てはめると、
+$<span class="math notranslate nohighlight">\(
+\frac{b^2}{a^2} x^2 + y^2 = b^2
+\)</span><span class="math notranslate nohighlight">\(
+となり、整理すると楕円の公式
+\)</span><span class="math notranslate nohighlight">\(
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+\)</span>$
+が得られます。</p></li>
+<li><p>さらに、代数方程式の変形により、二つの焦点から周上の点までの距離の和が一定であることを示すことができます。</p></li>
+</ul>
+</div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/akydrzau">https://www.geogebra.org/m/akydrzau</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/akydrzau/width/1196/height/805&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/akydrzau/width/1196/height/805"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+<ul class="simple">
+<li><p>補足</p>
+<ul>
+<li><p>楕円の長軸と短軸、長径と短径</p></li>
+<li><p>楕円の直径 (diameter)</p>
+<ul>
+<li><p>楕円を等分する？</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<p>Dandelinが円柱や円錐の切断面とそれに内接する球による作図を発想するまで、図形的な証明はありませんでした。</p>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/hkme4mgu">https://www.geogebra.org/m/hkme4mgu</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/hkme4mgu/width/2544/height/1255&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/hkme4mgu/width/2544/height/1255"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -455,7 +593,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./chapters/01"
+            path: "./chapters/02"
         },
         predefinedOutput: true
     }
@@ -473,20 +611,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="010_intro.html"
+       href="../intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">第一回: 円を描く</p>
+        <p class="prev-next-title">プログラミングで遡る科学史</p>
       </div>
     </a>
     <a class="right-next"
-       href="012_draw.html"
+       href="02_01x.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">第一回: 円を描く (2)</p>
+        <p class="prev-next-title">第二回: 円を傾ける (1’)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,7 +644,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-ai">1.2 Jupyter AI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-ai">2.1 ask ai</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.1.1 円を傾ける</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.1.2 円柱の切断面</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
