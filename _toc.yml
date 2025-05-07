@@ -9,13 +9,11 @@ parts:
   chapters:
   - file: chapters/04/0401_intro.ipynb
     title: Formula to figure (2)
-  - file: chapters/04/0401x_intro.ipynb
-    title: Formula to figure (2')
-  - file: chapters/04/0402.ipynb
+  - file: chapters/04/0402_geometric_mean.ipynb
     title: Theorem of Geometric Mean
-  - file: chapters/04/0403.ipynb
+  - file: chapters/04/0403_newton.ipynb
     title: Newton
-  - file: chapters/04/0404.ipynb
+  - file: chapters/04/0404_menaechmus.ipynb
     title: Menachmus
   - file: chapters/04/0405.ipynb
     title: Summary
@@ -24,8 +22,6 @@ parts:
   chapters:
   - file: chapters/03/0301_intro.ipynb
     title: Formula to figure (1)
-  - file: chapters/03/0301x_intro.ipynb
-    title: Formula to figure (1')
   - file: chapters/03/0302.ipynb
     title: Formula to figure (1-2)
   - file: chapters/03/0303.ipynb
