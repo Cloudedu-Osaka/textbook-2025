@@ -4,6 +4,21 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/05/07
+  numbered: false
+  chapters:
+  - file: chapters/04/0401_intro.ipynb
+    title: Formula to figure (2)
+  - file: chapters/04/0401x_intro.ipynb
+    title: Formula to figure (2')
+  - file: chapters/04/0402.ipynb
+    title: Theorem of Geometric Mean
+  - file: chapters/04/0403.ipynb
+    title: Newton
+  - file: chapters/04/0404.ipynb
+    title: Menachmus
+  - file: chapters/04/0405.ipynb
+    title: Summary
 - caption: 2025/04/30
   numbered: false
   chapters:
@@ -12,13 +27,13 @@ parts:
   - file: chapters/03/0301x_intro.ipynb
     title: Formula to figure (1')
   - file: chapters/03/0302.ipynb
-    title: Formula to figure (2)
+    title: Formula to figure (1-2)
   - file: chapters/03/0303.ipynb
-    title: Formula to figure (3)
+    title: Formula to figure (1-3)
   - file: chapters/03/0304.ipynb
-    title: Formula to figure (4)
+    title: Formula to figure (1-4)
   - file: chapters/03/0305.ipynb
-    title: Formula to figure (5)
+    title: Formula to figure (1-5)
 - caption: 2025/04/23
   numbered: false
   chapters:
