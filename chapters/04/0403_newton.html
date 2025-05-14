@@ -61,7 +61,7 @@
     <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/04/0403_newton.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="第四回: 数式から図形へ" href="0404_menaechmus.html" />
+    <link rel="next" title="第三回: 数式と図形" href="../03/0301_intro.html" />
     <link rel="prev" title="第四回: 数式から図形へ" href="0402_geometric_mean.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,13 +172,11 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/07</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0401_intro.html">Formula to figure (2)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Newton</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0404_menaechmus.html">Menachmus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0405.html">Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
 <ul class="nav bd-sidenav">
@@ -401,6 +399,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.2.1 Newtonと放物線</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.2.2 Newtonと放物線と幾何平均</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.2.3 Newtonと楕円と幾何平均</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.2.4 Newtonと双曲線と幾何平均</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">4.2.5 Newtonとサイクロイド</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtonfeynman">4.2.5 NewtonとFeynman</a></li>
 </ul>
 </li>
 </ul>
@@ -428,21 +429,40 @@ document.write(`
 <ul class="simple">
 <li><p>in Wikipedia</p>
 <ul>
-<li><p>(c.626/623 – c.548/545 BC)) <a class="reference external" href="https://en.wikipedia.org/wiki/Thales_of_Miletus">Thales of Miletus - Wikipedia</a></p></li>
+<li><p>(c.626/623 – c.548/545 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Thales_of_Miletus">Thales of Miletus - Wikipedia</a></p></li>
+<li><p>(c.570 BC – c.495 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Pythagoras">Pythagoras - Wikipedia</a></p></li>
 <li><p>(c.380 – c.320 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Menaechmus">Menaechmus - Wikipedia</a></p></li>
+<li><p>(fl. 300 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Euclid">Euclid - Wikipedia</a></p></li>
+<li><p>(c.287 BC – c.212 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Archimedes">Archimedes - Wikipedia</a></p></li>
+<li><p>(c.240 BC – c.190 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Apollonius_of_Perga">Apollonius of Perga - Wikipedia</a></p></li>
+<li><p>(1596 – 1650) <a class="reference external" href="https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes">René Descartes - Wikipedia</a></p></li>
+<li><p>(1601 – 1665) <a class="reference external" href="https://en.wikipedia.org/wiki/Pierre_de_Fermat">Pierre de Fermat - Wikipedia</a></p></li>
 <li><p>(1643 – 1727) <a class="reference external" href="https://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton - Wikipedia</a></p></li>
+<li><p>(1646 – 1716) <a class="reference external" href="https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">Gottfried Wilhelm Leibniz - Wikipedia</a></p></li>
+<li><p>(1777 – 1855) <a class="reference external" href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">Carl Friedrich Gauss - Wikipedia</a></p></li>
 <li><p>(1918 – 1988) <a class="reference external" href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman - Wikipedia</a></p></li>
 </ul>
 </li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">ask ai</p>
-<p>Newtonは、Apolloniusの円錐曲線論を熟読し、彼の著書Principiaにおいて幾何平均を活用して円錐曲線の向心力を証明した</p>
+<p>一般論として、Newtonとは？</p>
 <div class="seealso admonition">
 <p class="admonition-title">ask ai repeatedly</p>
 <ul class="simple">
-<li><p>具体的には円錐曲線の補助線に現れる一辺を共有する相似な直角三角形の幾何平均から物理法則を導いた</p></li>
-<li><p>Newtonは、古代ギリシアで熱心に研究された円錐曲線の直径を活用しようとしたが、ごく一部に導入したものの直接的な利便は得られなかった</p></li>
+<li><p>Sir Isac Newtonの業績について</p></li>
+<li><p>Newtonとルネッサンス・科学革命期の幾何学について</p>
+<ul>
+<li><p>Newtonに先立って、DecartesとFermatは放物線の接線の研究をしていました。
+Decartesは放物線に内接する円との連立する代数方程式の判別式から接線が一点で交わることを証明しました。
+Fermatは、放物線が二次多項式の軌跡であり、「微分」が接線であることに気づきました。</p></li>
+<li><p>Newtonは、放物線を図形的に分析し、一般的な方程式の根の近似法を発見しました。
+それは二次方程式においてはArchmedesが円周率を求める際に活用したバビロニア法そのものでした。</p></li>
+<li><p>Archmedesは放物線の焦点に光が集まる性質を兵器として利用しようとしたと伝わっています。
+Newtonは、接触円を導入し、円錐曲線への光の入射・反射角が等しいことを示そうとしました。
+接触円は、後世のGaussによって厳密に定義されました。</p></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -469,15 +489,33 @@ document.write(`
         ></iframe>
         </div></div>
 </div>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<ul class="simple">
+<li><p>Newtonと古代ギリシアの幾何学について</p></li>
+</ul>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<ul class="simple">
+<li><p>Newtonは、EuclidとApolloniusの円錐曲線論を科学的に応用した最初で最後の人物です。</p></li>
+<li><p>Newtonですら、Apolloniusが熱心に研究した円錐曲線の直径は、用語として引用したものの、
+そこで究明された性質を使うことはありませんでした。</p></li>
+<li><p>Newtonは、幾何平均を使って求心力 (centripetal force) が距離の二乗に反比例することを証明しました。
+その際、円錐曲線が二次多項式の軌跡であることや、その微分・積分は用いていません。</p></li>
+<li><p>Newtonは、当時の学術界に受け入れらるよう、Principiaを作図幾何学に基づいてラテン語で記述しました。
+彼は、古代ギリシアの学術界にMenaechmusの業績が受け入れられなかったことを知っていたのかもしれません</p></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="id3">
 <h3>4.2.2 Newtonと放物線と幾何平均<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.geogebra.org/m/muqtm3gg">https://www.geogebra.org/m/muqtm3gg</a></p></li>
+<li><p><a class="reference external" href="https://www.geogebra.org/m/jvxph4sd">https://www.geogebra.org/m/jvxph4sd</a></p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/muqtm3gg/width/1366/height/853&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/jvxph4sd/width/1905/height/1044&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -486,7 +524,7 @@ document.write(`
         <iframe
             width="1000"
             height="500"
-            src="https://www.geogebra.org/material/iframe/id/muqtm3gg/width/1366/height/853"
+            src="https://www.geogebra.org/material/iframe/id/jvxph4sd/width/1905/height/1044"
             frameborder="0"
             allowfullscreen
             
@@ -497,11 +535,11 @@ document.write(`
 <section id="id4">
 <h3>4.2.3 Newtonと楕円と幾何平均<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.geogebra.org/m/s5hj7wy3">https://www.geogebra.org/m/s5hj7wy3</a></p></li>
+<li><p><a class="reference external" href="https://www.geogebra.org/m/ynjeufy2">https://www.geogebra.org/m/ynjeufy2</a></p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/s5hj7wy3/width/1366/height/853&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/ynjeufy2/width/1905/height/1044&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -510,7 +548,94 @@ document.write(`
         <iframe
             width="1000"
             height="500"
-            src="https://www.geogebra.org/material/iframe/id/s5hj7wy3/width/1366/height/853"
+            src="https://www.geogebra.org/material/iframe/id/ynjeufy2/width/1905/height/1044"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
+<section id="id5">
+<h3>4.2.4 Newtonと双曲線と幾何平均<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/sm9wfjwr">https://www.geogebra.org/m/sm9wfjwr</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/sm9wfjwr/width/1905/height/1044&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/sm9wfjwr/width/1905/height/1044"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<ul class="simple">
+<li><p>Newtonと後世の幾何学について</p></li>
+</ul>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<ul class="simple">
+<li><p>Newtonは、向心力の作図において、直接的に速度や加速度を図示することはできませんでした。
+しかし、楕円軌道についてはサイクロイドによって角速度の変化を表示しました。</p></li>
+<li><p>20世紀になって、Feynmanは円形準線による速度ベクトルの図示方法を発見しました。
+この方法は、後に「失われた講義」として再発見されます。</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="id6">
+<h3>4.2.5 Newtonとサイクロイド<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/wgt6qhjq">https://www.geogebra.org/m/wgt6qhjq</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/wgt6qhjq/width/1905/height/1016&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/wgt6qhjq/width/1905/height/1016"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
+<section id="newtonfeynman">
+<h3>4.2.5 NewtonとFeynman<a class="headerlink" href="#newtonfeynman" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/fx5j2ctp">https://www.geogebra.org/m/fx5j2ctp</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/fx5j2ctp/width/1905/height/1016&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/fx5j2ctp/width/1905/height/1016"
             frameborder="0"
             allowfullscreen
             
@@ -561,11 +686,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="0404_menaechmus.html"
+       href="../03/0301_intro.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">第四回: 数式から図形へ</p>
+        <p class="prev-next-title">第三回: 数式と図形</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -589,6 +714,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.2.1 Newtonと放物線</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.2.2 Newtonと放物線と幾何平均</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.2.3 Newtonと楕円と幾何平均</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.2.4 Newtonと双曲線と幾何平均</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">4.2.5 Newtonとサイクロイド</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtonfeynman">4.2.5 NewtonとFeynman</a></li>
 </ul>
 </li>
 </ul>

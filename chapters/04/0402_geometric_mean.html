@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/04/0402_geometric_mean';</script>
     <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/04/0402_geometric_mean.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -172,13 +174,11 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/07</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0401_intro.html">Formula to figure (2)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Theorem of Geometric Mean</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0403_newton.html">Newton</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0404_menaechmus.html">Menachmus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0405.html">Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
 <ul class="nav bd-sidenav">
@@ -397,9 +397,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.1 算術・幾何平均</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidpythagoras">4.1.1 Euclid原論でのPythagorasの定理の証明</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pythagoras">4.1.1 Pythagorasの定理と幾何平均</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.1 相加・相乗平均と算術・幾何平均</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.1.1 古代メソポタミアの数式と幾何平均</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.1.2 等比数列と等比中項</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.1.3 幾何平均の定理</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidpythagoras">4.1.4 Euclid原論でのPythagorasの定理の証明</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pythagoras">4.1.5 Pythagorasの定理の証明と幾何平均</a></li>
 </ul>
 </li>
 </ul>
@@ -423,17 +426,85 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>第四回: 数式から図形へ<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>4.1 算術・幾何平均<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>4.1 相加・相乗平均と算術・幾何平均<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>in Wikipedia</p>
 <ul>
-<li><p>(c.626/623 – c.548/545 BC)) <a class="reference external" href="https://en.wikipedia.org/wiki/Thales_of_Miletus">Thales of Miletus - Wikipedia</a></p></li>
+<li><p>(c.626/623 – c.548/545 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Thales_of_Miletus">Thales of Miletus - Wikipedia</a></p></li>
 <li><p>(c.380 – c.320 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Menaechmus">Menaechmus - Wikipedia</a></p></li>
+<li><p>(fl. 300 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Euclid">Euclid - Wikipedia</a></p></li>
+<li><p>(c.287 BC – c.212 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Archimedes">Archimedes - Wikipedia</a></p></li>
+<li><p>(c.240 BC – c.190 BC) <a class="reference external" href="https://en.wikipedia.org/wiki/Apollonius_of_Perga">Apollonius of Perga - Wikipedia</a></p></li>
+<li><p>(1596 – 1650) <a class="reference external" href="https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes">René Descartes - Wikipedia</a></p></li>
+<li><p>(1601 – 1665) <a class="reference external" href="https://en.wikipedia.org/wiki/Pierre_de_Fermat">Pierre de Fermat - Wikipedia</a></p></li>
 <li><p>(1643 – 1727) <a class="reference external" href="https://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton - Wikipedia</a></p></li>
+<li><p>(1646 – 1716) <a class="reference external" href="https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">Gottfried Wilhelm Leibniz - Wikipedia</a></p></li>
+<li><p>(1777 – 1855) <a class="reference external" href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">Carl Friedrich Gauss - Wikipedia</a></p></li>
 <li><p>(1918 – 1988) <a class="reference external" href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman - Wikipedia</a></p></li>
 </ul>
 </li>
 </ul>
+<section id="id3">
+<h3>4.1.1 古代メソポタミアの数式と幾何平均<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+(x+y)^2 - 4xy = (x-y)^2 \geq 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{eqnarray}
+(x+y)^2 &amp;\geq&amp; 4xy \\
+\frac{(x+y)^2}{4} &amp;\geq&amp; xy \\
+\frac{x+y}{2} &amp;\geq&amp; \sqrt{xy}
+\end{eqnarray}
+\end{split}\]</div>
+</section>
+<section id="id4">
+<h3>4.1.2 等比数列と等比中項<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>比例関係の式の等号の両側の項 (比例中項) が等しいとき:</p>
+<div class="math notranslate nohighlight">
+\[
+a:b=b:c
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{b}{a} = \frac{c}{b} = r
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b^2 = a \cdot c
+\]</div>
+<p>初項が<span class="math notranslate nohighlight">\(a\)</span>、等比が<span class="math notranslate nohighlight">\(r\)</span>の等比数列の最初の三項:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{eqnarray}
+  \left\{
+    \begin{array}{l}
+    a \cdot r = b\\
+    a \cdot r^2 = c
+    \end{array}
+  \right.
+\end{eqnarray}
+\end{split}\]</div>
+<p>さらに、<span class="math notranslate nohighlight">\(a\)</span>が定数のとき、
+$<span class="math notranslate nohighlight">\(
+b^2 = 定数 \cdot c
+\)</span><span class="math notranslate nohighlight">\(
+放物線のグラフになる:
+\)</span><span class="math notranslate nohighlight">\(
+y = 係数 \cdot x^2
+\)</span>$</p>
+<p><span class="math notranslate nohighlight">\(b\)</span>が定数の時、
+$<span class="math notranslate nohighlight">\(
+定数 = a \cdot c
+\)</span><span class="math notranslate nohighlight">\(
+反比例のグラフ (双曲線) になる:
+\)</span><span class="math notranslate nohighlight">\(
+y = \frac{係数}{x}
+\)</span>$</p>
+</section>
+<section id="id5">
+<h3>4.1.3 幾何平均の定理<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">ask ai</p>
 <p>幾何平均の定理は日本では教えられていない</p>
@@ -457,8 +528,9 @@ document.write(`
 </ul>
 </li>
 </ul>
+</section>
 <section id="euclidpythagoras">
-<h3>4.1.1 Euclid原論でのPythagorasの定理の証明<a class="headerlink" href="#euclidpythagoras" title="Link to this heading">#</a></h3>
+<h3>4.1.4 Euclid原論でのPythagorasの定理の証明<a class="headerlink" href="#euclidpythagoras" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.geogebra.org/m/stydjqvf">https://www.geogebra.org/m/stydjqvf</a></p></li>
 </ul>
@@ -482,7 +554,7 @@ document.write(`
 </div>
 </section>
 <section id="pythagoras">
-<h3>4.1.1 Pythagorasの定理と幾何平均<a class="headerlink" href="#pythagoras" title="Link to this heading">#</a></h3>
+<h3>4.1.5 Pythagorasの定理の証明と幾何平均<a class="headerlink" href="#pythagoras" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.geogebra.org/m/nz8qdne2">https://www.geogebra.org/m/nz8qdne2</a></p></li>
 </ul>
@@ -572,9 +644,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.1 算術・幾何平均</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidpythagoras">4.1.1 Euclid原論でのPythagorasの定理の証明</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pythagoras">4.1.1 Pythagorasの定理と幾何平均</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.1 相加・相乗平均と算術・幾何平均</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.1.1 古代メソポタミアの数式と幾何平均</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.1.2 等比数列と等比中項</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.1.3 幾何平均の定理</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidpythagoras">4.1.4 Euclid原論でのPythagorasの定理の証明</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pythagoras">4.1.5 Pythagorasの定理の証明と幾何平均</a></li>
 </ul>
 </li>
 </ul>
