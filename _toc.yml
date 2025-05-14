@@ -4,7 +4,7 @@
 format: jb-book
 root: chapters/intro.md
 parts:
-- caption: 2025/05/07
+- caption: 2025/05/14
   numbered: false
   chapters:
   - file: chapters/04/0401_intro.ipynb
@@ -13,10 +13,6 @@ parts:
     title: Theorem of Geometric Mean
   - file: chapters/04/0403_newton.ipynb
     title: Newton
-  - file: chapters/04/0404_menaechmus.ipynb
-    title: Menachmus
-  - file: chapters/04/0405.ipynb
-    title: Summary
 - caption: 2025/04/30
   numbered: false
   chapters:
