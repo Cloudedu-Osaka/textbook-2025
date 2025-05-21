@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/05x/0502x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/05x/0502x.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/05x/0502x.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/05x/0502x.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+楕円の中心を極とする三角関数による極座標表示は、楕円が円を一方向に縮小した図形であることを最もよく示しています
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！楕円を三角関数による極座標で表現することは、楕円が「円を一方向へ縮小した図形」であることを非常に明示的に示します。この表記法は、楕円の形状と円との関係性を数式によって直感的に理解するのに便利です。</p>
+<hr class="docutils" />
+<p>まず、円の極座標表示を思い出してみましょう。円の半径を $r_0$ とすると、極座標 $(r, \theta)$ で表される円の方程式は次のようになります：</p>
+<p>$$
+r(\theta) = r_0
+$$</p>
+<p>つまり、角度 $\theta$ に関係なく、半径 $r$ は常に一定値 $r_0$ です。</p>
+<hr class="docutils" />
+<p>一方で楕円は、「円をある方向に縮小した形状」です。たとえば、楕円の形状を次のように考えます：</p>
+<p>$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+$$</p>
+<p>ここで $a$ は長軸（x軸方向）、$b$ は短軸（y軸方向）の半径です。この楕円を極座標で表すには、xとyを以下のように置き換えます：</p>
+<p>$$
+x = r \cos\theta, \quad y = r \sin\theta
+$$</p>
+<p>これを楕円の方程式に代入すると：</p>
+<p>$$
+\frac{(r \cos\theta)^2}{a^2} + \frac{(r \sin\theta)^2}{b^2} = 1
+$$</p>
+<p>これを整理して $r$ について解くと、次のような結果が得られます：</p>
+<p>$$
+r(\theta) = \frac{ab}{\sqrt{(b \cos\theta)^2 + (a \sin\theta)^2}}
+$$</p>
+<p>この式は、与えられた角度 $\theta$ に対して楕円状の各点の半径 $r$ を表しています。</p>
+<hr class="docutils" />
+<p>この式を見ると、楕円がある方向（短軸）で圧縮されており、角度 $\theta$ によって半径の値が変化するのがわかります。特に、次の2点が重要です：</p>
+<ol class="arabic simple">
+<li><p>$\theta = 0$（x軸方向）では、$r = a$（長軸方向の半径）。</p></li>
+<li><p>$\theta = \frac{\pi}{2}$（y軸方向）では、$r = b$（短軸方向の半径）。</p></li>
+</ol>
+<p>このように、楕円の極座標表示は、<strong>円を一方向に縮小したことを明確に示す</strong>表現です。また、楕円の形状を角度 $\theta$ による変化として視覚化するのに役立ちます。</p>
+<hr class="docutils" />
+<p>もしさらに詳しい数式の導出や図示が気になる場合は教えてください！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+楕円の一般的な極座標表示の微分では、楕円の焦点を導出できません
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです。楕円の極座標表示を微分しても、直接的に楕円の焦点（焦点座標）は導出できません。楕円の焦点は楕円の幾何学的特徴に依存しており、極座標の微分の過程自体から得られるわけではないからです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id1">楕円の焦点（幾何学的な特性）</h3>
+<p>楕円の焦点は、その定義に基づいて次の式で決まります。長軸の半径を $a$、短軸の半径を $b$ としたとき、焦点間の距離（2つの焦点間の直線距離）は次の通りです：</p>
+<p>$$
+c = \sqrt{a^2 - b^2}
+$$</p>
+<p>焦点の座標は、主軸の設定次第で異なります：</p>
+<ul class="simple">
+<li><p>楕円が $x$ 軸を主軸とする場合、焦点の座標は $(-c, 0)$ と $(c, 0)$。</p></li>
+<li><p>楕円が $y$ 軸を主軸とする場合、焦点の座標は $(0, -c)$ と $(0, c)$。</p></li>
+</ul>
+<p>この結果は、楕円の定義から直接導かれるものであって、極座標表示の微分によるものではありません。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id2">楕円の極座標表示</h3>
+<p>楕円を極座標で表す場合、焦点を極（原点）に置いた形で次の式が与えられます（惑星の軌道や天文学的応用でよく使われる形式）：</p>
+<p>$$
+r(\theta) = \frac{p}{1 + e \cos\theta}
+$$</p>
+<p>ここで：</p>
+<ul class="simple">
+<li><p>$p$ は楕円の準短軸長。</p></li>
+<li><p>$e = \frac{c}{a}$ は離心率（焦点の離れ具合を示す定数）。</p></li>
+<li><p>$\theta$ は原点（焦点）を中心とする極座標の角度。</p></li>
+</ul>
+<p>この形は、惑星運動などの解析で特に便利ですが、中心を原点に置いた場合の極座標形とは異なる形になります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id3">微分の結果</h3>
+<p>もし楕円の中心を原点として表す極座標表記を考える場合、極座標形式：</p>
+<p>$$
+r(\theta) = \frac{ab}{\sqrt{(b \cos\theta)^2 + (a \sin\theta)^2}}
+$$</p>
+<p>を微分できますが、この微分結果から楕円の焦点（およびその位置パラメータ $c$ や離心率 $e$）を導出するのは難しいです。微分では法線方向や接線方向の変化に関する情報は得られますが、焦点そのものの情報とは直接関係しないのが理由です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id4">結論</h3>
+<p>楕円の焦点やその座標を求めるためには、微分ではなく楕円の幾何学的な性質（長軸、短軸、離心率）を活用する必要があります。その結果、微分では焦点を導出することができない、ということがおっしゃるように明らかです。</p>
+<p>もし具体的な疑問やどの観点で微分を試みたかがある場合、詳細を教えていただければさらに掘り下げてお答えします！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+楕円の一つの焦点を極とする極座標表示においても、微分は複雑になるだけで、もう一方の焦点を導出できません
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃる通り、楕円の一つの焦点を極（中心）とした極座標表示では、式が複雑になるだけで、もう一方の焦点を直接微分だけで導出することはできません。これは以下の理由によります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5">1. <strong>焦点を極とする極座標表示の特徴</strong></h3>
+<p>楕円の一つの焦点を極に置く場合、楕円の極座標表示は次のようになります：</p>
+<p>$$
+r(\theta) = \frac{p}{1 + e \cos\theta}
+$$</p>
+<p>ここで：</p>
+<ul class="simple">
+<li><p>$ e = \frac{c}{a} $ は離心率。</p></li>
+<li><p>$ p $ は楕円の <strong>準短軸</strong> 長（直線の離心率から導かれる定数$ p = a(1 - e^2) $）。</p></li>
+<li><p>$ \theta $ は極（焦点）を基準にした角度。</p></li>
+</ul>
+<p>この式は、惑星軌道で利用される形式でもあり、楕円の一方の焦点を原点とする場合の標準的な極座標表現です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id6">2. <strong>微分の難しさ</strong></h3>
+<p>この極座標表示に基づいて微分を試みても、別の焦点の位置に関する情報を導くのは難しい理由は以下の通りです：</p>
+<ol class="arabic simple">
+<li><p><strong>式自体が一つの焦点に依存している</strong><br />
+上記の極座標表示 $ r(\theta) = \frac{p}{1 + e \cos\theta} $ は、一つの焦点を基準として楕円の形状を説明しています。このため、もう一方の焦点に関する情報（具体的な位置）は、式から微分単独で導出されません。</p></li>
+<li><p><strong>微分の結果は曲線の局所情報を提供する</strong><br />
+楕円式を微分すると、主に曲線の接線や法線方向、曲率など、局所的な幾何学的な特性を解析することになります。しかし、焦点は楕円全体の構造に関わる「全体的な特性」から定義されるため、単に微分するだけでは反映されません。</p></li>
+<li><p><strong>焦点の位置は幾何学的定義から分かるもの</strong><br />
+楕円の焦点位置は楕円の性質に基づいて直接的に次のように計算されます：
+$$
+c = ae
+$$
+ここで、この $ c $ が焦点の極座標（または直交座標）における位置を決定します。微分ではこの情報を引き出す手段が用意されていません。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id7">3. <strong>理由を深掘り</strong></h3>
+<p>もう一つの焦点を直接知りたい場合、それが楕円形状の場合どこに位置するかは、楕円の定義そのものにかかわっています。楕円を「任意の点と焦点の距離の和が一定」という基本的な性質として捉えると、もう一方の焦点の位置はその性質に基づいて決定され、これは微分的な解析とは関係しません。</p>
+<p>焦点を極として表す式では、片方の焦点は極座標系の原点に固定され、もう一つの焦点に関しては明示的に直接現れるわけではないため、その位置を式から導き出すには、楕円全体の性質（長軸、短軸、離心率など）を反映させた別の方法が必要です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id8">4. <strong>結論</strong></h3>
+<p>極座標形式で楕円を表現すると、微分はカーブの局所変化（接線の変化、曲率）に関連する特性を明らかにするだけで、もう一方の焦点を導出することには役立ちません。</p>
+<p>焦点の位置を計算するには、以下の手順で幾何的性質を使うのが最も適切です：</p>
+<ul class="simple">
+<li><p>長軸（$ a $）と離心率（$ e = \frac{c}{a} $）を使って焦点間距離を求める。</p></li>
+<li><p>焦点軸上の配置を明示的に計算する。</p></li>
+</ul>
+<p>もしこの件に関して別の数学的アプローチやさらなる深掘りが欲しければ、ぜひ詳細を教えてください！ 😊</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/05x"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
