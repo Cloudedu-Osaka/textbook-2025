@@ -4,6 +4,17 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/05/21
+  numbered: false
+  chapters:
+  - file: chapters/05/0501_intro.ipynb
+    title: Ellipse
+  - file: chapters/05/0502.ipynb
+    title: Polar representation of a ellipse
+  - file: chapters/05/0503.ipynb
+    title: Two foci of a ellipse
+  - file: chapters/05/0504.ipynb
+    title: Tangent to circle
 - caption: 2025/05/14
   numbered: false
   chapters:
