@@ -4,6 +4,19 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/05/28
+  numbered: false
+  chapters:
+  - file: chapters/06/0601_intro.ipynb
+    title: Conic sections
+  - file: chapters/06/0602.ipynb
+    title: Cylinder and Cone
+  - file: chapters/06/0603.ipynb
+    title: Tangent to circles (1)
+  - file: chapters/06/0604.ipynb
+    title: Tangent to circles
+  - file: chapters/06/0605.ipynb
+    title: Ellipse as a conic section
 - caption: 2025/05/21
   numbered: false
   chapters:
