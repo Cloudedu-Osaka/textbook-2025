@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+    <title>第七回: それは楕円？ (3) &#8212; プログラミングで遡る科学史</title>
   
   
   
@@ -60,10 +60,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/05x/0504x';</script>
-    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/05x/0504x.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/07/0704';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/07/0704.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="第六回: それは楕円？ (角の二等分線)" href="../06/0601_intro.html" />
+    <link rel="prev" title="第七回: それは楕円？ (3)" href="0703.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -162,11 +162,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmu</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Menaechmu</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
 <ul class="nav bd-sidenav">
@@ -271,7 +271,7 @@
       
       
       
-      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/05x/0504x.ipynb&branch=main" target="_blank"
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/07/0704.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -317,7 +317,7 @@
       
       
       
-      <li><a href="../../_sources/chapters/05x/0504x.ipynb" target="_blank"
+      <li><a href="../../_sources/chapters/07/0704.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -393,7 +393,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>第七回: それは楕円？ (3)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -402,9 +402,15 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menaechmus">7.8 Menaechmus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orthtome">7.8.1 orthtome</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amblytome">7.8.2 amblytome</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delian-problem-1">7.8.3 Delian problem (1)</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delian-problem-2">7.8.4 Delian problem (2)</a></li>
+</ul>
             </nav>
         </div>
     </div>
@@ -417,153 +423,130 @@
                   
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
-作画難易度を示してください:
-1. 円の外部から接線を引く
-2. 半径の等しい交わらない二つの円に共通の接線を引く
-3. 半径の異なる交わらない二つの円に共通の接線を引く
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">IFrame</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<p>作図の難易度を比較すると、以下のような順序になります（主観的な感覚になりますが、理由も合わせて解説します）:</p>
-<hr class="docutils" />
-<h3 class="rubric" id="id1"><strong>1. 円の外部から接線を引く - 難易度：低</strong></h3>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>第七回: それは楕円？ (3)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<p>Menaechmosは円錐曲線の断面を分析し、楕円にoxytome、放物線にorthtome、双曲線にamblytomeという名前をつけました。</p>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
 <ul class="simple">
-<li><p><strong>理由</strong>: 基本的な作図問題であり、プロセスは比較的シンプルです。</p>
-<ul>
-<li><p>手順として、「円の中心と外部の点を結ぶ線を引き、中点をとり、その中点を中心とした半径の円を描く」、その後その円と元の円を結びます。こうすることで接点が求められ、接線を引くことができます。</p></li>
+<li><p>Apolloniusは、Euclidから引き継いだ円錐曲線論において
+Menaechmosの命名をellipse、parabola、hyperbolaに置き換えましが、意味は変わりません。</p></li>
+<li><p>Menaechmosは、放物線と回転した放物線の交点や双曲線の交点から立方体の倍積問題の解を示しました。</p></li>
+<li><p>Menaechmusによるグラフの交点という考え方は、古代ギリシアの学術界には受け入れられず、
+Menaechmusの業績はApolloniusによって闇に葬られたともいえます。</p></li>
 </ul>
-</li>
-<li><p>GeoGebraやコンパス・定規を使うと、短時間で完成できる作図です。</p></li>
-</ul>
-<h3 class="rubric" id="id2"><strong>2. 半径の等しい交わらない二つの円に共通の接線を引く - 難易度：中</strong></h3>
-<ul class="simple">
-<li><p><strong>理由</strong>: 既に「円外部から接線を引く」知識を使いますが、2つの円には、それぞれ異なる接点を計算するための作業が加わります。</p>
-<ul>
-<li><p>また、<strong>外部共通接線</strong>だけでなく、<strong>内部共通接線</strong>も考えるため、複数のケースを区別しながら作図する必要があります。</p></li>
-<li><p>等しい半径の性質を利用して簡略化することも可能ですが、それでも1つ目と比較すると複雑です。</p></li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<h3 class="rubric" id="id3"><strong>3. 半径の異なる交わらない二つの円に共通の接線を引く - 難易度：高</strong></h3>
-<ul class="simple">
-<li><p><strong>理由</strong>: 最も作図が複雑で、計算や幾何的な操作が必要になります。</p>
-<ul>
-<li><p>半径の異なる2つの円に共通の接線を描くためには、中心間の距離や半径の比を考慮しなければならず、円を半径に基づいて内部や外部から調整するなど、1・2より視覚的な理解が必要です。</p></li>
-<li><p>特に、<strong>内接する共通接線</strong>の作図では、中心間距離と半径差の利用が重要であり、外部共通接線も両方を考慮する必要があります。</p></li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<h3 class="rubric" id="id4"><strong>まとめ</strong></h3>
-<p>難易度としては以下の順番になります：</p>
-<ol class="arabic simple">
-<li><p>円の外部から接線を引く → <strong>もっとも簡単</strong></p></li>
-<li><p>半径の等しい交わらない二つの円に共通の接線を引く → <strong>やや難しい</strong></p></li>
-<li><p>半径の異なる交わらない二つの円に共通の接線を引く → <strong>最も難しい</strong></p></li>
-</ol>
-<p>もし具体的な作図方法が必要であれば、詳しく手順を解説します！ 😊</p>
 </div>
 </div>
+<section id="menaechmus">
+<h2>7.8 Menaechmus<a class="headerlink" href="#menaechmus" title="Link to this heading">#</a></h2>
+<section id="orthtome">
+<h3>7.8.1 orthtome<a class="headerlink" href="#orthtome" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/qxeykmkx">https://www.geogebra.org/m/qxeykmkx</a></p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
-他の作図も含めると、これらの難易度はどう評価できますか？
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/qxeykmkx/width/2544/height/1319&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p>これらの作図を「他の標準的な幾何学的作図問題」と比較すると、その難易度に対する評価は以下の通りです。この評価は学校数学やコンパス・定規を用いた典型的な作図問題との関係で解説します。</p>
-<hr class="docutils" />
-<h3 class="rubric" id="id5"><strong>評価基準について</strong></h3>
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/qxeykmkx/width/2544/height/1319"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
+<section id="amblytome">
+<h3>7.8.2 amblytome<a class="headerlink" href="#amblytome" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>難易度は以下の基準で分類されます:</p>
-<ul>
-<li><p><strong>易しい</strong>: 基本的な作図（1～2つのステップで行えるもの）。</p></li>
-<li><p><strong>やや難しい</strong>: 複数の手順が必要で、図形の関係を正確に理解する必要があるもの。</p></li>
-<li><p><strong>難しい</strong>: 高度な理論や幾何学の応用が必要で、ミスしやすいもの。</p></li>
-<li><p><strong>非常に難しい</strong>: コンパスと定規を使った純粋な作図では困難で、計算や応用技術を要するもの。</p></li>
+<li><p><a class="reference external" href="https://www.geogebra.org/m/nwkzdvne">https://www.geogebra.org/m/nwkzdvne</a></p></li>
 </ul>
-</li>
-</ul>
-<hr class="docutils" />
-<h3 class="rubric" id="id6"><strong>基本作図と比較</strong></h3>
-<p>以下は、よく知られた基本的な作図例と比較した場合の相対評価です。</p>
-<h4 class="rubric" id="id7"><strong>円の外部から接線を引く (難易度：低)</strong></h4>
-<ul class="simple">
-<li><p>比較対象：点の円への投影線を引く、および円の半径を使って円の内外に補助線を引く類</p></li>
-<li><p>難易度：**易しい ** （初心者レベル）</p>
-<ul>
-<li><p>基本的な手法の範疇。線分の中点を求めたり、補助円の交点を使うなど、一通り理解していれば簡単に作図できます。</p></li>
-<li><p>同じくらいの難易度の作図例: 円の接線を与えられた点に引く、円の中心線を求めるなど。</p></li>
-</ul>
-</li>
-</ul>
-<h4 class="rubric" id="id8"><strong>半径の等しい交わらない二つの円に共通の接線を引く (難易度：中)</strong></h4>
-<ul class="simple">
-<li><p>比較対象：二つの線（平行・非平行）の交点を求めたり、円の合同性を使う作図</p></li>
-<li><p>難易度：<strong>やや難しい</strong></p>
-<ul>
-<li><p>一方では等しい半径を利用できるため計算は簡単ですが、外部共通接線・内部共通接線の両方を構造的に考える必要があるため、若干高度。</p></li>
-<li><p>同じくらいの難易度の作図例: 円を特定の直線に対して反射させる問題。</p></li>
-</ul>
-</li>
-</ul>
-<h4 class="rubric" id="id9"><strong>半径の異なる交わらない二つの円に共通の接線を引く (難易度：高)</strong></h4>
-<ul class="simple">
-<li><p>比較対象：二つの異なるサイズの図形の間で距離関係を求める作図、三つ以上の図形の関係を作図する場合など</p></li>
-<li><p>難易度：<strong>難しい</strong></p>
-<ul>
-<li><p>半径の比を計算し、中心線を利用して相互関係を作り出すため、より高度な理解が必要。</p></li>
-<li><p>特に内部共通接線の場合は構造が複雑で、ミスが起こりやすい。</p></li>
-<li><p>同じくらいの難易度の作図例: 正八角形を作図する問題、接する円が含む三角形を作図する問題。</p></li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<h3 class="rubric" id="id10"><strong>他の作図問題の難易度と比較</strong></h3>
-<p>以下は、幾何学における他の有名な作図問題についての難易度と比較です。</p>
-<h4 class="rubric" id="id11"><strong>易しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>点を通る直線を作図する</p></li>
-<li><p>三角形の外接円を作図する</p></li>
-<li><p>与えられた直線に平行な線を作図する<br />
-→ 円の外部から接線を引く問題はこのグループに入ります。</p></li>
-</ol>
-<h4 class="rubric" id="id12"><strong>やや難しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>与えられた角度を等分する</p></li>
-<li><p>二点を通る円を作図する（補助線が必要）</p></li>
-<li><p>与えられた円にちょうど接する三角形を作図する<br />
-→ 半径が等しい二円の共通接線を引く問題はこのグループ。</p></li>
-</ol>
-<h4 class="rubric" id="id13"><strong>難しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>二つの図形間で接する図形を作図（特に異なる大きさの円や三角形）する</p></li>
-<li><p>指定された条件で正多角形を作図する（例えば正十一角形など）</p></li>
-<li><p>半径が異なる円に接する直線や多角形の作図を行う<br />
-→ 半径が異なる二つの円の共通接線問題はこのレベルに属します。</p></li>
-</ol>
-<h4 class="rubric" id="id14"><strong>非常に難しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>二次曲線（放物線や楕円）をコンパス・定規のみで無理なく作図する</p></li>
-<li><p>正五十角形などの極端に複雑な正多角形を作図する問題</p></li>
-<li><p>特殊な関数を利用した動的な幾何学作図問題<br />
-→ 半径が異なる円の問題がさらに条件付きで複雑化すると、ここに近づく可能性があります。</p></li>
-</ol>
-<hr class="docutils" />
-<h3 class="rubric" id="id15"><strong>総合評価</strong></h3>
-<p>あなたが挙げた3つの作図は、基本から中程度の難易度に分類されますが、以下のような形でまとまります:</p>
-<ul class="simple">
-<li><p><strong>円の外部からの接線</strong>: 幾何作図の初歩レベル。</p></li>
-<li><p><strong>半径が等しい二円の共通接線</strong>: 初歩を踏まえた「やや難しい」問題。</p></li>
-<li><p><strong>半径が異なる二円の共通接線</strong>: 幾何学の発展的理解が必要な難しい問題。</p></li>
-</ul>
-<p>ちなみにこれらが難しいと感じた場合、最初から基本的な作図問題（点の中間線や単純な円の特性）を復習すると、理解しやすくなると思います！ 😊</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/nwkzdvne/width/2544/height/1319&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/nwkzdvne/width/2544/height/1319"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
+<section id="delian-problem-1">
+<h3>7.8.3 Delian problem (1)<a class="headerlink" href="#delian-problem-1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Doubling_the_cube">Doubling the cube - Wikipedia</a></p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/zbjrnuak">https://www.geogebra.org/m/zbjrnuak</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/zbjrnuak/width/1905/height/1016&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/zbjrnuak/width/1905/height/1016"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
+</section>
+<section id="delian-problem-2">
+<h2>7.8.4 Delian problem (2)<a class="headerlink" href="#delian-problem-2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geogebra.org/m/esdreeaz">https://www.geogebra.org/m/esdreeaz</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/esdreeaz/width/1905/height/1016&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="1000"
+            height="500"
+            src="https://www.geogebra.org/material/iframe/id/esdreeaz/width/1905/height/1016"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -578,7 +561,7 @@
         },
         kernelOptions: {
             name: "python3",
-            path: "./chapters/05x"
+            path: "./chapters/07"
         },
         predefinedOutput: true
     }
@@ -595,6 +578,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="0703.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">第七回: それは楕円？ (3)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../06/0601_intro.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">第六回: それは楕円？ (角の二等分線)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -611,9 +612,15 @@
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menaechmus">7.8 Menaechmus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orthtome">7.8.1 orthtome</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amblytome">7.8.2 amblytome</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delian-problem-1">7.8.3 Delian problem (1)</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#delian-problem-2">7.8.4 Delian problem (2)</a></li>
+</ul>
   </nav></div>
 
 </div></div>

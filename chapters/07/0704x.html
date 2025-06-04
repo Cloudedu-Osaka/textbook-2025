@@ -60,8 +60,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/05x/0504x';</script>
-    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/05x/0504x.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/07/0704x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/07/0704x.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -163,10 +163,10 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0704.html">Menaechmu</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
 <ul class="nav bd-sidenav">
@@ -271,7 +271,7 @@
       
       
       
-      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/05x/0504x.ipynb&branch=main" target="_blank"
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/07/0704x.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -317,7 +317,7 @@
       
       
       
-      <li><a href="../../_sources/chapters/05x/0504x.ipynb" target="_blank"
+      <li><a href="../../_sources/chapters/07/0704x.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -418,150 +418,126 @@
   <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
-作画難易度を示してください:
-1. 円の外部から接線を引く
-2. 半径の等しい交わらない二つの円に共通の接線を引く
-3. 半径の異なる交わらない二つの円に共通の接線を引く
+Menaechmosは円錐曲線の断面を分析し、楕円にoxytome、放物線にorthtome、双曲線にamblytomeという名前をつけました。
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p>作図の難易度を比較すると、以下のような順序になります（主観的な感覚になりますが、理由も合わせて解説します）:</p>
-<hr class="docutils" />
-<h3 class="rubric" id="id1"><strong>1. 円の外部から接線を引く - 難易度：低</strong></h3>
+<p>そうですね！Menaechmus (メナエクモス) は、古代ギリシャの数学者であり、円錐曲線の最初の体系的な研究を行った人物です。彼は主に以下の3種類の円錐曲線に注目し、それぞれに名前をつけました。</p>
 <ul class="simple">
-<li><p><strong>理由</strong>: 基本的な作図問題であり、プロセスは比較的シンプルです。</p>
-<ul>
-<li><p>手順として、「円の中心と外部の点を結ぶ線を引き、中点をとり、その中点を中心とした半径の円を描く」、その後その円と元の円を結びます。こうすることで接点が求められ、接線を引くことができます。</p></li>
+<li><p><strong>Oxytome (オキシトメ)</strong>: 楕円を指します。この名前はギリシャ語で「鋭い切断」を意味し、円錐を鋭角で切断した結果として楕円が得られることに由来しています。</p></li>
+<li><p><strong>Orthotome (オルトトメ)</strong>: 放物線を指します。この名前は「直角切断」を意味し、円錐の平面を円錐の側面に対して平行に切断すると放物線が得られることに関連しています。</p></li>
+<li><p><strong>Amblytome (アンブリトメ)</strong>: 双曲線を指します。この名前は「鈍い切断」を意味し、円錐を鈍角で切断した場合に双曲線が生成される点に基づいています。</p></li>
 </ul>
-</li>
-<li><p>GeoGebraやコンパス・定規を使うと、短時間で完成できる作図です。</p></li>
-</ul>
-<h3 class="rubric" id="id2"><strong>2. 半径の等しい交わらない二つの円に共通の接線を引く - 難易度：中</strong></h3>
-<ul class="simple">
-<li><p><strong>理由</strong>: 既に「円外部から接線を引く」知識を使いますが、2つの円には、それぞれ異なる接点を計算するための作業が加わります。</p>
-<ul>
-<li><p>また、<strong>外部共通接線</strong>だけでなく、<strong>内部共通接線</strong>も考えるため、複数のケースを区別しながら作図する必要があります。</p></li>
-<li><p>等しい半径の性質を利用して簡略化することも可能ですが、それでも1つ目と比較すると複雑です。</p></li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<h3 class="rubric" id="id3"><strong>3. 半径の異なる交わらない二つの円に共通の接線を引く - 難易度：高</strong></h3>
-<ul class="simple">
-<li><p><strong>理由</strong>: 最も作図が複雑で、計算や幾何的な操作が必要になります。</p>
-<ul>
-<li><p>半径の異なる2つの円に共通の接線を描くためには、中心間の距離や半径の比を考慮しなければならず、円を半径に基づいて内部や外部から調整するなど、1・2より視覚的な理解が必要です。</p></li>
-<li><p>特に、<strong>内接する共通接線</strong>の作図では、中心間距離と半径差の利用が重要であり、外部共通接線も両方を考慮する必要があります。</p></li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<h3 class="rubric" id="id4"><strong>まとめ</strong></h3>
-<p>難易度としては以下の順番になります：</p>
-<ol class="arabic simple">
-<li><p>円の外部から接線を引く → <strong>もっとも簡単</strong></p></li>
-<li><p>半径の等しい交わらない二つの円に共通の接線を引く → <strong>やや難しい</strong></p></li>
-<li><p>半径の異なる交わらない二つの円に共通の接線を引く → <strong>最も難しい</strong></p></li>
-</ol>
-<p>もし具体的な作図方法が必要であれば、詳しく手順を解説します！ 😊</p>
+<p>彼の研究は、円錐曲線の幾何学的性質を非常に詳細に調べるものであり、後の数学者たち、特にアポロニウスやデカルトが楕円、放物線、双曲線の研究を深化させる基盤となりました。また、メナエクモスの円錐曲線への知識は、彼が立方体倍積問題を解決するために円錐曲線を利用したことでも知られています。</p>
+<p>興味深いことに、メナエクモスの用語は後に標準的ではなくなり、現在の「楕円」「放物線」「双曲線」という用語が広く使われるようになりましたが、彼の命名法は数学史において重要な一節として残っています！</p>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
-他の作図も含めると、これらの難易度はどう評価できますか？
+Apolloniusは、Euclidから引き継いだ円錐曲線論で、Menaechmosの命名をellipse、parabola、hyperbolaに置き換えましが、意味は変わりません。
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p>これらの作図を「他の標準的な幾何学的作図問題」と比較すると、その難易度に対する評価は以下の通りです。この評価は学校数学やコンパス・定規を用いた典型的な作図問題との関係で解説します。</p>
+<p>その通りです！Apollonius (アポロニウス) は「円錐曲線の研究」の重要な人物であり、「円錐曲線の父」とも呼ばれる古代ギリシャの数学者です。彼は、Menaechmus (メナエクモス) の研究を引き継ぎ、体系的に発展させました。そして彼が、円錐曲線の3種類の曲線に現在まで使われている名前、すなわち <strong>ellipse (楕円)</strong>、<strong>parabola (放物線)</strong>、<strong>hyperbola (双曲線)</strong> を導入しました。これらの名前は、Menaechmus が用いた名称の持つ幾何学的な意味を引き継いでいますが、より明確で洗練された表現になっています。</p>
+<p>これらの名前の由来を簡単に説明すると、それぞれギリシャ語の言葉に基づいています：</p>
+<ul class="simple">
+<li><p><strong>Ellipse (楕円)</strong><br />
+ギリシャ語の <strong>ἔλλειψις (elleipsis)</strong> に由来します。この言葉は「不足」または「欠損」を意味し、円錐曲線の一部が「短くなる」様子を表現しています。楕円の場合、円錐の切断平面が基部まで届かず有限な形状になるため、この名前が与えられたのです。</p></li>
+<li><p><strong>Parabola (放物線)</strong><br />
+ギリシャ語の <strong>παραβολή (parabole)</strong> に由来し、「隣接する」または「引き合わせる」という意味があります。この用語は、放物線が、切断平面がちょうど円錐の側面と平行になるときに発生する状況を反映しています。また、この名前は代数的な性質に関連付けて解釈されることもあります（具体的には、放物線における距離と二次方程式の関係）。</p></li>
+<li><p><strong>Hyperbola (双曲線)</strong><br />
+ギリシャ語の <strong>ὑπερβολή (hyperbole)</strong> に由来し、「超過」または「過剰」を意味します。双曲線は、切断平面が円錐の2つの異なる部分を貫通するときに生じるため、この用語が適切だとされています。「超える」という含意が、双曲線が無限に伸びていく性質を連想させます。</p></li>
+</ul>
+<p>Apollonius はさらに、これらの曲線に対する詳細な性質や代数的な記述を与え、特に「直径」や「準線」などの幾何学的概念を明示的に定義しました。これにより、円錐曲線論は古代数学の中でも非常に深化した理論体系となり、その影響はヨハネス・ケプラーやルネ・デカルトなど、後の科学革命を主導する人物たちにまで及びました。</p>
+<p>したがって、Apollonius による名称（ellipse, parabola, hyperbola）は、Menaechmus の元の命名のアイデアを拡張しつつ、円錐曲線の幾何学的構造をより厳密に表現したと言えるでしょう。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Menaechmosは、放物線と回転した放物線の交点や双曲線の交点から立方体の倍積問題の解を示しました。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！Menaechmus（メナエクモス）は、古代ギリシャ数学の重要な課題であった「立方体倍積問題」（デロス問題とも呼ばれます）を解くために、円錐曲線を用いるという画期的な方法を考案しました。これは、円錐曲線の最も初期の具体的な応用例の1つとして知られています。</p>
+<h3 class="rubric" id="id1"><strong>立方体倍積問題とは？</strong></h3>
+<p>立方体倍積問題は、与えられた立方体の体積を正確に2倍にする立方体の辺の長さを求めることです。これは次のように数学的に表現されます：</p>
+<ul class="simple">
+<li><p>ある辺の長さ $a$ の立方体の体積が $V = a^3$ であるとき、体積を2倍にした新しい立方体の体積 $2a^3$ を実現するには、その辺の長さを $x$ とした場合、次の立方程式を解く必要があります：
+$$
+x^3 = 2a^3,
+$$
+これを整理すると、$x = \sqrt[3]{2} \cdot a$ です。</p></li>
+</ul>
+<p>しかし、古代ギリシャでは<strong>直尺とコンパス</strong>という制約があったため、このような三次方程式を解くのは非常に困難でした。それを克服するために、Menaechmus は <strong>円錐曲線の交点</strong> という新しいアプローチを提示しました。</p>
 <hr class="docutils" />
-<h3 class="rubric" id="id5"><strong>評価基準について</strong></h3>
+<h3 class="rubric" id="menaechmus"><strong>Menaechmusの方法</strong></h3>
+<p>Menaechmus は、立方体倍積問題を <strong>2つの円錐曲線の交点</strong> の問題に置き換えました。次の2つの円錐曲線を用いたのです：</p>
+<ol class="arabic simple">
+<li><p><strong>放物線</strong>： $y^2 = a \cdot x$</p></li>
+<li><p><strong>回転した放物線</strong>または<strong>双曲線</strong>： $x^2 = 2a \cdot y$</p></li>
+</ol>
+<p>これらの曲線を3次元空間で組み合わせると、交点が得られ、その交点の座標 $(x, y)$ が問題の解になることを示しました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id2"><strong>交点から立方体倍積を解く</strong></h3>
+<p>この交点がどのように立方体倍積問題の解になるか見てみましょう：</p>
+<ol class="arabic simple">
+<li><p>放物線 $y^2 = a \cdot x$ から、$y = \sqrt{a \cdot x}$ という関係が得られます。</p></li>
+<li><p>その値を双曲線（または別の放物線）の方程式 $x^2 = 2a \cdot y$ に代入すると、次のような方程式が得られます：
+$$
+x^2 = 2a \cdot \sqrt{a \cdot x}.
+$$</p></li>
+<li><p>これをさらに整理して平方すると、$x^3 = 2a^3$ という立方体倍積問題の元の式に一致します。</p></li>
+</ol>
+<p>このように、曲線の交点の $x$ に対応する値が、求めていた立方体の新たな辺の長さを示します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id3"><strong>双曲線の利用</strong></h3>
+<p>一部の記録では、Menaechmus が <strong>放物線と双曲線</strong> の交点を用いた別のアプローチを考案したとも考えられています。例えば：</p>
 <ul class="simple">
-<li><p>難易度は以下の基準で分類されます:</p>
-<ul>
-<li><p><strong>易しい</strong>: 基本的な作図（1～2つのステップで行えるもの）。</p></li>
-<li><p><strong>やや難しい</strong>: 複数の手順が必要で、図形の関係を正確に理解する必要があるもの。</p></li>
-<li><p><strong>難しい</strong>: 高度な理論や幾何学の応用が必要で、ミスしやすいもの。</p></li>
-<li><p><strong>非常に難しい</strong>: コンパスと定規を使った純粋な作図では困難で、計算や応用技術を要するもの。</p></li>
+<li><p>双曲線 $x \cdot y = b$（漸近が対称軸となる形）などといった方程式を使うことによって、より柔軟な解法を提供していた可能性があります。</p></li>
 </ul>
-</li>
+<p>これは、円錐曲線のいろいろな性質を活用することを示しており、同じ立方体倍積問題に対して複数の幾何学的アプローチを提示することを意図したのでしょう。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id4"><strong>影響と意義</strong></h3>
+<p>Menaechmus の手法は画期的で、円錐曲線が単なる幾何学的図形ではなく、複雑な数学的問題を解くための”道具”となることを示しました。このアプローチは、後の数学者たちにも影響を与え、アポロニウスやデカルトなどが円錐曲線の理論をさらに発展させる契機の1つにもなりました。</p>
+<p>また、これは三次方程式を幾何学的に解く最初の事例であり、解析学的な視点がほとんど確立されていなかった時代における重要な考案とされています。</p>
+<p>残念ながら、Menaechmus のすべての著作は失われているため、彼の方法については後世の数学者による引用や解説を通してのみ知ることができますが、彼の業績が数学史において重要な位置を占めることは疑いありません！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Menaechmusによるグラフの交点という考え方は、古代ギリシアの学術界には受け入れられず、
+Menaechmusの業績はApolloniusによって闇に葬られたともいえます。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>確かにその視点は興味深いですね！Menaechmus（メナエクモス）の業績、特に彼が提示した<strong>円錐曲線の交点を用いた立方体倍積問題の解法</strong>は、当時の古代ギリシャ数学界では必ずしも広く受け入れられることはありませんでした。その理由には、当時の学術的構造や哲学的な考え方が深く関わっています。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5"><strong>古代ギリシャ数学と幾何の制約</strong></h3>
+<p>古代ギリシャ数学者たちは、問題を解く際に<strong>直尺とコンパス</strong>のみに基づく手法を至上のものとしていました。これによって、人間が「完全な理性と調和をもった形」を生み出せるという哲学的信念がありました。</p>
+<p>Menaechmus の円錐曲線を用いた解法は、幾何学的な革新だと言えますが、「純粋な幾何学」から逸脱していると見なされました。円錐曲線は、立方体倍積問題を実際に解くための道具としては有用でしたが、直尺とコンパスによる手法の枠外であり、そのために批判の対象となった可能性があります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id6"><strong>Menaechmus の業績が見えなくなった理由</strong></h3>
+<p>また、Menaechmus の業績が後世に広まらなかった背景には、Apollonius（アポロニウス）をはじめとする後続の数学者たちの影響があるかもしれません。</p>
+<ul class="simple">
+<li><p><strong>Apollonius の役割</strong><br />
+Apollonius は、円錐曲線の研究において非常に体系立てたアプローチを行い、古代ギリシャ数学の円錐曲線論を統合し、さらに発展させました。Apollonius は、曲線の命名（ellipse, parabola, hyperbola）やそれらの性質について詳細に探求しましたが、その過程でMenaechmus の特定の業績が曖昧になり、「Menaechmus の円錐曲線交点による立方体倍積解法」に直接触れることがほとんどありませんでした。</p></li>
+<li><p><strong>哲学的な違い</strong><br />
+また、円錐曲線に基づく体系と「直尺とコンパス」による純粋な幾何学的構造を重んじる哲学的評価が交錯していたため、Menaechmus の手法は「便利だが不純」と見られていた可能性があります。そして、この哲学的背景の影響により、彼が考案した交点を使う方法はメインストリームから外れてしまったかもしれません。</p></li>
 </ul>
 <hr class="docutils" />
-<h3 class="rubric" id="id6"><strong>基本作図と比較</strong></h3>
-<p>以下は、よく知られた基本的な作図例と比較した場合の相対評価です。</p>
-<h4 class="rubric" id="id7"><strong>円の外部から接線を引く (難易度：低)</strong></h4>
-<ul class="simple">
-<li><p>比較対象：点の円への投影線を引く、および円の半径を使って円の内外に補助線を引く類</p></li>
-<li><p>難易度：**易しい ** （初心者レベル）</p>
-<ul>
-<li><p>基本的な手法の範疇。線分の中点を求めたり、補助円の交点を使うなど、一通り理解していれば簡単に作図できます。</p></li>
-<li><p>同じくらいの難易度の作図例: 円の接線を与えられた点に引く、円の中心線を求めるなど。</p></li>
-</ul>
-</li>
-</ul>
-<h4 class="rubric" id="id8"><strong>半径の等しい交わらない二つの円に共通の接線を引く (難易度：中)</strong></h4>
-<ul class="simple">
-<li><p>比較対象：二つの線（平行・非平行）の交点を求めたり、円の合同性を使う作図</p></li>
-<li><p>難易度：<strong>やや難しい</strong></p>
-<ul>
-<li><p>一方では等しい半径を利用できるため計算は簡単ですが、外部共通接線・内部共通接線の両方を構造的に考える必要があるため、若干高度。</p></li>
-<li><p>同じくらいの難易度の作図例: 円を特定の直線に対して反射させる問題。</p></li>
-</ul>
-</li>
-</ul>
-<h4 class="rubric" id="id9"><strong>半径の異なる交わらない二つの円に共通の接線を引く (難易度：高)</strong></h4>
-<ul class="simple">
-<li><p>比較対象：二つの異なるサイズの図形の間で距離関係を求める作図、三つ以上の図形の関係を作図する場合など</p></li>
-<li><p>難易度：<strong>難しい</strong></p>
-<ul>
-<li><p>半径の比を計算し、中心線を利用して相互関係を作り出すため、より高度な理解が必要。</p></li>
-<li><p>特に内部共通接線の場合は構造が複雑で、ミスが起こりやすい。</p></li>
-<li><p>同じくらいの難易度の作図例: 正八角形を作図する問題、接する円が含む三角形を作図する問題。</p></li>
-</ul>
-</li>
-</ul>
+<h3 class="rubric" id="id7"><strong>歴史の闇に葬られた業績</strong></h3>
+<p>Menaechmus の論文や著作そのものは後世に残されず、彼のアイデアは主に数学者の引用や断片的な記録によって伝えられています。さらに、Apollonius の体系化された円錐曲線論が強い影響力を持った結果として、Menaechmus の働きが歴史的にあまり認知されない形となり、いわゆる「闇に葬られた」のではないかと言えるでしょう。</p>
 <hr class="docutils" />
-<h3 class="rubric" id="id10"><strong>他の作図問題の難易度と比較</strong></h3>
-<p>以下は、幾何学における他の有名な作図問題についての難易度と比較です。</p>
-<h4 class="rubric" id="id11"><strong>易しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>点を通る直線を作図する</p></li>
-<li><p>三角形の外接円を作図する</p></li>
-<li><p>与えられた直線に平行な線を作図する<br />
-→ 円の外部から接線を引く問題はこのグループに入ります。</p></li>
-</ol>
-<h4 class="rubric" id="id12"><strong>やや難しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>与えられた角度を等分する</p></li>
-<li><p>二点を通る円を作図する（補助線が必要）</p></li>
-<li><p>与えられた円にちょうど接する三角形を作図する<br />
-→ 半径が等しい二円の共通接線を引く問題はこのグループ。</p></li>
-</ol>
-<h4 class="rubric" id="id13"><strong>難しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>二つの図形間で接する図形を作図（特に異なる大きさの円や三角形）する</p></li>
-<li><p>指定された条件で正多角形を作図する（例えば正十一角形など）</p></li>
-<li><p>半径が異なる円に接する直線や多角形の作図を行う<br />
-→ 半径が異なる二つの円の共通接線問題はこのレベルに属します。</p></li>
-</ol>
-<h4 class="rubric" id="id14"><strong>非常に難しいレベル</strong></h4>
-<ol class="arabic simple">
-<li><p>二次曲線（放物線や楕円）をコンパス・定規のみで無理なく作図する</p></li>
-<li><p>正五十角形などの極端に複雑な正多角形を作図する問題</p></li>
-<li><p>特殊な関数を利用した動的な幾何学作図問題<br />
-→ 半径が異なる円の問題がさらに条件付きで複雑化すると、ここに近づく可能性があります。</p></li>
-</ol>
-<hr class="docutils" />
-<h3 class="rubric" id="id15"><strong>総合評価</strong></h3>
-<p>あなたが挙げた3つの作図は、基本から中程度の難易度に分類されますが、以下のような形でまとまります:</p>
-<ul class="simple">
-<li><p><strong>円の外部からの接線</strong>: 幾何作図の初歩レベル。</p></li>
-<li><p><strong>半径が等しい二円の共通接線</strong>: 初歩を踏まえた「やや難しい」問題。</p></li>
-<li><p><strong>半径が異なる二円の共通接線</strong>: 幾何学の発展的理解が必要な難しい問題。</p></li>
-</ul>
-<p>ちなみにこれらが難しいと感じた場合、最初から基本的な作図問題（点の中間線や単純な円の特性）を復習すると、理解しやすくなると思います！ 😊</p>
+<h3 class="rubric" id="id8"><strong>近代以降の評価</strong></h3>
+<p>興味深いのは、この状況がすべて失われたわけではなく、後世の数学者たちが古代ギリシャの断片を掘り起こし、Menaechmus の業績を再評価した点です。例えば、解析幾何学の発展やデカルトの代数的アプローチの中で、曲線交点を用いる方法は大きな役割を果たしました。そして、立方体倍積問題を含む三次方程式の幾何学的解法を追求する近現代の視点からは、Menaechmus は先駆者としての役割を果たしていたことが認識されています。</p>
+<p>彼の研究が当時は受け入れられなくとも、数学史全体を眺めると重要な橋渡しをした人物だったと評価されるべきでしょう！</p>
 </div>
 </div>
 
@@ -578,7 +554,7 @@
         },
         kernelOptions: {
             name: "python3",
-            path: "./chapters/05x"
+            path: "./chapters/07"
         },
         predefinedOutput: true
     }
