@@ -4,6 +4,17 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/06/04
+  numbered: false
+  chapters:
+  - file: chapters/07/0701.ipynb
+    title: Tangents to a circle
+  - file: chapters/07/0702.ipynb
+    title: Tangents to two circles
+  - file: chapters/07/0703.ipynb
+    title: Major-axis of a ellipse
+  - file: chapters/07/0704.ipynb
+    title: Menaechmu
 - caption: 2025/05/28
   numbered: false
   chapters:
