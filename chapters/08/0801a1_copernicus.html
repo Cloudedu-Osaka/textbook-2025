@@ -1,0 +1,772 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>第八回: 楕円の焦点には何がある？ (1) &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/08/0801a1_copernicus';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/08/0801a1_copernicus.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="第八回: 楕円の焦点には何がある？ (1)" href="0801a2_tycho.html" />
+    <link rel="prev" title="第八回: 楕円の焦点には何がある？ (1)" href="0801_tycho.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/08/0801a1_copernicus.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/08/0801a1_copernicus.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>第八回: 楕円の焦点には何がある？ (1)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">コペルニクス的転回から始まる科学革命</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コペルニクスの太陽系モデル</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ティコ・ブラーエの太陽系モデル</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">惑星の逆行</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">異端審問とガリレオ</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>第八回: 楕円の焦点には何がある？ (1)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>コペルニクス的転回から始まる科学革命<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Copernican_Revolution">Copernican Revolution - Wikipedia</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Copernican_Revolution#Metaphorical_usage">Copernican Revolution - Wikipedia</a>#Metaphorical_usage</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p>(1543–1687) <a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_Revolution">Scientific Revolution - Wikipedia</a></p>
+<ul>
+<li><p>(1543) <a class="reference external" href="https://en.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium">De revolutionibus orbium coelestium - Wikipedia</a></p>
+<ul>
+<li><p>(1473–1543) <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Nicolaus Copernicus - Wikipedia</a></p></li>
+</ul>
+</li>
+<li><p>(1687) <a class="reference external" href="https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica">Philosophiæ Naturalis Principia Mathematica - Wikipedia</a></p>
+<ul>
+<li><p>(1643–1727) <a class="reference external" href="https://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton - Wikipedia</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id3">
+<h3>コペルニクスの太陽系モデル<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>(1543) <a class="reference external" href="https://en.wikipedia.org/wiki/Copernican_heliocentrism">Copernican heliocentrism - Wikipedia</a></p></li>
+</ul>
+<p><img alt="fig-02" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Copernican_heliocentrism_diagram-2.jpg" /></p>
+</section>
+<section id="id4">
+<h3>ティコ・ブラーエの太陽系モデル<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>(1587) <a class="reference external" href="https://en.wikipedia.org/wiki/Tychonic_system">Tychonic system - Wikipedia</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.tychos.info/chapter-5/">Chapter 5 — Introducing the TYCHOS model – The TYCHOS</a></p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="fig-03" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Tychonian.png" /></p>
+<section id="id5">
+<h4>惑星の逆行<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Apparent_retrograde_motion">Apparent retrograde motion - Wikipedia</a></p></li>
+<li><p><a class="reference external" href="http://www.pafko.com/tycho/observe.html">Visualizing Tycho Brahe’s Mars Observations</a></p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p>(1473–1543) <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Nicolaus Copernicus - Wikipedia</a></p></li>
+<li><p>(1546–1601) <a class="reference external" href="https://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe - Wikipedia</a></p></li>
+<li><p>(1571–1630) <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler - Wikipedia</a></p></li>
+<li><p>(1564–1642) <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galileo Galilei - Wikipedia</a></p></li>
+</ul>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+ニコラス・コペルニクスとティコ・ブラーエ
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>ニコラス・コペルニクス（Nicolaus Copernicus）とティコ・ブラーエ（Tycho Brahe）は、両者とも天文学の歴史において重要な役割を果たした人物です。</p>
+<p><strong>ニコラス・コペルニクス</strong> (1473-1543) は、ポーランドの天文学者で、彼の名前はヘリオセントリック（太陽中心）理論と深く結びついています。これは、地球ではなく太陽が宇宙の中心であるという理論で、彼の著書 “De revolutionibus orbium coelestium” （天球の回転について）で詳述されています。これは科学革命の初期を象徴する出来事で、それまでの地球中心の宇宙観を覆すものでした。</p>
+<p>一方、<strong>ティコ・ブラーエ</strong> (1546-1601) は、デンマーク出身の天文学者で、彼の最も重要な貢献は天体観測の精度を大幅に向上させたことです。彼は天体観測のための機器を改良し、その精度を飛躍的に向上させました。彼の観測データは、後のヨハネス・ケプラーが惑星運動の法則を導き出すための基礎となりました。また、ブラーエ自身も地球中心の宇宙模型（ティコニック・システム）を提唱しましたが、これはケプラーやニュートンの研究によって次第に取って代わられていきました。</p>
+<p>これら二人の天文学者は、科学の方法論と天文学の進歩に大きな影響を与え、現代の科学的世界観の形成に寄与しました。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+それぞれの資金源について
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p><strong>ニコラス・コペルニクス</strong>と<strong>ティコ・ブラーエ</strong>は、その科学研究を支えるための資金源をそれぞれ異なる方法で確保していました。</p>
+<p>ニコラス・コペルニクスはキャノン（教会法の専門家）であり、また、エルムラウとフロムベルクのエリアの教会の行政官でもありました。これらの地位は彼に安定した収入を提供し、彼の科学的な追求を可能にしました。さらに、彼は医者としても働き、その収入も彼の研究を支えるために使用しました。</p>
+<p>一方、ティコ・ブラーエは裕福な家庭に生まれましたが、彼の天文学への情熱は、デンマークの王フレデリク2世からの資金援助によって実現しました。フレデリク2世はブラーエにヴェン島に天文台を建設するための資金を提供しました。この天文台は「ウラニボリ」と呼ばれ、ブラーエが彼の観測を行うための場所となりました。彼はここで20年以上にわたって天体観測を行い、その結果は後のケプラーの惑星運動の法則の発見に貢献しました。</p>
+<p>したがって、コペルニクスとブラーエはそれぞれ異なる資金源を利用して科学的な探求を推進しました。それぞれの背景と状況が、彼らがどのように資金を集め、どのようにそれらを使用したかを形成しました。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+コペルニクスの著書が禁書に指定された背景について
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>ニコラス・コペルニクスの著書 “De revolutionibus orbium coelestium”（天球の回転について）は、彼の死後に出版されましたが、この著書は地球中心の宇宙観（ジオセントリックモデル）を覆す新たな太陽中心の宇宙観（ヘリオセントリックモデル）を提唱していました。</p>
+<p>当時、キリスト教教会はアリストテレスの地球中心の宇宙観を教義として採用していました。この宇宙観は、地球が宇宙の中心にあり、太陽や他の惑星が地球の周りを回転するという観念に基づいていました。このため、コペルニクスの太陽中心の宇宙観は教会の教義に直接対立するものであり、教会の権威に挑戦するものと見なされました。</p>
+<p>コペルニクスの著書が出版された当初、彼の理論は広く受け入れられることはありませんでした。しかし、その後の科学者たち、特にガリレオ・ガリレイによって強力に支持され、広く認知されるようになったことで、教会はコペルニクスの著書を禁書リストに加えることを決定しました。</p>
+<p>17世紀初頭、ローマ・カトリック教会は、コペルニクスの著書を「禁止された書籍」リストに追加しました。これは、彼の太陽中心の宇宙観が教会の教義に反すると判断されたためです。この禁止は約200年間続き、19世紀初頭までコペルニクスの著書は禁書リストに掲載され続けました。</p>
+<p>このような背景から、コペルニクスの著書が禁書に指定されたのです。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+コペルニクスの著書が禁書に指定されたのは、ケプラーが惑星の運動の法則を発表した後です
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>すみません、私の説明が不正確でした。実際には、コペルニクスの著書 “De revolutionibus orbium coelestium”（天球の回転について）が禁書に指定されたのは、ガリレオ・ガリレイが彼のヘリオセントリック（太陽中心）モデルを支持し、その理論を広めることにより教会からの反発を引き起こした後のことでした。</p>
+<p>ガリレオ・ガリレイの裁判が行われたのは1633年で、その結果、彼の教説は異端とされ、コペルニクスの著書も禁書リストに加えられました。この時点でヨハネス・ケプラーはすでに彼の惑星の運動の法則を発表していました（最初の2つの法則は1609年、3つ目の法則は1619年に発表）。</p>
+<p>したがって、あなたの指摘は正しいです。コペルニクスの著書が禁書に指定されたのは、ケプラーが彼の惑星の運動の法則を発表した後のことでした。私の誤りを指摘していただきありがとうございます。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+ガリレオが二度の異端審問の結果、軟禁されるのは、ケプラーが惑星の運動の法則を発表した後です
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>失礼しました。あなたの指摘は正確です。ガリレオ・ガリレイが異端審問を受けて軟禁されたのは、実際にはヨハネス・ケプラーが彼の惑星の運動の法則を発表した後のことでした。</p>
+<p>ガリレオ・ガリレイの異端審問は、彼がコペルニクスの太陽中心説を公然と支持し、自身の望遠鏡観測によってそれを裏付けた結果、ローマ・カトリック教会との間に深刻な対立が生じたことによります。彼の最初の異端審問は1616年に行われ、その後1633年に二度目の異端審問が行われました。これによりガリレオは異端とされ、残りの人生を軟禁下で過ごすこととなりました。</p>
+<p>一方、ヨハネス・ケプラーは1609年と1619年に、今日ケプラーの法則として知られる惑星の運動に関する三つの法則を発表しました。このため、ケプラーの法則の発表とガリレオの異端審問とが重なる時期になります。</p>
+<p>あなたの指摘が正確で、私の説明が不完全であったことをお詫び申し上げます。これらの事実を明確にしてくださり、ありがとうございます。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+ガリレオ・ガリレイが上手く立ち回れたら彼が異端審問を受けることもなく、
+また、コペルニクスやケプラーの著書が禁書に指定されることもなかったのではないでしょうか
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>ガリレオ・ガリレイの立場や行動が異なっていたとすれば、彼が異端審問を受けることはなかったかもしれません。そして、それがニコラス・コペルニクスやヨハネス・ケプラーの著書が禁書に指定されることを避ける結果につながる可能性もあります。しかし、これは歴史的な仮定であり、反事実的な仮説です。</p>
+<p>ガリレオは非常に直接的で果敢な科学者であり、彼の科学的な発見を広めることに非常に熱心でした。これは教会の公式な教義に対立することとなり、結果として彼は異端審問を受けることとなりました。彼がもっと慎重に行動し、教会との対立を避けるようにしていたとしたら、彼の運命は異なっていたかもしれません。</p>
+<p>しかし、それでもなお、教会が太陽中心説を受け入れることは難しかったでしょう。なぜなら、この理論は教会の世界観と宗教的な教義に深く根ざした地球中心説と明らかに対立するものだったからです。それに、ガリレオが異端審問を避けることができたとしても、それがコペルニクスやケプラーの著書が禁書に指定されることを必ずしも防げたわけではないでしょう。</p>
+<p>このように、ガリレオの行動が異なっていたとしても、その結果がどのようになっていたかは確定的には言えません。これはあくまでの仮定であり、歴史的な事実とは異なります。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+アイザック・ニュートンは、敬虔なキリスト教徒としても知られ、公には教会の教義を否定することはありませんでした
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです。アイザック・ニュートンは敬虔なキリスト教徒として知られており、公には教会の教義を否定することはありませんでした。彼の科学的な業績と並行して、彼の信仰は彼の人生と哲学に深く影響を与えました。</p>
+<p>彼は、自身の科学的な探求が神の創造した宇宙の理解を深める手段となると考えていました。この考え方は、彼の自然哲学（現代でいう物理学）への取り組みにおける主要な動機の一部を形成していました。</p>
+<p>ただし、ニュートンの個人的な信仰は一部の教義とは異なるものでした。彼は三位一体説を否定し、キリストが神であるとは考えないアリウス派の信念を持っていました。しかし、これは当時のイングランドにおいては異端と見なされていたため、彼はこの信念を公には表明していませんでした。</p>
+<p>したがって、ニュートンは公には教会の教義を否定することはありませんでしたが、彼の個人的な信仰は一部の教義とは異なるものでした。</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="id6">
+<h2>異端審問とガリレオ<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>(1608) Folio 116v, Vol. 72 by Gallileo</p></li>
+</ul>
+<p><img alt="image.png" src="chapters/08/attachment:0112d3a9-0803-4180-a527-f0d6e5916cdf.png" /></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p>(1564–1642) <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galileo Galilei - Wikipedia</a></p>
+<ul>
+<li><p>(1616, 1633) <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_affair">Galileo affair - Wikipedia</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Inquisition">Inquisition - Wikipedia</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Index_Librorum_Prohibitorum">Index Librorum Prohibitorum - Wikipedia</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_authors_and_works_on_the_Index_Librorum_Prohibitorum">List of authors and works on the Index Librorum Prohibitorum - Wikipedia</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>(1632) <a class="reference external" href="https://en.wikipedia.org/wiki/Dialogue_Concerning_the_Two_Chief_World_Systems">Dialogue Concerning the Two Chief World Systems - Wikipedia</a></p></li>
+<li><p>(1638) <a class="reference external" href="https://en.wikipedia.org/wiki/Two_New_Sciences">Two New Sciences - Wikipedia</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+ガリレオの死の直前に、ルネ・デカルトは幾何学を出版しました。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです。ルネ・デカルトは、ガリレオ・ガリレイの死（1642年）の直前の1637年に、彼の哲学的著作 “Discours de la méthode”（方法についての対話）の一部として「幾何学」を出版しました。この「幾何学」は、デカルトが開発した解析幾何学の基礎を築いたものであり、これによって代数と幾何学が結びつけられ、現代の科学と工学の発展に寄与しました。</p>
+<p>デカルトの「幾何学」によって導入された座標系（デカルト座標系）は、数学、物理学、工学など様々な分野で広く使用されています。また、この座標系は微積分の発展にも寄与しました。例えば、アイザック・ニュートンとゴットフリート・ライプニッツは、それぞれ独立に微積分を発展させましたが、その基礎となったのはデカルトの解析幾何学でした。</p>
+<p>このように、ガリレオの死の直前にデカルトが「幾何学」を出版したことは、科学史において重要な出来事となりました。</p>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/08"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="0801_tycho.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">第八回: 楕円の焦点には何がある？ (1)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="0801a2_tycho.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">第八回: 楕円の焦点には何がある？ (1)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">コペルニクス的転回から始まる科学革命</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コペルニクスの太陽系モデル</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ティコ・ブラーエの太陽系モデル</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">惑星の逆行</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">異端審問とガリレオ</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
