@@ -4,6 +4,19 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/06/11
+  numbered: false
+  chapters:
+  - file: chapters/08/0801_tycho.ipynb
+    title: Tycho Brahe
+  - file: chapters/08/0801a1_copernicus.ipynb
+    title: Tycho Brahe (add. 1)
+  - file: chapters/08/0801a2_tycho.ipynb
+    title: Tycho Brahe (add. 2)
+  - file: chapters/08/0802_kepler.ipynb
+    title: Johannes Kepler
+  - file: chapters/08/0803_halley.ipynb    
+    title: Edmond Halley
 - caption: 2025/06/04
   numbered: false
   chapters:
@@ -14,7 +27,7 @@ parts:
   - file: chapters/07/0703.ipynb
     title: Major-axis of a ellipse
   - file: chapters/07/0704.ipynb
-    title: Menaechmu
+    title: Menaechmus
 - caption: 2025/05/28
   numbered: false
   chapters:
