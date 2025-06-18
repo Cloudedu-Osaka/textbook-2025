@@ -4,6 +4,19 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/06/18
+  numbered: false
+  chapters:
+  - file: chapters/09/0901_intro.ipynb
+    title: Introduction
+  - file: chapters/09/0902_kepler.ipynb
+    title: Johannes Kepler
+  - file: chapters/09/0903_kepler_equation.ipynb
+    title: Kepler's equation
+  - file: chapters/09/0904_galileo.ipynb
+    title: Galileo Galilei
+  - file: chapters/09/0905.ipynb    
+    title: Kepler and Galileo
 - caption: 2025/06/11
   numbered: false
   chapters:
