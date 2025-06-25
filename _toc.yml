@@ -4,6 +4,17 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/06/25
+  numbered: false
+  chapters:
+  - file: chapters/10/1001_galileo.ipynb
+    title: Galileo Galilei
+  - file: chapters/10/1002_parabola.ipynb
+    title: Parabola of Galileo
+  - file: chapters/10/1003_apollonius#1.ipynb
+    title: Diameter of Apollonius
+  - file: chapters/10/1004_apollonius#2.ipynb
+    title: Parabola of Apollonius
 - caption: 2025/06/18
   numbered: false
   chapters:
