@@ -1,0 +1,1342 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>第十一回: Archimedesと積尽 &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/11/1101_archimedes#1';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/11/1101_archimedes#1.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="第十一回: Archimedesと積尽" href="1102_archimedes%232.html" />
+    <link rel="prev" title="プログラミングで遡る科学史" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/11/1101_archimedes%231.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/11/1101_archimedes#1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>第十一回: Archimedesと積尽</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.1 Archimedesと円周率</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">バビロニア法（ニュートン法）で平方根を計算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">正多角形の辺の長さを計算 (内接)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">単位円に内接する正96角形の辺の長さ</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="archimedes">
+<h1>第十一回: Archimedesと積尽<a class="headerlink" href="#archimedes" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>11.1 Archimedesと円周率<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">ask ai</p>
+<ul class="simple">
+<li><p>東大の2003年の入試問題「円周率が3.05より大きいことを証明せよ。」を解きます。</p></li>
+</ul>
+<div class="seealso admonition">
+<p class="admonition-title">ask ai repeatedly</p>
+<ul class="simple">
+<li><p>この際、アルキメデスが正96角形の辺の長さを計算した方法を踏襲します。</p></li>
+<li><p>この数列をPythonのプログラムにコーディングします。</p>
+<ul>
+<li><p>アルキメデスの時代を考慮して、平方根はバビロニア法を用い、PythonのFractionで記述します。</p></li>
+<li><p>反復計算の精度は<span class="math notranslate nohighlight">\(1/1000\)</span>として下さい。分母の上限はFractionのlimit_denomitorメソッドで上限を<span class="math notranslate nohighlight">\(1000\)</span>にして返します。</p></li>
+</ul>
+</li>
+<li><p>外接正多角形の数列の式?</p></li>
+</ul>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+東大の2003年の入試問題「円周率が3.05より大きいことを証明せよ。」を解きます。
+この際、アルキメデスが正96角形の辺の長さを計算した方法を踏襲します。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>素晴らしいテーマですね！アルキメデスの円周率計算は、円の内接と外接の正多角形を使う方法で、非常に優れたアイデアです。この方法を踏襲して円周率が $3.05$ より大きいことを証明するためには、まず正96角形の辺の長さを計算する手順を明確化する必要があります。そして、その計算を段階的に進めることで、円周の近似値を作り出し、円周率の下限を示します。</p>
+<p>以下では、アルキメデスの方法を追って計算手順を示します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id2">アルキメデス式の概要：内接と外接正多角形</h3>
+<p>アルキメデスは、円周は正多角形の周の長さに近いという事実を利用しました。そして、内接正多角形と外接正多角形を使って円周率の上限と下限を求めました。</p>
+<h4 class="rubric" id="id3">方針</h4>
+<ol class="arabic simple">
+<li><p>始点として正六角形（簡単に計算可能）を用います。</p></li>
+<li><p>次に正多角形を倍化する操作を繰り返していきます。（正12角形→正24角形→正48角形→正96角形）</p></li>
+<li><p>多角形の辺の長さを計算し続け、円の内接と外接の近似を行います。</p></li>
+<li><p>最終的に正96角形を用いて $3.05 &lt; \pi$ を証明します。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id4">正多角形の辺の長さの計算方法</h3>
+<p>アルキメデスが用いたものとして、次の式を使います。これが正多角形の辺を倍化する際の重要な関係式です：</p>
+<ol class="arabic simple">
+<li><p>正 $n$ 角形の辺の長さを $a_n$ とする。</p></li>
+<li><p>次の正 $2n$ 角形の辺の長さ $a_{2n}$ は、次のリカーシブな式で与えられます。</p></li>
+</ol>
+<p>$$
+a_{2n} = \sqrt{2 - \sqrt{4 - a_n^2}}
+$$</p>
+<p>この式を使うことで多角形の倍化（例えば、正六角形から正12角形へ）が可能になります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5">計算の例：正六角形から正96角形まで</h3>
+<ol class="arabic simple">
+<li><p><strong>正六角形</strong>の辺の長さ $a_6$:
+正六角形は内接しているので、その辺の長さは円の半径（$r = 1$）を基準として計算できます。正六角形の各辺の長さは単純に
+$$
+a_6 = 1
+$$
+と分かります。</p></li>
+<li><p><strong>正12角形</strong>への移行:
+次に、正12角形の辺の長さを求めます。上記の公式を適用すると以下が得られます：
+$$
+a_{12} = \sqrt{2 - \sqrt{4 - a_6^2}} = \sqrt{2 - \sqrt{4 - 1^2}} = \sqrt{2 - \sqrt{3}}
+$$</p></li>
+<li><p><strong>正24角形</strong>:
+同様に、正24角形の辺の長さは次の式で求められます：
+$$
+a_{24} = \sqrt{2 - \sqrt{4 - a_{12}^2}}
+$$
+$a_{12} = \sqrt{2 - \sqrt{3}}$ を代入して計算を続けます。</p></li>
+<li><p>同様に <strong>正48角形</strong> → <strong>正96角形</strong> を計算していきます。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id6">円周率の下限の証明</h3>
+<p>正96角形で内接多角形の周の長さを近似的に求めた結果を使います。例えば、正96角形の辺の長さが計算できれば、その周の長さ $L_{96}$ は
+$$
+L_{96} = 96 \cdot a_{96}
+$$
+となります。この $L_{96}$ が円周の下限であり、それを用いて次を示します：
+$$
+\frac{L_{96}}{2r} &gt; 3.05
+$$
+（ここで円の半径 $r = 1$ を仮定しています。）</p>
+<p>計算を進めていけば、円周率が確かに $3.05$ より大きいことを示すことができます！</p>
+<hr class="docutils" />
+<p>具体的な数値計算を開始したい場合は、辺の長さの式を順次評価し数値を計算していく準備が必要です。計算を進めますか？</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+この数列をPythonのプログラムにコーディングします。
+アルキメデスの時代を考慮して、平方根はバビロニア法を用い、PythonのFractionで記述します。
+反復計算の精度は$1/1000$として下さい。分母の上限はFractionのlimit_denomitorメソッドで上限を$1000$にして返します。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>以下のコードは、アルキメデスの円周率近似手法をPythonで再現するために、バビロニア法（ニュートン法）を使って平方根を反復計算で求め、Pythonの<code class="docutils literal notranslate"><span class="pre">Fraction</span></code>モジュールを用いて分数形式で計算を行います。さらに、反復計算の精度を$1/1000$に設定し、最終的な結果を<code class="docutils literal notranslate"><span class="pre">limit_denominator</span></code>メソッドで上限を1000に制限します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id7">コード例</h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="c1"># バビロニア法（ニュートン法）で平方根を計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">babylonian_sqrt</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    バビロニア法（ニュートン法）を使って平方根を計算</span>
+<span class="sd">    value: ルートを計算する対象の値</span>
+<span class="sd">    max_denom: 分母の上限 (limit_denominator を使用して制限)</span>
+<span class="sd">    precision: 収束条件としての精度 (分数形式)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># 初期値: value の半分</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="c1"># 次の値を計算</span>
+        <span class="n">next_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="c1"># 精度が収束したら終了</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">next_x</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">precision</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">next_x</span>
+    <span class="c1"># 分母を上限 max_denom に制限</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="n">max_denom</span><span class="p">)</span>
+
+<span class="c1"># 正多角形の辺の長さを計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_polygon_side</span><span class="p">(</span><span class="n">initial_side</span><span class="p">,</span> <span class="n">levels</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    正多角形の辺の長さを繰り返し計算</span>
+<span class="sd">    initial_side: 初期の辺の長さ (正六角形の場合は 1)</span>
+<span class="sd">    levels: 多角形を倍化する回数 (正六角形→正96角形なら 4)</span>
+<span class="sd">    max_denom: 分母の上限</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">a_n</span> <span class="o">=</span> <span class="n">initial_side</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">levels</span><span class="p">):</span>
+        <span class="c1"># 公式: a_{2n} = sqrt(2 - sqrt(4 - a_n^2))</span>
+        <span class="n">inner_sqrt</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="n">a_n</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">max_denom</span><span class="p">)</span>
+        <span class="n">a_n</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">inner_sqrt</span><span class="p">,</span> <span class="n">max_denom</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">a_n</span>
+
+<span class="c1"># 初期条件: 正六角形の辺の長さ</span>
+<span class="n">a_6</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 正六角形 → 正12角形 → 正24角形 → ... → 正96角形 (辺を4回倍化)</span>
+<span class="n">a_96</span> <span class="o">=</span> <span class="n">compute_polygon_side</span><span class="p">(</span><span class="n">a_6</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># 正96角形の内接多角形の周の長さ (辺の長さ x 辺の数)</span>
+<span class="n">perimeter_96</span> <span class="o">=</span> <span class="mi">96</span> <span class="o">*</span> <span class="n">a_96</span>
+
+<span class="c1"># 円周率の下限値 (周の長さ ÷ 直径)</span>
+<span class="n">pi_lower_bound</span> <span class="o">=</span> <span class="n">perimeter_96</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="c1"># 結果の出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;正96角形の辺の長さ:&quot;</span><span class="p">,</span> <span class="n">a_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;正96角形の内接多角形の周の長さ:&quot;</span><span class="p">,</span> <span class="n">perimeter_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;円周率の下限値 (浮動小数表示):&quot;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">pi_lower_bound</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;円周率の下限値 (分数表示):&quot;</span><span class="p">,</span> <span class="n">pi_lower_bound</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<h3 class="rubric" id="id8">コードの詳細</h3>
+<ol class="arabic simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">babylonian_sqrt</span></code>関数</strong>:</p>
+<ul class="simple">
+<li><p><strong>バビロニア法</strong>に基づいて分数形式で平方根を計算します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">precision</span></code>引数で収束条件を設定します（デフォルトで$1/1000$）。</p></li>
+<li><p>反復計算が収束し、精度条件を満たすと計算を終了します。</p></li>
+<li><p>計算結果を<code class="docutils literal notranslate"><span class="pre">limit_denominator</span></code>を用いて分母が1000以下になるよう丸めます。</p></li>
+</ul>
+</li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">compute_polygon_side</span></code>関数</strong>:</p>
+<ul class="simple">
+<li><p>リカーシブな辺の長さ計算に基づき、正多角形の辺の長さを段階的に求めます。</p></li>
+<li><p>初期の辺の長さ（正六角形の場合は1）からスタートし、内側と外側の平方根を計算して次の正多角形の辺の長さを求めます。</p></li>
+</ul>
+</li>
+<li><p><strong>計算プロセス</strong>：</p>
+<ul class="simple">
+<li><p>正六角形 $\rightarrow$ 正12角形 $\rightarrow$ 正24角形 $\rightarrow$ 正48角形 $\rightarrow$ 最終的に正96角形。</p></li>
+<li><p>各ステップで辺の長さをバビロニア法で計算。</p></li>
+</ul>
+</li>
+<li><p><strong>結果</strong>：</p>
+<ul class="simple">
+<li><p>アルキメデスの手法に従って計算された正96角形の辺の長さ、内接多角形の周の長さ、円周率の近似値を表示します。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id9">実行結果の例</h3>
+<p>以下のような結果が得られます：</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>正96角形の辺の長さ: 177295653/125000000
+正96角形の内接多角形の周の長さ: 17021382768/7812500
+円周率の下限値 (浮動小数表示): 3.0985735506576624
+円周率の下限値 (分数表示): 8510691384/3906250
+</pre></div>
+</div>
+<p>結果から、円周率が $3.05$ より大きいことを確認できます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id10">ノート</h3>
+<ul class="simple">
+<li><p>反復精度 $1/1000$ に収束することを保証しつつ分母の上限を1,000に固定するため、コンパクトな分数形式で結果を導いています。</p></li>
+<li><p>分数形式 (<code class="docutils literal notranslate"><span class="pre">Fraction</span></code>) を採用しており、このコードはアルキメデスの考え方を現代的に忠実に再現しています！</p></li>
+</ul>
+<p>何か改良や質問が必要であればいつでも教えてください 😊</p>
+</div>
+</div>
+</section>
+<section id="id11">
+<h2>バビロニア法（ニュートン法）で平方根を計算<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="c1"># バビロニア法（ニュートン法）で平方根を計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">babylonian_sqrt</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    バビロニア法（ニュートン法）を使って平方根を計算</span>
+<span class="sd">    value: ルートを計算する対象の値</span>
+<span class="sd">    max_denom: 分母の上限 (limit_denominator を使用して制限)</span>
+<span class="sd">    precision: 収束条件としての精度 (分数形式)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># 初期値: value の半分</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="c1"># 次の値を計算</span>
+        <span class="n">next_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="c1"># 精度が収束したら終了</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">next_x</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">precision</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">next_x</span>
+    <span class="c1"># 分母を上限 max_denom に制限</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="n">max_denom</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4142135623730951
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">babylonian_sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(577, 408)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4142156862745099
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">babylonian_sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mf">0.0000000001</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(1393, 985)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4142131979695431
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">babylonian_sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">10</span><span class="o">**</span><span class="mi">8</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mf">1e-16</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(131836323, 93222358)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4142135623730951
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id12">
+<h2>正多角形の辺の長さを計算 (内接)<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 正多角形の辺の長さを計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_polygon_side</span><span class="p">(</span><span class="n">initial_side</span><span class="p">,</span> <span class="n">levels</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    正多角形の辺の長さを繰り返し計算</span>
+<span class="sd">    initial_side: 初期の辺の長さ (正六角形の場合は 1)</span>
+<span class="sd">    levels: 多角形を倍化する回数 (正六角形→正96角形なら 4)</span>
+<span class="sd">    max_denom: 分母の上限</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">a_n</span> <span class="o">=</span> <span class="n">initial_side</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">levels</span><span class="p">):</span>
+        <span class="c1"># 公式: a_{2n} = sqrt(2 - sqrt(4 - a_n^2))</span>
+        <span class="n">inner_sqrt</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="n">a_n</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">max_denom</span><span class="p">)</span>
+        <span class="n">a_n</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">inner_sqrt</span><span class="p">,</span> <span class="n">max_denom</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">a_n</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 6</span>
+<span class="n">compute_polygon_side</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">*</span><span class="mi">6</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 12</span>
+<span class="n">compute_polygon_side</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(102, 197)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">*</span><span class="mi">12</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1065989847715736
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 24</span>
+<span class="n">compute_polygon_side</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(250, 957)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">*</span><span class="mi">24</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.134796238244514
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 48</span>
+<span class="n">compute_polygon_side</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(118, 903)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">*</span><span class="mi">48</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1362126245847173
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id13">
+<h2>単位円に内接する正96角形の辺の長さ<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 初期条件: 正六角形の辺の長さ</span>
+<span class="n">a_6</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 正六角形 → 正12角形 → 正24角形 → ... → 正96角形 (辺を4回倍化)</span>
+<span class="n">a_96</span> <span class="o">=</span> <span class="n">compute_polygon_side</span><span class="p">(</span><span class="n">a_6</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">max_denom</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># 正96角形の内接多角形の周の長さ (辺の長さ x 辺の数)</span>
+<span class="n">perimeter_96</span> <span class="o">=</span> <span class="mi">96</span> <span class="o">*</span> <span class="n">a_96</span>
+
+<span class="c1"># 円周率の下限値 (周の長さ ÷ 直径)</span>
+<span class="n">pi_lower_bound</span> <span class="o">=</span> <span class="n">perimeter_96</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="c1"># 結果の出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;正96角形の辺の長さ:&quot;</span><span class="p">,</span> <span class="n">a_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;正96角形の内接多角形の周の長さ:&quot;</span><span class="p">,</span> <span class="n">perimeter_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;円周率の下限値 (浮動小数表示):&quot;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">pi_lower_bound</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;円周率の下限値 (分数表示):&quot;</span><span class="p">,</span> <span class="n">pi_lower_bound</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>正96角形の辺の長さ: 57/872
+正96角形の内接多角形の周の長さ: 684/109
+円周率の下限値 (浮動小数表示): 3.1376146788990824
+円周率の下限値 (分数表示): 342/109
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Fraction</span><span class="p">(</span><span class="mi">342</span><span class="p">,</span> <span class="mi">109</span><span class="p">)</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="mi">71</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(91, 29)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1379310344827585
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>次の
+GPT-4oの回答は間違いです</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+外接正多角形の数列の式
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>外接正多角形の辺の長さの数列について、数列の一般式を導出します。これは内接正多角形の場合の公式を対照的にしたものです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="b-n">外接正多角形の辺の長さ $b_n$</h3>
+<p>アルキメデスの手法では正 $n$ 角形の外接多角形の辺の長さ $b_n$ を以下の公式で計算します：</p>
+<p>$$
+b_{2n} = \sqrt{2 + \sqrt{4 - b_n^2}}
+$$</p>
+<p>この式は、辺数が倍になる（正 $n$ 角形 → 正 $2n$ 角形）場合に、辺の長さを次の段階に進めるための再帰的な関係式です。ここで：</p>
+<ul class="simple">
+<li><p>$b_n$: 正 $n$ 角形の外接多角形の辺の長さ</p></li>
+<li><p>$b_{2n}$: 正 $2n$ 角形の外接多角形の辺の長さ</p></li>
+</ul>
+<p>具体的な数列を生成するためには、この式を初期値から段階的に適用していきます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id14">初期値（正六角形）</h3>
+<p>外接正六角形の辺の長さ $b_6$ は、円の半径 $r = 1$ を基準に次のように計算できます：</p>
+<p>$$
+b_6 = \frac{2\sqrt{3}}{3}
+$$</p>
+<p>（これを分数形式に直せば $b_6 = \text{2/√3}$ または概数で $1.1547…$。）</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id15">次の項の具体計算例</h3>
+<ul class="simple">
+<li><p>正六角形 ($b_6$) → 正12角形 ($b_{12}$):
+$$
+b_{12} = \sqrt{2 + \sqrt{4 - b_6^2}}
+$$
+ここで $b_6^2 = \left(\frac{2\sqrt{3}}{3}\right)^2 = \frac{4}{3}$。</p></li>
+</ul>
+<p>$$
+b_{12} = \sqrt{2 + \sqrt{4 - \frac{4}{3}}} = \sqrt{2 + \sqrt{\frac{8}{3}}}
+$$</p>
+<ul class="simple">
+<li><p>正12角形 ($b_{12}$) → 正24角形 ($b_{24}$):
+$$
+b_{24} = \sqrt{2 + \sqrt{4 - b_{12}^2}}
+$$
+このように計算を繰り返します。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id16">一般式</h3>
+<p>外接正多角形の辺の長さの数列は次のように表されます：</p>
+<ul class="simple">
+<li><p>初期条件：
+$$
+b_6 = \frac{2\sqrt{3}}{3}
+$$</p></li>
+<li><p>再帰式：
+$$
+b_{2n} = \sqrt{2 + \sqrt{4 - b_n^2}}
+$$</p></li>
+</ul>
+<p>ここで $n$ は辺数で、$n = 6, 12, 24, \dots$ と倍化していきます（辺数が $6 \cdot 2^k$ の形になります）。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id17">周の長さ（外接正多角形に基づく円周率の上限値）</h3>
+<p>正 $n$ 角形の外接多角形の周長 $P_n$ は、辺の長さ $b_n$ を用いて：</p>
+<p>$$
+P_n = n \cdot b_n
+$$</p>
+<p>したがって、円周率の上限値は：</p>
+<p>$$
+\pi_{\text{upper}} = \frac{P_n}{2} = \frac{n \cdot b_n}{2}
+$$</p>
+<hr class="docutils" />
+<h3 class="rubric" id="python">数値計算の例（Pythonコード）</h3>
+<p>この計算を Python を用いて実行できます。以下に端的な例を示します：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="c1"># バビロニア法で平方根を計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">babylonian_sqrt</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">next_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">next_x</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">precision</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">next_x</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="c1"># 外接正多角形の辺の長さを再帰的に計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_outer_polygon_side</span><span class="p">(</span><span class="n">initial_side</span><span class="p">,</span> <span class="n">levels</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)):</span>
+    <span class="n">b_n</span> <span class="o">=</span> <span class="n">initial_side</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">levels</span><span class="p">):</span>
+        <span class="n">inner_sqrt</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="n">b_n</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+        <span class="n">b_n</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">inner_sqrt</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">b_n</span>
+
+<span class="c1"># 初期値: 正六角形 (外接辺)</span>
+<span class="n">b_6</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+
+<span class="c1"># 正六角形から正96角形まで (辺を 4 回倍化)</span>
+<span class="n">b_96</span> <span class="o">=</span> <span class="n">compute_outer_polygon_side</span><span class="p">(</span><span class="n">b_6</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 正96角形の周の長さ</span>
+<span class="n">perimeter_outer_96</span> <span class="o">=</span> <span class="mi">96</span> <span class="o">*</span> <span class="n">b_96</span>
+
+<span class="c1"># 円周率の上限値</span>
+<span class="n">pi_upper_bound</span> <span class="o">=</span> <span class="n">perimeter_outer_96</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="c1"># 結果を出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;正96角形の外接辺の長さ:&quot;</span><span class="p">,</span> <span class="n">b_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;外接正96角形の周の長さ:&quot;</span><span class="p">,</span> <span class="n">perimeter_outer_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;円周率の上限値:&quot;</span><span class="p">,</span> <span class="n">pi_upper_bound</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<h3 class="rubric" id="id18">関連する手法の補足</h3>
+<p>外接正多角形を利用したこの方法は、内接正多角形の場合とは反対に、円周率の上限を評価するのに非常に有効です。この再帰式が持つ幾何学的基盤は古代数学の重要な応用例として知られています。</p>
+<p>必要があれば計算過程に関するさらなる説明もお手伝いします！ 😊</p>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>正しい式に置き換えています</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="c1"># バビロニア法で平方根を計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">babylonian_sqrt</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">next_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">next_x</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">precision</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">next_x</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 外接正多角形の辺の長さを再帰的に計算</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_outer_polygon_side</span><span class="p">(</span><span class="n">initial_side</span><span class="p">,</span> <span class="n">levels</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)):</span>
+    <span class="n">b_n</span> <span class="o">=</span> <span class="n">initial_side</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">levels</span><span class="p">):</span>
+        <span class="n">inner_sqrt</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">b_n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+        <span class="n">b_n</span> <span class="o">=</span> <span class="n">b_n</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">inner_sqrt</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">b_n</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># 初期値: 正六角形 (外接辺)</span>
+<span class="n">b_6</span> <span class="o">=</span> <span class="n">babylonian_sqrt</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+
+<span class="c1"># 正六角形から正96角形まで (辺を 4 回倍化)</span>
+<span class="n">b_96</span> <span class="o">=</span> <span class="n">compute_outer_polygon_side</span><span class="p">(</span><span class="n">b_6</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 正96角形の周の長さ</span>
+<span class="n">perimeter_outer_96</span> <span class="o">=</span> <span class="mi">96</span> <span class="o">*</span> <span class="n">b_96</span>
+
+<span class="c1"># 円周率の上限値</span>
+<span class="n">pi_upper_bound</span> <span class="o">=</span> <span class="n">perimeter_outer_96</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="c1"># 結果を出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;正96角形の外接辺の長さ:&quot;</span><span class="p">,</span> <span class="n">b_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;外接正96角形の周の長さ:&quot;</span><span class="p">,</span> <span class="n">perimeter_outer_96</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;円周率の上限値:&quot;</span><span class="p">,</span> <span class="n">pi_upper_bound</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>正96角形の外接辺の長さ: 43/657
+外接正96角形の周の長さ: 1376/219
+円周率の上限値: 688/219
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1376</span><span class="o">/</span><span class="mi">219</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.28310502283105
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.141552511415525
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Fraction</span><span class="p">(</span><span class="mi">688</span><span class="p">,</span><span class="mi">219</span><span class="p">)</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="mi">71</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(223, 71)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.140845070422535
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Fraction</span><span class="p">(</span><span class="mi">688</span><span class="p">,</span><span class="mi">219</span><span class="p">)</span><span class="o">.</span><span class="n">limit_denominator</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fraction(22, 7)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.142857142857143
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/11"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">プログラミングで遡る科学史</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1102_archimedes%232.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">第十一回: Archimedesと積尽</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.1 Archimedesと円周率</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">バビロニア法（ニュートン法）で平方根を計算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">正多角形の辺の長さを計算 (内接)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">単位円に内接する正96角形の辺の長さ</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
