@@ -4,6 +4,17 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/07/02
+  numbered: false
+  chapters:
+  - file: chapters/11/1101_archimedes#1.ipynb
+    title: Pi
+  - file: chapters/11/1102_archimedes#2.ipynb
+    title: Pi (2)
+  - file: chapters/11/1103_archimedes#3.ipynb
+    title: Parabola
+  - file: chapters/11/1104.ipynb
+    title: Method of Exhaustion
 - caption: 2025/06/25
   numbered: false
   chapters:
