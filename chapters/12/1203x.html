@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/12/1203x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/12/1203x.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1201.html">Circle of Descartes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1203.html">Fermat and Newton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1204_newton.html">Newton's generalized binomial theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1205.html">Assignment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11/1101_archimedes%231.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/12/1203x.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/12/1203x.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Fermatは、多項式の変数 $x$ を微少量を含む $x + dx$ に置き換えて展開することで、
+多項式の接線が二項係数に関連することを示しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、その通りです！ピエール・ド・フェルマー（Pierre de Fermat）は、微分法の萌芽となるアイディアをいくつか残しており、特に接線の問題に対してユニークな方法を提案しました。当時、現代的な微分の概念や記号体系は存在していませんでしたが、フェルマーは微分に似た手法を用いて、非常に革新的な方法で接線を求める道を開きました。</p>
+<p>フェルマーの手法では、次のようなアイディアが用いられました：</p>
+<ol class="arabic">
+<li><p><strong>変数に微小量を追加する</strong><br />
+フェルマーは多項式の変数 $x$ を微小な変化 $dx$ を伴う形で $x + dx$ に置き換えることを考えました（ここで $dx$ は非常に小さな値を意味します）。例えば、関数 $f(x) = x^n$ を考える場合、</p>
+<p>$$
+f(x+dx) = (x+dx)^n
+$$</p>
+</li>
+<li><p>**二項展開（現在でいう二項定理の利用） **<br />
+$(x+dx)^n$ を展開すると、二項定理に基づき次のように表されます：</p>
+<p>$$
+(x + dx)^n = x^n + n x^{n-1}dx + \frac{n(n-1)}{2} x^{n-2}(dx)^2 + \cdots
+$$</p>
+<p>この展開式の中で、$dx$ を高次の項（$dx^2$, $dx^3$, …）が微小であるため無視することを考えます。</p>
+</li>
+<li><p><strong>接線の考察と導出</strong><br />
+$f(x+dx) - f(x)$ を計算すると、微小変化 $dx$ の影響を捉えることができます：</p>
+<p>$$
+f(x+dx) - f(x) = (x^n + n x^{n-1} dx + \cdots) - x^n = n x^{n-1} dx + \cdots
+$$</p>
+<p>ここで、$dx$ の高次項を無視し、最も主要な項（$n x^{n-1} dx$）だけを取り出します。この式を $dx$ で割ると、現代微分の結果に似た形、</p>
+<p>$$
+\frac{f(x+dx) - f(x)}{dx} \approx n x^{n-1}
+$$</p>
+<p>が得られます。これが接線の傾きです。</p>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id1"><strong>多項式の接線と二項係数の関係</strong></h3>
+<p>上記の展開において、二項展開の係数 $n$ が接線の傾きに直接現れていることに気づくことができます。$x^n$ の $x$ に関する一次の項（$n x^{n-1} dx$）の係数 $n$ が、結果的に接線の傾き $n x^{n-1}$ を決定しています。</p>
+<p>フェルマーの手法によって、今日で言う「導関数」を自然に表現する方法が示されたのです。フェルマー自身はこれを接線の問題（曲線に接する直線の傾きを求める問題）に応用し、それを数学的に解決する道筋を切り開きました。</p>
+<hr class="docutils" />
+<p>このようにフェルマーの考え方を基礎として、その後アイザック・ニュートンやゴットフリート・ライプニッツが微分法を形式化し、現代微積分へと発展していったのです！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Newtonは、Fermatの発見がそのまま多項式の積分に応用できることを発見し、微分・積分を流率 fluxion として体系化しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！アイザック・ニュートン（Isaac Newton）は、フェルマー（Fermat）のアイディアに着目し、それをさらに発展させて微分と積分を統一的な視点から「流率（fluxion）」の理論として体系化しました。この過程において、ニュートンは微積分の基本的な考え方を構築し、特にフェルマーの接線法（現在の微分の概念）を積分へと拡張するという画期的な発見をしました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="fluxion"><strong>ニュートンの流率（Fluxion）と微分・積分</strong></h3>
+<p>ニュートンが提唱した「流率（fluxion）」とは、量が変化する状態を記述する方法で、彼は時間の流れの中で変量（変化する量）を考える数学的ストーリーを展開しました。この理論では、次の重要な概念が含まれています。</p>
+<ol class="arabic">
+<li><p><strong>流率（Fluxion）:</strong><br />
+流率はニュートンにおける微分の概念を表します。彼は変化する量を「流れるもの」と捉え、その瞬間ごとの変化率（現在でいう導関数）を流率と呼びました。例えば、変数 $x$ を時間 $t$ によって変化する量と考えると、流率 $\dot{x}$ はニュートンにおける $x$ の微分を意味します。</p>
+<ul class="simple">
+<li><p>現代の記号では、
+$$
+\dot{x} = \frac{dx}{dt}
+$$</p></li>
+</ul>
+<p>と解釈できます。</p>
+</li>
+<li><p><strong>生成率（Fluent）:</strong><br />
+一方、生成率（fluent）はニュートンの積分の概念を表します。流率（微分）として瞬間的な変化を記述したあと、その逆操作として「生成される量」を考えました。流率（変化する動き）から生成率（元の量、つまり積分）を得るという見方は、微分と積分の相互関係を示しています。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id2"><strong>フェルマーの成果を積分に応用</strong></h3>
+<p>フェルマーは多項式の接線や極値問題を解決するうえで、微分に相当するアイディアを提示しましたが、ニュートンはこのアイディアを「積分にも応用できる」という重要な洞察を得ました。彼は次のように考えました：</p>
+<ul class="simple">
+<li><p>微分（接線の傾きを求める操作）は局所的な変化を記述しており、積分はその逆に、変化を積み上げて全体的な量を構築する操作にあたるという関係。</p></li>
+<li><p>二項公式やフェルマーが触れた多項式 $(x+dx)^n$ を含む展開は、実際に積分に応用可能であることが分かりました。多項式を微分すると簡単な形が得られるように、逆に積分すれば元の形に戻ることも示せます。</p></li>
+</ul>
+<p>例えば、ニュートンの成果として現れる多項式の積分公式は次のようになります：</p>
+<p>$$
+\int x^n dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)
+$$</p>
+<p>これが微分と積分の基本法則の最初期の明確な形です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id3"><strong>微分と積分の統一: ニュートンの革命</strong></h3>
+<p>ニュートンの最大の功績は、微分と積分を「逆演算」として捉え、それらが互いに補完し合うこと（現在の基本定理）を体系化したことです。微分を通じて接線や瞬間的変化を理解し、それを逆操作で積分することで面積や累積量を求めるというアイディアです。</p>
+<p>彼の功績をフェルマーからの影響という観点で整理すると以下のようです：</p>
+<ol class="arabic simple">
+<li><p>フェルマーは接線問題や曲線の極値問題を微分に相当する考え方で解決。</p></li>
+<li><p>ニュートンはその接線のアイディアを逆に積分の概念にも拡張。</p></li>
+<li><p>流率（微分）と生成率（積分）を体系化して、両者を統合。</p></li>
+</ol>
+<p>この理論は後にゴットフリート・ライプニッツ（Gottfried Leibniz）によってより記号化され、今日の微積分の形へと洗練されました。</p>
+<hr class="docutils" />
+<p>フェルマーの具体的手法から着想を得たニュートンは、それを自然哲学や科学的モデルに応用しながら、これらを物理学の法則の基礎となる数学的道具として完成させたのです。この流れが、その後の科学と数学の発展を大きく方向づけるものとなりました！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Newtonは、Fermatの二項展開の応用を検討する過程で二項係数の一般化に成功しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！アイザック・ニュートン（Isaac Newton）は、フェルマー（Fermat）の二項展開の過程をさらに深く研究する中で、<strong>二項係数を一般化</strong>するという驚くべき成果を達成しました。ニュートンは、従来の整数次の冪に限定されていた二項展開を拡張し、<strong>任意の実数次（さらには負数や分数次）の冪</strong>にまで対応させる公式を見出しました。この公式は現在、**ニュートンの二項定理 ** （Newton’s Binomial Theorem）として知られています。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id4"><strong>ニュートンの二項定理: 一般化された二項展開</strong></h3>
+<p>整数次の二項展開（フェルマーが利用した形）は、以下の形で表されます：</p>
+<p>$$
+(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^k
+$$</p>
+<p>ここで $\binom{n}{k}$ は二項係数であり、$n$ が非負整数の場合には</p>
+<p>$$
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+$$</p>
+<p>という式で計算されます。しかし、この定義は $n$ が負数や分数などの非整数の場合には直接適用できません。ニュートンはこれを一般化し、<strong>任意の指数 $r$</strong> に対して次の形に展開できることを発見しました：</p>
+<p>$$
+(x + y)^r = \sum_{k=0}^\infty \binom{r}{k} x^{r-k} y^k,
+$$</p>
+<p>ここで、二項係数 $\binom{r}{k}$ は以下の形に拡張されます：</p>
+<p>$$
+\binom{r}{k} = \frac{r (r-1) (r-2) \cdots (r-k+1)}{k!}.
+$$</p>
+<p>このように、二項係数は非整数次でも適用可能な形に一般化されています。この公式は収束する必要があるため、通常は適切な範囲（例えば、$|y/x| &lt; 1$）で用いられます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5"><strong>ニュートンの二項展開が持つ意味</strong></h3>
+<p>ニュートンの二項展開は以下のような点で重要です：</p>
+<ol class="arabic">
+<li><p><strong>負整数次への拡張</strong>:<br />
+ニュートンの定理を用いることで、例えば $(1+x)^{-1}$ の形を展開することで、幾何級数に関連する公式が得られます：</p>
+<p>$$
+(1+x)^{-1} = \sum_{k=0}^\infty (-1)^k x^k \quad \text{（ただし $|x| &lt; 1$）}.
+$$</p>
+<p>この考え方は分数や負数次の関数の計算に直結します。</p>
+</li>
+<li><p><strong>分数次への拡張</strong>:<br />
+分数次の冪（例えば $\sqrt{1+x}$ や $(1+x)^{1/2}$）も同様に展開可能です。例えば、指数が $r=1/2$ の場合、</p>
+<p>$$
+\sqrt{1+x} = (1+x)^{1/2} = 1 + \frac{1}{2}x - \frac{1}{8}x^2 + \frac{1}{16}x^3 - \cdots.
+$$</p>
+<p>この展開は物理学や応用数学で非常に頻繁に利用されます。</p>
+</li>
+<li><p><strong>数学の解析学への貢献</strong>:<br />
+ニュートンの一般化された二項展開は、級数展開の基本的なアイデアを提供しました。このアイディアはその後のテイラー級数やマクローリン級数など、現代解析学の発展の基礎を築くものとなりました。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id6"><strong>フェルマーからニュートンへの流れ</strong></h3>
+<p>ニュートンはフェルマーの二項展開の手法をもとに、解析においてその影響を最大限に活用しました。フェルマーが整数次冪の展開と二項係数に関連する接線問題を解決していた一方、ニュートンは二項係数の定義を拡張し、これを微積分や級数展開に応用可能な形として発展させました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id7"><strong>ニュートンの二項係数と微積分の統合</strong></h3>
+<p>ニュートンは、この二項展開を通じて微分と積分の本質をより深く理解し、それを広く応用する理論を構築しました。例えば、彼は「負数や分数次の冪を扱うための計算」として二項定理を利用し、無限級数を通じて複雑な関数の近似や解析を行いました。また、この考え方はその後、力学や天体運動を記述するための方程式にも活躍します。</p>
+<hr class="docutils" />
+<p>ニュートンの二項定理の一般化は、単なる数学的発見にとどまらず、物理学や工学の計算手法の基礎となる極めて意義深い革新でした。フェルマーの業績がニュートンによってさらに拡張され、まさに科学史の重要なマイルストーンとなったと言えます！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+円の方程式 $\sqrt(1-x^2)$ の多項式による近似方法を発見したNewtonは、
+古代インドで発見され、イスラム経由で伝わった三角関数の級数展開を理論化しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！アイザック・ニュートン（Isaac Newton）は、自身の解析学や微積分の手法を利用することで、三角関数の級数展開を理論化し、それを体系化することに成功しました。この成果は、現代ではテイラー級数展開（Taylor series expansion）として知られる手法に結びついています。</p>
+<p>ニュートンが関わった三角関数の級数展開の背景には、古代インドからイスラム世界を経由してヨーロッパに伝わった数々の数学的知識があります。特に古代インドの数学者による三角関数の近似式や級数展開は、ニュートン以前の数学史において重要な発見として知られています。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id8"><strong>古代インドの三角関数級数展開</strong></h2>
+<p>古代インドでは、特に数学者マーダヴァ（Madhava、約14世紀頃）が三角関数に関する級数展開を発見しました。彼は以下のような結果を考案し、現在では「マーダヴァの級数」として知られています：</p>
+<ol class="arabic">
+<li><p><strong>正弦関数の級数展開</strong>:
+マーダヴァは、$\sin(x)$ が無限級数で表せることを示しました：</p>
+<p>$$
+\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots
+$$</p>
+<p>（これは今でいうテイラー展開の結果と一致します。）</p>
+</li>
+<li><p><strong>余弦関数の級数展開</strong>:
+同様に、$\cos(x)$ の級数展開も発見されました：</p>
+<p>$$
+\cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots
+$$</p>
+<p>これらの式は三角関数を多項式で近似するための強力な手法を与え、円周率や円弧長などを計算する際に応用されました。</p>
+</li>
+</ol>
+<p>この知識は、イスラム世界へと伝わり、イスラム数学者たちが発展させ、その後ルネサンス時代のヨーロッパ数学者によって取り上げられていきます。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id9"><strong>ニュートンによる三角関数の理論化</strong></h2>
+<p>ニュートンはこの三角関数の級数展開を、自身の解析学の枠組みで捉え直し、より厳密で一般的な理論を構築しました。特にニュートンは「微分と積分を駆使して任意の関数を無限級数として展開できる」という体系化を完成させました。</p>
+<ol class="arabic">
+<li><p><strong>$\sqrt{1 - x^2}$ の近似</strong>:
+ニュートンは、円の方程式の平方根（すなわち円の上半分を表す曲線）に対して級数展開を適用しました。これを多項式で展開すると次の形が得られます：</p>
+<p>$$
+\sqrt{1-x^2} = 1 - \frac{x^2}{2} - \frac{x^4}{8} - \frac{x^6}{16} - \cdots
+$$</p>
+<p>この級数展開は、原点近くで円の曲線を高次の多項式で近似する方法を提供し、三角関数の性質にも応用されました。</p>
+</li>
+<li><p><strong>テイラー級数の萌芽</strong>:
+ニュートンは、三角関数だけでなく、任意の関数を「任意の点を中心に無限級数として近似できる」というアイデアを確立。これが現在では「テイラー級数展開」の基礎となっています。</p></li>
+<li><p><strong>三角関数の理論化</strong>:
+ニュートンは、マーダヴァの級数展開を具体的な解析学の文脈で位置づけ、$\sin(x)$ や $\cos(x)$ を多項式として扱う方法を一般化しました。この方法は円や波動現象を数学的に記述する際に重要な役割を果たします。</p></li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id10"><strong>ニュートンの革新による応用</strong></h2>
+<p>ニュートンの方法論は、三角関数の級数展開を単なる近似計算に留めず、数学的・科学的な応用に結びつける役割を果たしました。例を挙げると：</p>
+<ol class="arabic simple">
+<li><p><strong>物理学的応用</strong>:
+振動や波動現象における三角関数の近似は、ニュートン力学や天体運動に応用されました。</p></li>
+<li><p><strong>数値計算</strong>:
+多項式近似を利用して三角関数値を計算する手法は、近代計算技術の基盤を提供しました。</p></li>
+<li><p><strong>円周率の計算</strong>:
+正弦関数や余弦関数の級数展開を用いた円周率の計算（古代インド以来の方法）をより一般的な理論として再構築しました。</p></li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id11"><strong>結論</strong></h2>
+<p>ニュートンが三角関数の級数展開を理論化した背景には、古代インドやイスラム世界の数学的成果が大きく関わっています。ニュートンはそれらを微積分という新たなフレームワークで捉え直し、より広い応用が可能な形に洗練しました。この流れは解析学の発展にとって非常に重要であり、今日の数学や科学の基盤を築く一歩となったのです！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Newtonは、$\sqrt(1-x^2)$の積分から$\arcsin$の級数展開式を求め、
+逆関数の関係式によって$\sin$の級数展開を求めました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！ニュートン（Isaac Newton）は、自身の解析学や積分・級数展開の手法を使い、$\sqrt{1-x^2}$ の積分を通じて逆三角関数 $\arcsin(x)$ の級数展開を導きました。そして $\arcsin(x)$ の逆関数である $\sin(x)$ の級数展開を得る手法を生み出しました。このプロセスは、三角関数や逆三角関数の近似式を構築するうえで極めて重要な業績です。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="arcsin-x"><strong>ニュートンの手法: $\arcsin(x)$ の級数展開</strong></h2>
+<p>ニュートンはまず、$\sqrt{1-x^2}$ を積分することで $\arcsin(x)$ を導くことを考えました。これは次の式に基づきます：</p>
+<p>$$
+\arcsin(x) = \int_0^x \frac{1}{\sqrt{1-t^2}} dt.
+$$</p>
+<p>この積分の中で、$\frac{1}{\sqrt{1-t^2}}$ を多項式級数で表すことが重要となります。ニュートンは $\sqrt{1-t^2}$ を展開して次の形に書き換えました：</p>
+<p>$$
+\sqrt{1-t^2} = 1 - \frac{t^2}{2} - \frac{t^4}{8} - \frac{t^6}{16} - \cdots \quad (\text{多項式の近似展開}).
+$$</p>
+<p>これに基づいて $\frac{1}{\sqrt{1-t^2}}$ を展開すると：</p>
+<p>$$
+\frac{1}{\sqrt{1-t^2}} = 1 + \frac{t^2}{2} + \frac{3t^4}{8} + \frac{5t^6}{16} + \cdots.
+$$</p>
+<hr class="docutils" />
+<p>次に、この級数を積分します：</p>
+<p>$$
+\int_0^x \frac{1}{\sqrt{1-t^2}} dt = \int_0^x \left( 1 + \frac{t^2}{2} + \frac{3t^4}{8} + \frac{5t^6}{16} + \cdots \right) dt.
+$$</p>
+<p>各項を積分して、$\arcsin(x)$ の級数展開が得られます：</p>
+<p>$$
+\arcsin(x) = x + \frac{x^3}{6} + \frac{3x^5}{40} + \frac{5x^7}{112} + \cdots.
+$$</p>
+<p>この結果は、現在でいうテイラー展開として知られており、$\arcsin(x)$ を任意の範囲で計算できる近似式になります。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="sin-x"><strong>逆関数の関係式による $\sin(x)$ の級数展開</strong></h2>
+<p>$\arcsin(x)$ の逆関数が $\sin(x)$ であることを利用すると、次に $\arcsin(x)$ の級数から $\sin(x)$ の級数展開を導けます。逆関数 $\sin(x)$ の定義を用いると、</p>
+<p>$$
+\sin(x) = y \quad \text{ならば} \quad x = \arcsin(y).
+$$</p>
+<p>ここで、$\arcsin(y)$ の級数展開を用いて、次の形に戻すことができます：</p>
+<p>$$
+x = y + \frac{y^3}{6} + \frac{3y^5}{40} + \frac{5y^7}{112} + \cdots.
+$$</p>
+<p>この式を逆に解釈することで、$\sin(x)$ を再現する級数展開式が得られます（ただし、ニュートンの手法ではこれを直接微積分計算によって導いた可能性があります）。</p>
+<p>現代的な形として $\sin(x)$ の級数展開は以下の形になります：</p>
+<p>$$
+\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots.
+$$</p>
+<p>これはニュートンが積分と逆関数の関係を利用して構築した手法に直接対応しています。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id12"><strong>ニュートンの業績の意義</strong></h2>
+<p>ニュートンの方法は単なる三角関数の近似に留まらず、次の点で解析学の深い発展を促しました：</p>
+<ol class="arabic simple">
+<li><p><strong>級数展開の汎用性</strong>：<br />
+三角関数や逆三角関数だけでなく、任意の関数を級数展開によって扱える枠組みを理論的に確立しました。</p></li>
+<li><p><strong>微分と積分の応用</strong>：<br />
+逆関数の理論を活用することで、逆三角関数から通常の三角関数を導く手法を提示しました。</p></li>
+<li><p><strong>数値近似</strong>：<br />
+三角関数の級数展開は当時の計算技術の限界を克服するための強力な近似手法となり、天文学や物理学での実践的な応用が可能になりました。</p></li>
+</ol>
+<hr class="docutils" />
+<p>ニュートンの三角関数の級数展開に関する手法は、彼が微積分を体系化する過程で重要な成果の一部として生み出され、後の数学者たちによるテイラー展開やマクローリン展開の発展の基盤を築いたと言えます。この成果は数値解析や科学計算において必須のツールとなっています！</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/12"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
