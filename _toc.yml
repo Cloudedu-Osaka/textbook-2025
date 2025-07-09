@@ -4,6 +4,19 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/07/09
+  numbered: false
+  chapters:
+  - file: chapters/12/1201.ipynb
+    title: Circle of Descartes
+  - file: chapters/12/12002.ipynb
+    title: Parabola of Descartes
+  - file: chapters/12/1203.ipynb
+    title: Fermat and Newton
+  - file: chapters/12/1204_newton.ipynb
+    title: Newton's generalized binomial theorem
+  - file: chapters/12/1205.ipynb
+    title: Assignment
 - caption: 2025/07/02
   numbered: false
   chapters:
