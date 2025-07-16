@@ -9,7 +9,7 @@ parts:
   chapters:
   - file: chapters/13/1301.ipynb
     title: Projection
-  - file: chapters/13/13002.ipynb
+  - file: chapters/13/1302.ipynb
     title: Conformal projection
 - caption: 2025/07/09
   numbered: false
