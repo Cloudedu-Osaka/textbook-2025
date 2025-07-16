@@ -4,6 +4,13 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/07/16
+  numbered: false
+  chapters:
+  - file: chapters/13/1301.ipynb
+    title: Projection
+  - file: chapters/13/13002.ipynb
+    title: Conformal projection
 - caption: 2025/07/09
   numbered: false
   chapters:
