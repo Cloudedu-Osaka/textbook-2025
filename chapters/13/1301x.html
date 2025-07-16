@@ -1,0 +1,895 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/13/1301x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/13/1301x.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1301.html">Projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12/1201.html">Circle of Descartes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1203.html">Fermat and Newton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1204_newton.html">Newton's generalized binomial theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1205.html">Assignment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11/1101_archimedes%231.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/13/1301x.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/13/1301x.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Thalesは円の直径に対する円周角は直角であることを証明しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、まさにその通りです！タレス（Thales）が記したこの幾何学的事実は「タレスの定理」として知られています。それは円の直径に対する円周角は常に直角（90°）になる、というものです。この定理はユークリッド幾何学の基本的な理論の一つであり、タレスが初めて証明したと言われています。</p>
+<h3 class="rubric" id="id1">タレスの定理とは:</h3>
+<p>「円の直径を底辺とする任意の三角形の頂点が円周上にある場合、その三角形は直角三角形になる。」</p>
+<p>簡単に言うと、直径を基準にした円周角はいつでも90°に固定されます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id2">証明の概要:</h3>
+<p>タレスの定理を証明するにあたり、円の中心や対称性を活用します:</p>
+<ol class="arabic simple">
+<li><p><strong>円の概念を利用</strong>:
+円の中心を $O$ とし、円の直径の両端を $A$ と $B$、円周上の一任意の点を $C$ とします。直径なので $AB$ は円の中心を通ります。</p></li>
+<li><p><strong>三角形の構成</strong>:
+三角形 $\triangle ABC$ を考えます。$O$ が円の中心であることから、$OA = OB = OC$ (円の半径) であるため、$OAC$ と $OBC$ は二等辺三角形になります。</p></li>
+<li><p><strong>角度の和の性質</strong>:
+$\angle ACB$ は円周角であり、この三角形の最も重要な角度です。円の中心角の性質を利用すると、$\angle ACB = \frac{\angle AOB}{2}$ となります。</p></li>
+<li><p><strong>直径と中心角の関係性</strong>:
+直径に対する中心角 $\angle AOB$ は常に $180^\circ$ であるため、円周角 $\angle ACB$ はその半分、つまり $\frac{180^\circ}{2}$ であり、結果として直角 ($90^\circ$) となります。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id3">タレスが歴史的に与えた影響:</h3>
+<p>タレスは、この定理を発展させ数学の論理的証明の重要性を示した最初期の人物の一人です。また、タレスがこの定理を使ってピラミッドの高さを測定したという逸話もあります。（幾何学的推論を応用した例です！）</p>
+<hr class="docutils" />
+<p>さらに説明が必要なら、数学的記法や図形を使って詳しく解説することもできます。お気軽にどうぞ！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+直角から斜辺に垂線を下ろした時、分割される二つの直角三角形は相似となり、
+共有する辺を中項とする幾何平均が成り立つ
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、そのとおりです！直角三角形におけるこの性質は非常に重要で、「高さに関する相似」として中学数学や幾何学でよく取り上げられるテーマです。以下に、詳細な説明とこの幾何平均がどのように成り立つのかを詳しく解説します。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id4">問題の状況</h2>
+<p>直角三角形 $\triangle ABC$ を考えます（$C$ が直角の頂点）。斜辺 $AB$ に対し、直角の頂点 $C$ から垂線を下ろし、その足を点 $D$ とします。このとき、三角形は次の3つの部分に注目することができます：</p>
+<ol class="arabic simple">
+<li><p><strong>元の直角三角形</strong> $\triangle ABC$</p></li>
+<li><p><strong>小さな直角三角形</strong> $\triangle ACD$</p></li>
+<li><p><strong>もう一つの小さな直角三角形</strong> $\triangle CBD$</p></li>
+</ol>
+<p>こうした分割に基づいて、「この2つの小さな直角三角形 $\triangle ACD$ と $\triangle CBD$ は元の直角三角形 $\triangle ABC$ とそれぞれ相似である」とわかります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5"><strong>相似の条件</strong></h3>
+<p>$\triangle ACD$、$\triangle CBD$、および $\triangle ABC$ の間で相似が成立する理由は、以下の通りです：</p>
+<ol class="arabic simple">
+<li><p>すべての三角形で直角の一つ（$90^\circ$）を共有していること</p></li>
+<li><p>斜辺 $AB$ の片側にある角度（$\angle CAB$ や $\angle ABC$）がすべて対応する角度で等しいこと（なぜなら平行線の性質や三角形内角などの幾何学的制約があるからです）</p></li>
+</ol>
+<p>これにより、次のような相似関係が成り立ちます：</p>
+<ul class="simple">
+<li><p>$\triangle ACD \sim \triangle ABC$</p></li>
+<li><p>$\triangle CBD \sim \triangle ABC$</p></li>
+<li><p>$\triangle ACD \sim \triangle CBD$</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id6"><strong>幾何平均の性質</strong></h3>
+<p>この相似関係が成り立つおかげで、幾何学的な比例が導かれます。この比例が「幾何平均」として知られる性質を生んでいます。</p>
+<ol class="arabic">
+<li><p>面積の比較や辺の比に基づき、高さ $CD$ を **中項（mean proportional） **  とする次の関係式が得られます：
+$$
+CD^2 = AD \cdot DB
+$$
+（垂線が中項として現れる幾何平均）</p>
+<p>これは、「点 $D$ で分割された斜辺 $AB$ の2つの部分 $AD$ と $DB$ の幾何平均が $CD$ である」という意味です。</p>
+</li>
+<li><p>また、それぞれの小三角形の斜辺を使った幾何平均も成り立ちます：</p>
+<ul class="simple">
+<li><p>$AC^2 = AB \cdot AD$</p></li>
+<li><p>$BC^2 = AB \cdot DB$</p></li>
+</ul>
+<p>これらはそれぞれ、対応する辺の長さが比例関係にあることを幾何学的に反映しています。</p>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id7"><strong>図解する場合</strong></h3>
+<p>もし視覚化するなら、次の図形を描いてみるとよいでしょう：</p>
+<ol class="arabic simple">
+<li><p>直角三角形 $\triangle ABC$ を描く。</p></li>
+<li><p>頂点 $C$ （直角を持つ点）から斜辺 $AB$ に垂線を下ろし、その交点を $D$ とする。</p></li>
+<li><p>$\triangle ACD$ および $\triangle CBD$ を目で分割し、それぞれに対応する相似関係を確認する。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id8"><strong>応用例</strong></h3>
+<p>この幾何平均に関する性質は、ピタゴラスの定理とも関連づけて考えることができます。また、以下のような応用もあります：</p>
+<ol class="arabic simple">
+<li><p><strong>三平方の定理の証明</strong>：
+上記の相似性を利用すれば、$CD$ を媒介変数とした方法で簡単に三平方の定理を導出することができます。</p></li>
+<li><p><strong>円や比例を活用した問題</strong>：
+実際の初等幾何や大学入試レベルの問題で、斜辺の長さや高さを求める際に役立ちます。</p></li>
+</ol>
+<p>必要があればもっと詳細に説明したり、コードでの計算例を示すことも可能です！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Euclidは原論において、同様に直角から斜辺に下ろした垂線によって直角三角形を分割し、
+双方の構成要素の面積が等しいことを等積変形 (剪断写像) によって証明した
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、その通りです！ユークリッド（Euclid）は『原論（Elements）』の中で、直角三角形において直角から斜辺に下ろされた垂線（高）に関連する性質についても論じています。その中で、等積性に基づいた議論が特に興味深いものとなっています。彼は現代的な「幾何平均」という言葉は使用しませんが、その本質を理解し、面積や等積変形（剪断写像）の概念を用いることでこれらの性質を証明しました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id9"><strong>ユークリッドの議論概要</strong></h3>
+<p>以下は、『原論』第6巻（命題 31）や第2巻の内容に関連するものです。</p>
+<ol class="arabic simple">
+<li><p>直角三角形 $\triangle ABC$ を考えます（$C$ が直角の頂点）。</p></li>
+<li><p>頂点 $C$ から斜辺 $AB$ に向けて垂線を下ろし、その足を $D$ とします。</p>
+<ul class="simple">
+<li><p>このとき $\triangle ABC$ は、小三角形 $\triangle ACD$ と $\triangle CBD$ に分割されます。</p></li>
+</ul>
+</li>
+<li><p>ユークリッドは、この場合、小三角形 $\triangle ACD$ と $\triangle CBD$ について以下を示しています：</p>
+<ul class="simple">
+<li><p>小三角形 $\triangle ACD$ の面積は、斜辺 $AB$ の互いに対応する部分 $AD$ に比例する。</p></li>
+<li><p>同様に、$\triangle CBD$ の面積は $DB$ に比例する。</p></li>
+</ul>
+</li>
+<li><p>さらに、この2つの三角形が、大元の三角形 $\triangle ABC$ の面積と比較して「等積的な分割要素」であることを、<strong>剪断変形（Shearing transformation）や幾何変換</strong>を用いて説明しています。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id10"><strong>等積性に基づく説明</strong></h3>
+<h4 class="rubric" id="id11"><strong>面積の一致</strong></h4>
+<ul class="simple">
+<li><p>元の三角形 $\triangle ABC$ の面積は $\frac{1}{2} \cdot AB \cdot CD$ で表されます（$CD$ は垂線の高さ）。</p></li>
+<li><p>一方、小三角形 $\triangle ACD$ の面積は $\frac{1}{2} \cdot AD \cdot CD$。</p></li>
+<li><p>小三角形 $\triangle CBD$ の面積は $\frac{1}{2} \cdot DB \cdot CD$。</p></li>
+<li><p>したがって、次が成り立ちます：
+$$
+\text{面積} (\triangle ACD) + \text{面積} (\triangle CBD) = \text{面積} (\triangle ABC)
+$$</p></li>
+</ul>
+<p>また、それぞれの小三角形は元の三角形と等角性や相似性を持つため、構成要素の比率に基づき等積性が成立します。</p>
+<h4 class="rubric" id="shearing-transformation"><strong>剪断写像（Shearing transformation）の利用</strong></h4>
+<p>剪断写像は、ある図形を高さを保ったまま底辺を平行移動させる変換です。ユークリッドはこの考えを用い、（図形を物理的に切り分けなくても）幾何的に一致する面積が移し替えられることを示しました。以下の方法が本質です：</p>
+<ul class="simple">
+<li><p>$\triangle ACD$ と $\triangle CBD$ を垂線 $CD$ を基準に「等積変形」することで、最初の直角三角形 $\triangle ABC$ 全体を埋める形で一致を示します。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id12"><strong>結論としての幾何平均との関係</strong></h3>
+<p>ユークリッドの証明では、実際は幾何平均そのものに言及しているわけではありませんが、間接的に以下の関係が成立します：</p>
+<ol class="arabic simple">
+<li><p>$CD$ を中項（幾何平均）として、$CD^2 = AD \cdot DB$。</p></li>
+<li><p>また、$\triangle ACD \sim \triangle ABC$、$\triangle CBD \sim \triangle ABC$ という相似性に基づいて、面積が斜辺 $AB$ の分割関係に比例していることも示されています。</p></li>
+</ol>
+<p>この過程において、彼は等積変形を「面積保存の原則」として活用し、量的かつ視覚的にそれを理解・証明したのです。</p>
+<hr class="docutils" />
+<p>ユークリッドの方法は現代の代数的な幾何学や解析的なアプローチと異なり、非常に視覚的かつ構成的である点が魅力的です。この手法は、直感的に図形の性質を理解するための素晴らしい指針になっています。図解が必要でしたら、補足としてご提供しますね！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Euclidは原論で余弦定理と同等の命題を証明している。
+三角形の垂心を作図し、垂線で分割される直角三角形に
+ピタゴラスの定理に用いた作図を拡張することで余弦定理を証明できる
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃる通り、ユークリッド（Euclid）は『原論』において余弦定理に相当する命題を含んでいます。現代的な形式での「余弦定理」の形ではありませんが、彼の方法は幾何学的構成によるもので、ピタゴラスの定理（直角三角形における性質）を拡張する形で任意の三角形にも応用しています。</p>
+<p>その証明は視覚的・構成的な方法に基づいており、垂心や垂線を用いた作図とピタゴラスの定理に関連付けて、今日の余弦定理に相当する関係式を導くことが可能です。以下で解説します。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id13"><strong>余弦定理の現代的な表記</strong></h2>
+<p>余弦定理は、任意の三角形における辺と角の関係を示す式です。もし三角形の頂点を $A, B, C$ とし、その対応する辺の長さを $a, b, c$ としたとき、次が成り立ちます：</p>
+<p>$$
+c^2 = a^2 + b^2 - 2ab \cos \theta
+$$</p>
+<p>ここで、$\theta$ は辺 $a$ と辺 $b$ が成す角（$\angle C$）です。余弦定理は直角三角形においてはピタゴラスの定理に帰着し、任意の三角形にも拡張できる、非常に基本的かつ重要な定理です。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id14"><strong>ユークリッドのアプローチ</strong></h2>
+<p>ユークリッドの『原論』第2巻の命題12と13において、余弦定理の幾何学的な証明（現代では「余弦定理の原型」と呼ばれるもの）が提示されています。彼はピタゴラスの定理を直角三角形以外の場合に拡張し、面積や線分の長さの関係を利用して証明しています。</p>
+<p>実際にこの証明を得るためには、「直角三角形に基づくピタゴラスの作図」を任意の三角形に応用し、さらに余弦の項（斜辺とその垂線の分解に基づく調整項）を加える必要があります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id15"><strong>証明の構成：ピタゴラスの定理から余弦定理へ</strong></h3>
+<p>以下、垂心と垂線を活用し、余弦定理を導出する過程を説明します（垂心を使うアプローチは数学教育や作図的なアプローチで特に親しまれています）：</p>
+<ol class="arabic simple">
+<li><p><strong>三角形の設定</strong><br />
+任意の三角形 $\triangle ABC$ を考えます。辺 $c$ を基準にし、その上に頂角（$\angle C = \theta$）がある場合として設定します。</p></li>
+<li><p><strong>垂線の引き方</strong><br />
+頂点 $C$ から辺 $AB$（基底）に対して垂線を下ろし、その交点を $P$ とする。このとき、$\triangle ABC$ は2つの直角三角形（$\triangle ACP$ と $\triangle BCP$）に分割される。</p></li>
+<li><p><strong>直角三角形のピタゴラスの定理を適用</strong></p>
+<ul class="simple">
+<li><p>$\triangle ACP$ について、ピタゴラスの定理に基づき、
+$$
+AC^2 = CP^2 + AP^2
+$$</p></li>
+<li><p>$\triangle BCP$ についても同様に、
+$$
+BC^2 = CP^2 + BP^2
+$$</p></li>
+</ul>
+</li>
+<li><p><strong>基底（辺 $c$ の分割）の関係を代入</strong><br />
+辺 $AB$ の長さを $c$ とし、分割された $AP$ と $BP$ の関係を次のように設定します：
+$$
+AP = b \cos \theta, \quad BP = c - AP = c - b \cos \theta
+$$</p></li>
+<li><p><strong>$AP$ および $BP$ の代入と整理</strong><br />
+上記の関係をそれぞれピタゴラスの定理に代入し、展開します。</p>
+<ul class="simple">
+<li><p>$\triangle ACP$ では、
+$$
+a^2 = CP^2 + (b \cos \theta)^2
+$$</p></li>
+<li><p>$\triangle BCP$ では、
+$$
+b^2 = CP^2 + (c - b \cos \theta)^2
+$$</p></li>
+</ul>
+</li>
+<li><p><strong>余弦項の導出</strong><br />
+これらの式をまとめて変形すると、最終的に次の式が成り立ちます：
+$$
+c^2 = a^2 + b^2 - 2ab \cos \theta
+$$</p></li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id16"><strong>結論</strong></h2>
+<p>ユークリッドが『原論』で示した形は、幾何学的な領域の方法を利用しており、現代的な三角関数こそ明示していないものの、垂線の作図やピタゴラスの定理をもとに余弦定理の本質を説明しています。</p>
+<p>また、垂心や直線分割を活用したアプローチに基づき、面積的な議論や線分長の関係を拡張するのは、ユークリッド的な思考方法として見事なものでした。もう少し具体的な作図が必要な場合には、ぜひ図示化してみましょう！ 😊</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+任意の三角形の一片に対応するベクトルを$w$とする。
+$w$と始点を共有する辺と並行なベクトルを$u$、
+残った辺と並行で始点を共有するベクトルを$v$とする。
+$w$の$u$や$v$への射影と余弦定理を活用すると、
+$w$を$u$と$v$の線形結合で表す係数が求められる。
+この係数は、Christoffelの記号と関連する。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>面白い問いかけですね！確かに、任意の三角形の辺に関するこのベクトル的な視点は、余弦定理や射影を通して線形代数や幾何的構造に結び付けられます。そして、さらに進めればChristoffel記号や微分幾何へとつながっていきます。以下でこのリンクを解説していきます。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id17"><strong>問題設定：ベクトルと余弦定理の利用</strong></h2>
+<h3 class="rubric" id="id18"><strong>三角形の辺をベクトルとして考える</strong></h3>
+<p>三角形において、次のようにベクトルを定義します：</p>
+<ul class="simple">
+<li><p>任意の三角形の一辺に対応するベクトルを $w$ とする。</p></li>
+<li><p>$w$ の始点を共有し、ほかの2つの辺と並行なベクトル $u$ および $v$ を考える。</p></li>
+</ul>
+<p>ここで、$w$ を $u$ と $v$ の<strong>線形結合</strong>で表現します。つまり、
+$$
+w = a u + b v,
+$$
+ここで $a$ と $b$ は係数です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id19"><strong>余弦定理を利用した射影</strong></h3>
+<p>$w$ を $u$ および $v$ の方向に射影することで、係数 $a$ と $b$ を求める過程を見ていきましょう。</p>
+<ol class="arabic">
+<li><p><strong>射影の公式</strong>
+ベクトル $w$ のベクトル $u$ への射影（スカラー成分）は、次のように表されます：
+$$
+\text{射影}_{u}(w) = \frac{w \cdot u}{u \cdot u}.
+$$
+ここで、$w \cdot u$ は $w$ と $u$ の内積、$u \cdot u$ は $u$ の自己内積（すなわち $|u|^2$）です。</p>
+<p>同様に、ベクトル $w$ のベクトル $v$ への射影も以下のように得られます：
+$$
+\text{射影}_{v}(w) = \frac{w \cdot v}{v \cdot v}.
+$$</p>
+<p>これらの射影をそれぞれ $a$ と $b$ に対応づけます。</p>
+</li>
+<li><p><strong>係数の幾何学的意味</strong></p>
+<ul class="simple">
+<li><p><strong>$a$ の計算</strong>:
+$$
+a = \frac{w \cdot u}{u \cdot u}.
+$$</p></li>
+<li><p><strong>$b$ の計算</strong>:
+$$
+b = \frac{w \cdot v}{v \cdot v}.
+$$</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id20"><strong>余弦定理を活用</strong></h2>
+<p>余弦定理の視点から、内積を展開して係数を明示的に求めます。余弦定理に基づく内積の式は次のように表されます：
+$$
+w \cdot u = |w| |u| \cos \theta,
+$$
+ここで $\theta$ は $w$ と $u$ の挟む角です。同様に、
+$$
+w \cdot v = |w| |v| \cos \phi,
+$$
+ここで $\phi$ は $w$ と $v$ の挟む角です。</p>
+<p>これを係数 $a$ と $b$ に代入することで、以下の式が得られます：</p>
+<ul class="simple">
+<li><p>$a = \frac{|w| |u| \cos \theta}{|u|^2} = \frac{|w| \cos \theta}{|u|},$</p></li>
+<li><p>$b = \frac{|w| |v| \cos \phi}{|v|^2} = \frac{|w| \cos \phi}{|v|}.$</p></li>
+</ul>
+<p>これにより、$w$ が $u$ と $v$ の線形結合で表されるため、射影の係数が明示的に得られます。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="christoffel"><strong>Christoffel記号との関係</strong></h2>
+<ol class="arabic">
+<li><p><strong>背景：Christoffel記号とは</strong>
+微分幾何におけるChristoffel記号（$\Gamma^k_{ij}$）は、曲がった空間での接ベクトル場の変化を記述するために登場します。これは一般に、曲面やリーマン幾何のベースとなる概念です。</p>
+<p>ベクトル $w$ をベクトル $u$ と $v$ で線形結合する式は、微分幾何においてリーマン計量（内積構造）に付随して登場します。特に、Christoffel記号は接空間における射影や内積に深く関連しており、係数 $a$ や $b$ は、この射影操作を一部に含んでいます。</p>
+</li>
+<li><p><strong>係数とChristoffel記号への対応</strong>
+$w = a u + b v$ の係数 $a, b$ は、局所的な接空間における<strong>ベクトルの基底への分解</strong>に対応します。この分解において、内積計量がリーマン幾何でのChristoffel記号を導く鍵になっています。</p>
+<p>特に、射影を通した係数は、
+$$
+\Gamma^k_{ij} = \frac{\partial e_i}{\partial x_j} \cdot e_k,
+$$
+のようにChristoffel記号に関与します。この視点で見ると、ピュアな幾何学からリーマン幾何の構造へ自然に接続できます。</p>
+</li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id21"><strong>まとめ</strong></h2>
+<ul class="simple">
+<li><p>ベクトル $w$ の射影を $u$ と $v$ を用いて表現し、それを線形結合で書き下すことで、射影係数が得られる。</p></li>
+<li><p>これらの係数は内積と余弦定理を通じて明示的に与えられる。</p></li>
+<li><p>線形結合係数の幾何学的解釈は、微分幾何でのChristoffel記号と密接に関連している。この記号は、曲がった空間での接ベクトル場の変化を記述するのに役立つ。</p></li>
+</ul>
+<p>もしさらに詳細や具体例をご覧になりたい場合は、ぜひお聞きください！ 😊</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/13"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
