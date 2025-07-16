@@ -60,12 +60,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/13/1302';</script>
     <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/13/1302.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="第十二回: 接線と微分・積分" href="../12/1201.html" />
+    <link rel="prev" title="第十三回: 微分の微分" href="1301.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +117,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -164,8 +162,9 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/16</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1301.html">Projection</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Conformal projection</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
 <ul class="nav bd-sidenav">
@@ -531,80 +530,6 @@
         ></iframe>
         </div></div>
 </div>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.geogebra.org/m/btmdztan">https://www.geogebra.org/m/btmdztan</a></p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/btmdztan/width/1905/height/1016&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-        <iframe
-            width="1000"
-            height="500"
-            src="https://www.geogebra.org/material/iframe/id/btmdztan/width/1905/height/1016"
-            frameborder="0"
-            allowfullscreen
-            
-        ></iframe>
-        </div></div>
-</div>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.geogebra.org/m/d8apttrc">https://www.geogebra.org/m/d8apttrc</a></p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.geogebra.org/material/iframe/id/d8apttrc/width/1905/height/1016&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-        <iframe
-            width="1000"
-            height="500"
-            src="https://www.geogebra.org/material/iframe/id/d8apttrc/width/1905/height/1016"
-            frameborder="0"
-            allowfullscreen
-            
-        ></iframe>
-        </div></div>
-</div>
-<div class="amsmath math notranslate nohighlight" id="equation-0f483590-e061-455d-ad6a-ed741541928a">
-<span class="eqno">()<a class="headerlink" href="#equation-0f483590-e061-455d-ad6a-ed741541928a" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
-b &amp;=&amp; c \cos(\alpha) + a \cos(\gamma) \\
-c &amp;=&amp; a \cos(\beta) + b \cos(\alpha)
-
-\end{eqnarray}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{eqnarray}
-b &amp;=&amp; \left( a \cos(\beta) + b \cos(\alpha) \right) \cos(\alpha) + a \cos(\gamma) \\
-  &amp;=&amp; a \cos(\beta) \cos(\alpha)  + b^2 \cos^2(\alpha) + a \cos(\gamma) \\
-  &amp;=&amp; -a \cos(\beta) \cos(\theta)  + b^2 \cos^2(\theta) + a \cos(\gamma) \\
-b \left(1-\cos^2(\theta) \right) &amp;=&amp; a \cos(\gamma) - a \cos(\beta) \cos(\theta) \\
-b \sin^2(\theta) &amp;=&amp; \|proj_{\vec{u}}\ \vec{w}\| - \|proj_{\vec{v}}\ \vec{w}\| \cos(\theta) \\
-b &amp;=&amp; \frac{1}{sin^2(\theta)} \left( \|proj_{\vec{u}}\ \vec{w}\| - \|proj_{\vec{v}}\ \vec{w}\| \cos(\theta) \right)\\
-  &amp;=&amp; \frac{1}{sin^2(\theta)} \left( \frac{\vec{w}\cdot\vec{u}}{\vec{u}\cdot\vec{u}} - \frac{\vec{w}\cdot\vec{v}}{\vec{v}\cdot\vec{v}} \cos(\theta) \right) \\
-  &amp;=&amp; \Gamma^u
-\end{eqnarray}
-\end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(\alpha + \theta = \pi\)</span> なので、<span class="math notranslate nohighlight">\(\cos(\alpha) = -\cos(\theta)\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{eqnarray}
-c &amp;=&amp; -\frac{1}{sin^2(\theta)} \left( \|proj_{\vec{u}}\ \vec{w}\| \cos(\theta) - \|proj_{\vec{v}}\ \vec{w}\| \right)\\
-  &amp;=&amp; -\frac{1}{sin^2(\theta)} \left( \frac{\vec{w}\cdot\vec{u}}{\vec{u}\cdot\vec{u}} \cos(\theta) - \frac{\vec{w}\cdot\vec{v}}{\vec{v}\cdot\vec{v}} \right) \\
-  &amp;=&amp; \Gamma^v
-\end{eqnarray}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\vec{w} = \Gamma^{u}\ \vec{u} + \Gamma^{v}\ \vec{v}
-\]</div>
 </section>
 </section>
 </section>
@@ -639,6 +564,24 @@ c &amp;=&amp; -\frac{1}{sin^2(\theta)} \left( \|proj_{\vec{u}}\ \vec{w}\| \cos(\
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="1301.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">第十三回: 微分の微分</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../12/1201.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">第十二回: 接線と微分・積分</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
