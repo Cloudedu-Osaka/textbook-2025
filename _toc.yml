@@ -4,6 +4,17 @@
 format: jb-book
 root: chapters/intro.md
 parts:
+- caption: 2025/07/23
+  numbered: false
+  chapters:
+  - file: chapters/14/1401_neumann.ipynb
+    title: von Neumann
+  - file: chapters/14/1402_0_euler.ipynb
+    title: Euler
+  - file: chapters/14/1403_add.ipynb
+    title: Addendum
+  - file: chapters/14/1404.ipynb
+    title: Derivertives of Derivertives
 - caption: 2025/07/16
   numbered: false
   chapters:
