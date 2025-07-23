@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/14/1402x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/14/1402x.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1401_neumann.html">von Neumann</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1402_0_euler.html">Euler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1403_add.html">Addendum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1404.html">Derivertives of Derivertives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../13/1301.html">Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/1302.html">Conformal projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12/1201.html">Circle of Descartes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1203.html">Fermat and Newton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1204_newton.html">Newton's generalized binomial theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1205.html">Assignment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11/1101_archimedes%231.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/14/1402x.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/14/1402x.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Keplerの時代、大きな数の積は、三角関数表を逆引きし、三角関数の加法定理を使って積を和をに変換しました。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、その通りです。ケプラー（Johannes Kepler）の時代には、コンピューターのような機械計算装置が存在しなかったため、大きな数や複雑な数の計算を合理化するためのさまざまな工夫がなされていました。その一つが三角関数とその性質を利用する方法です。</p>
+<p>具体的には、「積を和に変換する」技法は、三角関数の<strong>加法定理</strong>に基づいています。この方法では、任意のふたつの数の掛け算（乗算）を三角関数表を使って計算できる形に変換しました。三角関数の加法定理には以下のような関係があります：</p>
+<p>$$
+\cos(A)\cos(B) = \frac{1}{2}[\cos(A+B) + \cos(A-B)]
+$$</p>
+<p>または</p>
+<p>$$
+\sin(A)\sin(B) = \frac{1}{2}[\cos(A-B) - \cos(A+B)].
+$$</p>
+<p>これによって、積が三角関数の和（つまり加減）に変わります。この変換を利用することで、計算の負担を大幅に軽減し、三角関数の既存の表を参照することで効率的に計算できるようになるのです。</p>
+<h3 class="rubric" id="id1">ケプラーの三角関数表の利用方法</h3>
+<p>ケプラーの時代には、非常に精密に作られた三角関数表（例えば、天文学で有名な<strong>ティコ・ブラーエの表</strong>やその後の表）がすでに存在していました。こうした表を参照しながら、「積を割り出す」計算をしていたのです。この方法を採用する理由は、大きな数をそのまま計算しようとしても誤差が増大しやすいのに対して、三角関数は正確な値が広く普及していたため、高精度の計算を可能にするからです。</p>
+<h3 class="rubric" id="id2">例: 積の計算</h3>
+<p>たとえば、数値 $x$ と $y$ の積を得たい場合、以下のようにして計算することができます：</p>
+<ol class="arabic simple">
+<li><p>数値 $x$ と $y$ を三角関数上の角度に対応させる（適切な変換が必要）。</p></li>
+<li><p>それらを $\cos$ または $\sin$ に適用した後、加法定理を用いて積を簡略化する。</p></li>
+<li><p>再び数値に変換する。</p></li>
+</ol>
+<p>この方法は、非常に大規模な計算（例えば天文学の軌道計算など）にも応用されていました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id3">この方法の遺産</h3>
+<p>このような方法は、ナピアの対数の発明とも関係しています。ケプラーの時代にはまだ対数が完全な形に発展していませんでしたが、その「積を和に」という発想は後の対数の概念と密接に結びついています。対数が登場すると、乗算は対数の加法になるためさらに効率化され、計算技術が飛躍的に進歩する基盤が作られることになります。</p>
+<p>ケプラーの時代のこうした工夫は、天文学だけでなく、数学全体の進化の重要なマイルストーンと言えますね！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+ちなみに、イスラム経由で伝わったインド数字を使っていますが、まだ小数点は発見されていません
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！ケプラーの時代には、インド数字（アラビア数字とも呼ばれる）がヨーロッパで広く利用されるようになっていましたが、小数点の概念はまだ確立されていませんでした。インド数字そのものはイスラム世界を通じて12世紀頃ヨーロッパに伝わり、計算の効率を大きく向上させましたが、分数や小数の扱いはまだ手作業的で少々不便なものでした。</p>
+<h3 class="rubric" id="id4">小数点の登場はその後のこと</h3>
+<p>小数点（decimal point）の概念は、16世紀後半から17世紀初頭に発展していきます。特に、小数点の現代的な形を確立したのはスコットランドの数学者**ジョン・ネイピア（John Napier） ** （対数の発明者としても有名）です。彼は小数点を数値表記に組み込むことを提案し、計算の利便性を飛躍的に高めました。</p>
+<p>ただし、ケプラーの時代（1571年-1630年）の数学や天文学では、依然として分数や整数部分を区別する方法での記述が多かったため、現在のような小数表現は一般的ではありませんでした。ケプラー自身も計算には頻繁に分数を使っており、例えば彼の著書である『新天文学（Astronomia Nova）』や『ルドルフ表（Tabulae Rudolphinae）』では、小数ではなく分数や天文学の伝統的な単位（度、分、秒）を用いて結果を表記しています。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5">計算の工夫：小数点なしの時代</h3>
+<p>小数点がない時代には、インド数字を用いても次のような方法で計算が進められました：</p>
+<ol class="arabic simple">
+<li><p><strong>分数を利用する</strong>: 分数は全体の精密な表現が可能だったため、1/2、1/3などで計算を進めることが一般的でした。ただ、計算が複雑になると誤差を避けるための工夫が必要でした。</p></li>
+<li><p><strong>比率や比例</strong>: ケプラーの天文学計算では、比率を使った計算が主流でした。これにより、小数点がなくても適切な関係を維持したまま軌道や天体運動を記述しました。</p></li>
+<li><p><strong>天文学に特化した「度・分・秒」システム</strong>: 天文学では角度を「度（°）」「分（′）」「秒（″）」で表記し、それを用いて複雑な計算を行う文化が根付いていました。このシステムは小数の概念なしでも効率的で、ケプラーの軌道計算でも頻繁に活用されています。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id6">インド数字と小数点登場の影響</h3>
+<p>小数点が普及したことで、インド数字はさらに効果を発揮するようになります。特に天文学者や数学者は、複雑な天体計算に関してより直感的で高速な記述と手計算が可能となり、後のニュートンやライプニッツの時代における計算精度の進歩に繋がりました。</p>
+<p>ケプラーは小数点のなかった時代でも、インド数字や三角関数を駆使し、惑星運動の規則（例：ケプラーの法則）を発見しましたが、その計算は現代から見ると驚くべき精密さを達成しています！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+より単純な積・和変換方法を模索したNapierは、$(1-10^{-7})^{10^7}$を底とする対数表を作成しました。
+Napierはその関数をLogarithmと名付けました。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>そうですね！ナピア（John Napier）は、「積を和に変換する」という計算の効率化を追求した結果、現代で知られる**対数（logarithm） ** という概念を生み出しました。この革命的なアイデアによって、複雑な乗算や除算が簡単な加算や減算に置き換えられるようになり、計算技術が飛躍的に発展しました。</p>
+<h3 class="rubric" id="id7">ナピアの対数の定義</h3>
+<p>ナピアが考案した対数は、現代的な対数の定義とはやや異なります。ナピアの対数は次の式を基本として定義されました：</p>
+<p>$$ \text{対数とは、数列 } : (1 - 10^{-7})^{10^7} : \text{の形で定義される数値の指数部分に対応するもの}。 $$</p>
+<p>この式において、基数（底数）は $(1-10^{-7})^{10^7}$ という値です。この基数はナピアが計算に便利になるよう調整したもので、現代の自然対数の基数 $e$ に近い値ですが、完全に一致するものではありません。</p>
+<p>具体的な考え方：</p>
+<ol class="arabic simple">
+<li><p>ナピアは、連続的に減少する級数（等比数列）の数値を時間とともに対応させました。</p></li>
+<li><p>実際の値とその「変化率」の関係に基づき、対数表を作成しました。</p></li>
+</ol>
+<p>この基数の取り方は非常にユニークで、ナピアが対数を現代的なデカルト的座標や微積分を持たずに作り上げたことを考えれば驚くべき業績です。</p>
+<h3 class="rubric" id="id8">対数と名称の由来</h3>
+<p>彼はこの関数を<strong>logarithm</strong>と名付けました。言葉の由来は以下の通りです：</p>
+<ul class="simple">
+<li><p>**logos ** （ギリシャ語で「比率」や「比」を意味する言葉）</p></li>
+<li><p>**arithmos ** （ギリシャ語で「数」を意味する言葉）</p></li>
+</ul>
+<p>したがって、logarithm という言葉は「比率の数（比率の測定）」を意味します。ナピアがこのような命名を行ったのは、対数が数値の間の関係（特に比例関係）を表現するための道具であると理解していたからです。</p>
+<h3 class="rubric" id="id9">ナピアが作成した対数表</h3>
+<p>ナピアの対数表は、数値の掛け算や除算を加算や減算に変換するための非常に有用なツールでした。対数表の仕組みは以下のように使われます：</p>
+<ol class="arabic simple">
+<li><p>対数値を求めたい数値を表から探します。</p></li>
+<li><p>掛け算をしたい場合、それぞれの数値の対数値を求め、合計します。</p></li>
+<li><p>得られた合計値に対応する元の数値（逆対数）を表で参照します。</p></li>
+</ol>
+<p>これによって、当時計算に膨大な時間を必要とした大数の掛け算が簡略化されました。ナピアの対数表は数値が非常に精密に作られており、天文学や航海術、測量などの分野ですぐに応用されました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id10">ナピアの業績のインパクト</h3>
+<p>ナピアの対数はケプラーをはじめとする同時代の天文学者や科学者たちに大きな影響を与えました。特にケプラーは、巨大な計算を行うために対数を積極的に活用した1人であり、ナピアの発明を絶賛しています。ナピアの対数を軸に発展した数学は後のニュートンやライプニッツによる微積分につながり、近代科学の基礎を築くこととなったのです。</p>
+<p>少し歴史的な文脈を加えると、ナピアが対数を発明した1600年代は、計算技術の革命の始まりの時代でした。彼の発明は、「天文学から船乗りまで、計算を必要とするあらゆる人々の生活を変えた」と評されることもあります。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+ちなみにNapierは小数点を発見しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、その通りです！ジョン・ネイピア（John Napier）は、対数という概念の発明だけでなく、<strong>小数点</strong>を発見・提案した人物としても知られています。この業績は彼が数学と科学に与えた影響の重要な部分を占めています。</p>
+<h3 class="rubric" id="id11">小数点の発見</h3>
+<p>ネイピアが小数点を導入したのは、計算を簡略化し、数値の記述を統一するためでした。彼が小数点に関するアイデアを打ち出したのは、対数表を作成する過程で数値の精密な扱いを要することに気づいたからだとされています。彼は、小数点を用いることで数とその分数的な表現を整然と示し、計算をよりスムーズに行える仕組みを作り上げました。</p>
+<p>当時の数学表記は、分数（例えば $\frac{1}{2}$ や $\frac{1}{3}$）や特殊な単位（例えば度・分・秒で角度を表す記法など）に依存していましたが、小数点を導入することでそれらの表記法から脱却し、数値を統一的に扱えるようになりました。</p>
+<h3 class="rubric" id="id12">小数点の影響</h3>
+<p>ネイピアの小数点に対する業績は次のような重要な意味を持ちます：</p>
+<ul class="simple">
+<li><p><strong>計算の便利さ向上</strong>: 対数計算や多桁の掛け算・割り算を行う際、小数を使うことで計算効率が大幅に改善しました。</p></li>
+<li><p><strong>計算の正確性向上</strong>: 小数点を用いることで、分数を使った計算よりも精度が向上し、誤差が減少しました。</p></li>
+<li><p><strong>普遍的な記述法</strong>: 小数点はどの分野においても使えるため、天文学や測量、建築などの数値計算の基盤として世界的に普及しました。</p></li>
+</ul>
+<h3 class="rubric" id="id13">ネイピアの業績を追った歴史</h3>
+<p>ネイピアの小数点は1614年に出版された彼の著書『Constructio』の中で初めて示されたと考えられています。この本は彼の対数の発明を解説したものですが、小数点の数学的扱いもそこで体系化されています。</p>
+<p>ちなみに、小数点の導入という概念自体は彼が初めて文字どおり「記号として発明した」ものですが、数学者の間で徐々に受け入れられました。その後、イギリスを中心にヨーロッパ中へ広がり、デカルトやニュートンの時代にはすっかり標準的な記法として定着しました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id14">ネイピアの発明の意義</h3>
+<p>ジョン・ネイピアの業績はまさに計算技術革命と言ってよく、その影響は現代にまで続いています。もしネイピアが小数点と対数を発明していなかったとしたら、科学者や天文学者が膨大な計算を行う効率性は著しく低下していたでしょう。また、小数点が普及することで数学がより「汎用的」になり、異なる分野の科学技術が互いに加速する基盤が生まれました。</p>
+<p>こうしたネイピアの業績を考えると、小数点という単純な記号のようにも見えるものが、実は人類の科学発展にとって不可欠だったのだと実感できますね！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Newtonは自身が発明した一般化された二項定理によって双曲線 $1/(1+x)$の積分を求め、
+対数の和の法則を満たす対数関数であるらしいことを発見しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>そうです！アイザック・ニュートン（Isaac Newton）は、自身が発明した<strong>一般化された二項定理</strong>を用いて、関数 $1/(1+x)$ の積分を解析し、その結果として対数関数が持つ性質を明らかにしました。特に、積分結果が対数関数の形式を満たし、さらにその関数が対数の「和の法則」を満たすことを見出した点は重要です。この発見は対数の解析的理解を深める上で重要でした。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id15">一般化された二項定理による関数展開</h3>
+<p>ニュートンの<strong>一般化された二項定理</strong>は、整数ではない冪指数を持つ形で二項式を展開する手法です。これは、現代では次の形として記述される公式です：</p>
+<p>$$
+(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots,
+$$</p>
+<p>ここで $n$ は整数でなくても適用可能（一般化）され、収束範囲において無限級数として展開できます。この定理をニュートンは差分法や積分に応用することで、厳密な関数を得ました。</p>
+<h3 class="rubric" id="x">双曲線 $1/(1+x)$ の積分</h3>
+<p>ニュートンは $1/(1+x)$ の積分値を求める際、この二項定理を使用して分母の形をシリーズ展開しました。関数 $1/(1+x)$ は次の形に展開できます：</p>
+<p>$$
+\frac{1}{1+x} = 1 - x + x^2 - x^3 + x^4 - \cdots,
+$$</p>
+<p>この結果を項ごとに積分することで、ニュートンは次の結果を得ました：</p>
+<p>$$
+\int \frac{dx}{1+x} = \int (1 - x + x^2 - x^3 + x^4 - \cdots ) dx,
+$$</p>
+<p>積分を取ると、結果は次のようになります：</p>
+<p>$$
+\int \frac{dx}{1+x} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots + C,
+$$</p>
+<p>ここで、無限級数として表されるこの結果は、対数関数 $\ln(1+x)$ に対応するとニュートンは発見しました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id16">対数関数の性質と和の法則</h3>
+<p>ニュートンはまた次の重要な点を認識しました：</p>
+<ol class="arabic simple">
+<li><p>関数 $\ln(1+x)$ の性質として、微分すると $1/(1+x)$ に戻ること。</p></li>
+<li><p>積分値 $\int 1/(1+x) , dx$ が対数関数の形式に一致していること。</p></li>
+<li><p>$\ln(1+x)$ が和の法則（加法定理）を満たすという点。</p></li>
+</ol>
+<p>加法定理とは、現代の記法では次のように記述されます：</p>
+<p>$$
+\ln(ab) = \ln(a) + \ln(b),
+$$</p>
+<p>ニュートンは解析的考察を通じて対数関数がこの性質を有していることを確認しました。この「和の法則」を満たす対数関数は、すでにナピアや他の数学者たちによって経験的に知られていましたが、ニュートンはそれを微積分を通して解析的に理解したといえます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id17">ニュートンの業績の意義</h3>
+<p>ニュートンのこの研究は、微積分を基礎にして対数関数を厳密に解析し、その性質を数列展開や積分と関連づけた点で重要です。具体的な意義は以下の通りです：</p>
+<ol class="arabic simple">
+<li><p><strong>微積分との結びつき</strong>: 対数関数が積分を通じて導かれることを示し、その性質が微分・積分とも強く結びついていることを明示しました。</p></li>
+<li><p><strong>現代的な解析への一歩</strong>: 無限級数を用いた関数展開とその積分解析を確定したことで、現代的な解析学の土台を構築しました。</p></li>
+<li><p><strong>数学の応用範囲拡大</strong>: こうした数学的洞察は、その後の物理学、特に運動学や天文学におけるモデル化に重要な役割を果たします。</p></li>
+</ol>
+<p>ニュートンの発見を経て、対数関数は解析学の主要テーマとなり、さらにライプニッツやオイラーの業績によって深められていきました。ニュートンの双曲線の積分解析は、数学の歴史において重要なターニングポイントのひとつと言えるでしょう！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Leibnizは自身が発明した微分のチェインルールを対数の和の法則に適用し、
+極限による微分の定義に基づいて対数関数の微分を求めました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、それは正しい観察です！ゴットフリート・ライプニッツ（Gottfried Wilhelm Leibniz）は、微積分の理論を発展させたときに、自身が発明した<strong>微分のチェインルール ** （連鎖律）を使い、対数関数の性質を精密に解析しました。その過程で、極限を用いた微分の定義に基づいて</strong>対数の微分法則**を求めました。ライプニッツの仕事は、対数関数の本質的な性質を微分の視点から理論的に確立した重要な一歩でした。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id18">チェインルールの発明と対数関数の解析</h3>
+<p>ライプニッツの微分記法では、変数間の関数関係を解析する便利な方法が導入されました。特に、チェインルール（連鎖律）は次のように記述されます：</p>
+<p>$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx},
+$$</p>
+<p>つまり、ある関数 $y$ が別の媒介変数 $u$ に依存し、その媒介変数がさらに $x$ に依存している場合の微分を、このように変数間で分割して解析するルールです。</p>
+<p>ライプニッツはこの連鎖律を利用し、対数関数の性質を微分の視点で解析しました。具体的には、<strong>対数の和の法則</strong>が微分でも成り立つかどうかを調べるため、次の形式で議論を展開しました。</p>
+<h3 class="rubric" id="id19">対数の加法定理と微分</h3>
+<p>対数関数には加法定理が成り立つことが知られています：</p>
+<p>$$
+\ln(ab) = \ln(a) + \ln(b).
+$$</p>
+<p>ライプニッツは、この性質を微分に適用できるかどうかを解析的に検証しました。彼は、関数 $\ln(x)$ の性質だけでなく、この性質が微分という操作下で保たれることを示しました。</p>
+<h4 class="rubric" id="id20">極限による対数関数の微分</h4>
+<p>微分の基本定義に基づいて、ライプニッツは次の極限を用いて対数関数の微分を直接求めました：</p>
+<p>$$
+\frac{d}{dx}[\ln(x)] = \lim_{h \to 0} \frac{\ln(x + h) - \ln(x)}{h}.
+$$</p>
+<p>ここで、<strong>対数の和の法則</strong>を適用して右辺を変形すると、次のようになります。</p>
+<ol class="arabic">
+<li><p>$\ln(x + h) - \ln(x)$ を対数の性質 $\ln\left(\frac{x + h}{x}\right)$ に置き換える：
+$$
+\frac{\ln(x + h) - \ln(x)}{h} = \frac{\ln\left(\frac{x + h}{x}\right)}{h}.
+$$</p></li>
+<li><p>さらに、分数 $\frac{x + h}{x}$ を分解すると、$\frac{x + h}{x} = 1 + \frac{h}{x}$：</p>
+<p>$$
+\frac{\ln\left(\frac{x + h}{x}\right)}{h} = \frac{\ln\left(1 + \frac{h}{x}\right)}{h}.
+$$</p>
+</li>
+<li><p>極限を取る際、$\ln\left(1 + u\right) \approx u$（$u$ が十分小さい場合）の近似を適用します：</p>
+<p>$$
+\lim_{h \to 0} \frac{\ln\left(1 + \frac{h}{x}\right)}{h} = \lim_{h \to 0} \frac{\frac{h}{x}}{h} = \frac{1}{x}.
+$$</p>
+</li>
+</ol>
+<p>これにより、ライプニッツは次の結果を得ました：</p>
+<p>$$
+\frac{d}{dx}[\ln(x)] = \frac{1}{x}.
+$$</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id21">ライプニッツの微分記法と対数微分法</h3>
+<p>ライプニッツの発明した記法（$dx$, $dy$ の形）を用いると、対数関数の微分は次のように表されます：</p>
+<p>$$
+d[\ln(x)] = \frac{dx}{x}.
+$$</p>
+<p>つまり、対数関数を微分すると「関数の変化量」がその関数自体で割られた形になる、という非常にシンプルで美しい結果が導かれます。</p>
+<p>もし、関数が複合的な形（例えば $\ln(f(x))$）を持っている場合には、チェインルールを適用します：</p>
+<p>$$
+\frac{d}{dx}[\ln(f(x))] = \frac{1}{f(x)} \cdot f’(x).
+$$</p>
+<p>これが、現代でも標準的に使われる<strong>対数微分法</strong>となります。チェインルールによって、複雑な関数の微分も簡易的に解析できるようになりました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id22">ライプニッツの業績の意義</h3>
+<p>ライプニッツの微積分理論は、ニュートンとともに現代数学の基盤を築いたものですが、とりわけ彼の連鎖律や微分の定式化が対数関数に適用されたことで、以下の重要な意味をもちます：</p>
+<ol class="arabic simple">
+<li><p><strong>対数関数の解析的性質の理解</strong>: 微分が対数関数の性質にどのように作用するかを理論的に確立しました。</p></li>
+<li><p><strong>応用範囲の拡大</strong>: 対数微分法は複雑な関数の解析において非常に有効で、物理学や天文学、工学の分野に広く応用されました。</p></li>
+<li><p><strong>統一的な記法の導入</strong>: ライプニッツの記法は、対数関数などを含むほぼすべての微積分操作に適用でき、現代の数学教育でも標準的に用いられています。</p></li>
+</ol>
+<p>ライプニッツの連鎖律＋対数関数の微分の研究は、その後のオイラーやラグランジュによる解析学の発展に道を開き、さらに自然対数の基数 $e$ や指数関数との関係を深化させていきました。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Eulerは、$(1+x/N)^N$の二項展開から指数関数の底を求めました。
+底はNapierの対数の底の逆数になっていることを示しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>そうですね！オイラー（Leonhard Euler）は、指数関数の底を理論的に導き出す過程で、<strong>二項展開</strong>を利用し、自然対数の底 $e$ を数学的に厳密な形で定義しました。そして重要なことに、彼はこの値がナピア（John Napier）の対数の底の逆数であることを示しています。オイラーの解析的なアプローチは、指数関数と対数関数を統一的に捉える上で極めて重要な業績です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="x-n-n">オイラーの方法：$(1+x/N)^N$ の極限による定義</h3>
+<p>オイラーは次の形式を考えました：</p>
+<p>$$
+\left(1 + \frac{1}{N}\right)^N,
+$$</p>
+<p>ここで、$N$ を大きな値にすると、二項展開を利用してこの式を調べることができます。この式が特定の値に収束することを知り、その値が自然対数の基数であることを示しました。</p>
+<h4 class="rubric" id="id23">二項展開の解析</h4>
+<p>二項展開を適用すると、次の形になります：</p>
+<p>$$
+\left(1 + \frac{1}{N}\right)^N = 1 + N \cdot \frac{1}{N} + \frac{N(N-1)}{2!} \cdot \left(\frac{1}{N}\right)^2 + \frac{N(N-1)(N-2)}{3!} \cdot \left(\frac{1}{N}\right)^3 + \cdots.
+$$</p>
+<p>これを簡略化すると：</p>
+<p>$$
+\left(1 + \frac{1}{N}\right)^N = 1 + 1 + \frac{1}{2!} + \frac{1}{3!} + \dots + \frac{1}{k!} + \dots
+$$</p>
+<p>ここで、項が収束する極限では式全体が次の値に近づきます。つまり：</p>
+<p>$$
+\lim_{N \to \infty} \left(1 + \frac{1}{N}\right)^N = e,
+$$</p>
+<p>この値が<strong>自然対数の底</strong>と定義されました。</p>
+<h3 class="rubric" id="id24">オイラーの発見：ナピアの底との関係</h3>
+<p>ナピアが最初に作成した対数表における底は、彼が定義した対数スケールのうち、次の値に対応していました：</p>
+<p>$$
+\text{ナピアの底 } = \left(1 - 10^{-7}\right)^{10^7}.
+$$</p>
+<p>するとこの値は極限的に次の形式になります：</p>
+<p>$$
+\lim_{N \to \infty} \left(1 - \frac{1}{N}\right)^N.
+$$</p>
+<p>オイラーはこうした関係性を比較し、ナピアの底が自然対数の底 $e$ の逆数であることを示しました。つまり：</p>
+<p>$$
+\text{ナピアの底} = \frac{1}{e}.
+$$</p>
+<p>これを数学的にも直感的にも整理すると、ナピアの対数のスケール（減少的なスケール）と自然対数のスケール（増加的なスケール）が互いに逆数の関係にあることを意味します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id25">結論：オイラーの功績</h3>
+<p>オイラーの業績は、自然対数の底としての $e$ を初めて厳密に定義したことだけでなく、歴史的な文脈（ナピアの対数）との関係性を明確にした点で重要です。以下の意義があります：</p>
+<ol class="arabic simple">
+<li><p><strong>指数関数と対数関数の基数を統一</strong>:
+オイラーの分析により、$e$ が指数関数と自然対数両方の基数として重要であることが示されました。</p></li>
+<li><p><strong>ナピアの底との逆数関係の発見</strong>:
+オイラーは、$e$ がナピアの対数底の逆数であることを明らかにし、初期の対数理論を現代的な基準に統合しました。</p></li>
+<li><p><strong>数学的厳密性の向上</strong>:
+$e$ を極限や級数展開を通じて導出することで、解析学（特に微積分）における基盤を固めました。</p></li>
+</ol>
+<p>オイラーの導入した $e$ は、その後の数学や科学・工学など広範な分野で不可欠な存在となり、対数関数の性質とその歴史的意義も数学的に洗練された形で築かれていったのです！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+NewtonやLeibnizですらボンヤリとした認識しかできなかった対数と指数関数を、Eulerは一気に体系化しました。
+Eulerは、$e$を底とする指数関数が微分で不変であること、
+さらに、二階微分の符号が反転する微分方程式の解として複素指数関数を定義しました
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！レオンハルト・オイラー（Leonhard Euler）は、数学史の中でも特に重要な役割を果たし、自然対数の底 $e$ を中心に対数関数と指数関数を完全に体系化しました。そして、彼はこれらの関数が持つ微分や微分方程式の性質を余すところなく解明し、微分方程式の解として複素指数関数をも定義しました。ニュートンやライプニッツが微分・積分を生み出したときにはまだ「ボンヤリ」とした部分が多かった概念を、オイラーは驚くほど明快に体系化したのです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="e-x"><strong>$e^x$ の微分で不変性</strong></h3>
+<p>オイラーが行った大きな業績のひとつは、指数関数 $e^x$ が微分によって不変であることを証明し、その対数関数との性質を厳密に結びつけた点です。</p>
+<h4 class="rubric" id="id26">微分による不変性</h4>
+<p>オイラーは指数関数 $e^x$ を考え、微分操作の下でどのように変化するかを調べました。彼は次の基本的な式を導きました：</p>
+<p>$$
+\frac{d}{dx} e^x = e^x,
+$$</p>
+<p>すなわち、<strong>$e^x$ を微分すると元の関数 $e^x$ に戻る</strong>という性質です。この結果は指数関数の性質として非常に特異であり、関数の中でも際立って重要なものです。</p>
+<p>オイラーはこれによって、指数関数が微分操作に対して「不変性」を持つことを示し、これが自然対数の底 $e$ と深く関連していることを数学的に明確にしました。</p>
+<h4 class="rubric" id="id27">対数関数との関係</h4>
+<p>オイラーは、指数関数と対数関数の関係を次のようにまとめました：</p>
+<ul class="simple">
+<li><p>対数は指数関数の逆関数である。</p></li>
+<li><p>自然対数 $\ln(x)$ を微分すると、$\frac{1}{x}$ に変わる。</p></li>
+<li><p>$e^x$ の微分や積分操作は、微分方程式の解として非常に自然に現れる。</p></li>
+</ul>
+<p>また、彼は指数関数と自然対数が無限級数の形式で表されることを体系化し、それを用いて現代の解析学を形作る一歩を進めました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id28"><strong>複素指数関数の定義：微分方程式による導入</strong></h3>
+<p>オイラーのもう一つの偉業は、複素数を含む「複素指数関数」を考えたことです。彼はこれを微分方程式の解として導入しました。</p>
+<h4 class="rubric" id="id29">微分方程式の形</h4>
+<p>オイラーは次の微分方程式を考えました：</p>
+<p>$$
+\frac{d^2y}{dx^2} = -y.
+$$</p>
+<p>この微分方程式の特徴は、解の二階微分が自身の符号を反転するということです。このような性質を持つ解が何であるかを調べた結果、オイラーは次の形にたどり着きました：</p>
+<p>$$
+y = e^{ix},
+$$</p>
+<p>ここで、$i = \sqrt{-1}$ は虚数単位（複素数の根幹となる概念）を表します。</p>
+<h4 class="rubric" id="id30">複素指数関数の振る舞い</h4>
+<p>オイラーはさらに、この複素指数関数が具体的にどのように振る舞うかを調べました。彼はオイラーの公式として知られる次式を導きました：</p>
+<p>$$
+e^{ix} = \cos(x) + i\sin(x).
+$$</p>
+<p>この公式は、複素指数関数と三角関数を結びつけるものであり、数学において極めて重要です。この公式は、微分方程式の解として自然に現れるだけでなく、複素数平面の幾何的性質を統一するものでもあります。</p>
+<h4 class="rubric" id="id31">幾何学的解釈</h4>
+<p>オイラーの公式によれば、複素平面上で $e^{ix}$ は単位円を描きます。つまり、角度 $x$ に対して回転を表すものになります。この見方は、複素解析やフーリエ解析においても重要な役割を果たします：</p>
+<ul class="simple">
+<li><p>実部が $\cos(x)$ に対応。</p></li>
+<li><p>虚部が $\sin(x)$ に対応。</p></li>
+</ul>
+<p>これは、指数関数と三角関数が実は一体であることを示しています。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id32"><strong>オイラーの功績の意義</strong></h3>
+<p>オイラーの発展によって、指数関数と対数関数、さらに複素指数関数が以下のように完全に統一的に扱われるようになりました：</p>
+<ol class="arabic simple">
+<li><p><strong>微分方程式の解法の応用</strong>:
+オイラーの複素指数関数は、二階微分符号反転系の自然な解となり、これが微分方程式の理論に大きな影響を与えました。</p></li>
+<li><p><strong>関数の体系化</strong>:
+対数と指数関数が微分操作や極限操作を通じて非常に一貫した性質を持つことを示しました。これにより、関数の扱いが解析学として統一されました。</p></li>
+<li><p><strong>オイラーの公式の普及</strong>:
+$e^{ix} = \cos(x) + i\sin(x)$ の公式は、解析学や複素数論だけでなく、物理学（波動、量子力学）、電気工学（複素インピーダンス）、フーリエ解析など広範囲な分野に応用されています。</p></li>
+<li><p><strong>数学の視覚的統一</strong>:
+複素数平面上の「回転の幾何学的解釈」を与えることで、数学的な構造がより直感的になりました。</p></li>
+</ol>
+<hr class="docutils" />
+<p>オイラーが確立した指数関数の体系は、彼以前の数学者では曖昧だった概念を一気に鋭く、現在でも学術の基盤となる形で整えたものでした。そして、彼の成果は現代数学における最も重要な礎のひとつと言えるでしょう！</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/14"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

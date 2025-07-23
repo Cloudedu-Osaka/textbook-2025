@@ -1,0 +1,2110 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Napier’s Logarithms: 九九のない世界 &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/14/1402_1_napier';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/14/1402_1_napier.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1401_neumann.html">von Neumann</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1402_0_euler.html">Euler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1403_add.html">Addendum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1404.html">Derivertives of Derivertives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../13/1301.html">Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/1302.html">Conformal projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12/1201.html">Circle of Descartes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1203.html">Fermat and Newton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1204_newton.html">Newton's generalized binomial theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1205.html">Assignment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11/1101_archimedes%231.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/14/1402_1_napier.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/14/1402_1_napier.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Napier’s Logarithms: 九九のない世界</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#napier">Napierの定義</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r-5"><span class="math notranslate nohighlight">\(R=5\)</span>のとき</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">出版された表を再現する</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="napier-s-logarithms">
+<h1>Napier’s Logarithms: 九九のない世界<a class="headerlink" href="#napier-s-logarithms" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/John_Napier">John Napier - Wikipedia</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Napierian_logarithm#:~:text=The%20term%20Napierian%20logarithm%20or,it%20is%20named%20after%20him.">Napierian logarithm - Wikipedia</a></p></li>
+<li><p><a class="reference external" href="https://www.maa.org/press/periodicals/convergence/logarithms-the-early-history-of-a-familiar-function-john-napier-introduces-logarithms">Logarithms: The Early History of a Familiar Function - John Napier Introduces Logarithms | Mathematical Association of America</a></p></li>
+</ul>
+</li>
+</ul>
+<p>Napierは、<span class="math notranslate nohighlight">\(N\)</span>に対して対数 (logarithm) <span class="math notranslate nohighlight">\(L\)</span>を次の数式で定義し、<span class="math notranslate nohighlight">\(R=7\)</span> の場合の数表を作成した。</p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{N}{10^R} = \left(1-\frac{1}{10^{R}}\right)^{L}
+\]</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/E_%28mathematical_constant%29">e (mathematical constant) - Wikipedia</a></p></li>
+</ul>
+<p>その後、Eulerは自然対数<span class="math notranslate nohighlight">\(e\)</span>を次の極限式で定義した。</p>
+<div class="math notranslate nohighlight">
+\[
+  \lim_{n\rightarrow\infty} \left( 1+\frac{1}{n} \right)^n = e
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+  \lim_{n\rightarrow\infty} \left( 1-\frac{1}{n} \right)^n = \frac{1}{e}
+\]</div>
+<p><span class="math notranslate nohighlight">\(R\)</span>が十分大きいとき次の近似式が得られる。</p>
+<div class="math notranslate nohighlight">
+\[
+\left( 1-\frac{1}{10^R} \right)^{10^R} = (1-10^{-R})^{10^R} \approx \frac{1}{e}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mi">10</span><span class="o">**-</span><span class="mi">5</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mi">10</span><span class="o">**-</span><span class="mi">7</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">),</span> <span class="mi">1</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">e</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(0.3678776017682465, 0.367879422971105, 0.36787944117144233)
+</pre></div>
+</div>
+</div>
+</div>
+<p>現代数学の<span class="math notranslate nohighlight">\(\log\)</span>を用いるとNapierの対数<span class="math notranslate nohighlight">\(L\)</span>は次のように近似できる。</p>
+<div class="math notranslate nohighlight">
+\[
+  L = \log_{1-10^{-R}} \frac{N}{10^R} \approx
+  10^R \log_{1/e}\left( \frac{N}{10^R} \right) \approx -10^R \log_{e}\left( \frac{N}{10^R} \right)
+\]</div>
+<section id="napier">
+<h2>Napierの定義<a class="headerlink" href="#napier" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">-</span><span class="mi">10</span><span class="o">**-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">10</span><span class="o">**-</span><span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(0.99999, 0.9999999)
+</pre></div>
+</div>
+</div>
+</div>
+<p><span class="math notranslate nohighlight">\(p_{n}\)</span> を次の数列として定義したとき、</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{eqnarray}
+p_{0}   &amp;=&amp; 10^7 = 10000000 \\
+p_{1}   &amp;=&amp; 10^7 \left(1-\frac{1}{10^7} \right)= 10000000 \times 0.9999999 = 9999999 \\
+p_{n+1} &amp;=&amp; p_{n} \left(1-\frac{1}{10^7}\right) = p_{n} \times 0.9999999 
+\end{eqnarray}
+\end{split}\]</div>
+<p>数列の添字 <span class="math notranslate nohighlight">\(n\)</span> は <span class="math notranslate nohighlight">\(p_{n}\)</span> のNapier対数である。</p>
+<div class="math notranslate nohighlight">
+\[
+p_{n} = 10^7 \times \left(1-\frac{1}{10^7}\right)^n
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+  n = \log_{1-10^{-7}}\left(\frac{p_{n}}{10^7}\right)
+\]</div>
+<p>次のように対数法則を満たす。</p>
+<div class="math notranslate nohighlight">
+\[
+p_{m+n} = 10^R \times \left(1-\frac{1}{10^7}\right)^{m+n} = 10^R \times \left(1-\frac{1}{10^7}\right)^m \times \left(1-\frac{1}{10^7}\right)^n = p_{m} \times p_{n} \times \frac{1}{10^R}
+\]</div>
+<section id="r-5">
+<h3><span class="math notranslate nohighlight">\(R=5\)</span>のとき<a class="headerlink" href="#r-5" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">napier5</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    R=5のときのNapierの数表の第n項を計算する</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mi">10</span><span class="o">**</span><span class="mi">5</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">))</span><span class="o">**</span><span class="n">n</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># `math.log()`を使って、Napierの対数を計算する</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">)),</span> <span class="p">(</span><span class="mi">1234</span><span class="p">,</span> <span class="mi">5678</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[439488.72859419696, 286855.6785070823]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Napierの数表の項番を計算する</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">napier5</span><span class="p">,</span> <span class="n">_</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1234.0, 5677.999999999997]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 対数法則から積を求める</span>
+<span class="n">napier5</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">__</span><span class="p">))</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7006651.999999997
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 検算</span>
+<span class="mi">1234</span><span class="o">*</span><span class="mi">5678</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7006652
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Compound_interest">Compound interest - Wikipedia</a></p>
+<ul>
+<li><p>(1655—1705) <a class="reference external" href="https://en.wikipedia.org/wiki/Jacob_Bernoulli">Jacob Bernoulli - Wikipedia</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="id1">
+<h3>出版された表を再現する<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Napierは、<span class="math notranslate nohighlight">\(R=7\)</span>の場合の数表を作成した。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>astropy
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting astropy
+  Using cached astropy-6.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: numpy&gt;=1.23 in /opt/conda/lib/python3.11/site-packages (from astropy) (1.26.4)
+Collecting pyerfa&gt;=2.0.1.1 (from astropy)
+  Using cached pyerfa-2.0.1.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+Collecting astropy-iers-data&gt;=0.2024.5.27.0.30.8 (from astropy)
+  Downloading astropy_iers_data-0.2024.6.24.0.31.11-py3-none-any.whl.metadata (5.1 kB)
+Requirement already satisfied: PyYAML&gt;=3.13 in /opt/conda/lib/python3.11/site-packages (from astropy) (6.0.1)
+Requirement already satisfied: packaging&gt;=19.0 in /opt/conda/lib/python3.11/site-packages (from astropy) (24.0)
+Using cached astropy-6.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.2 MB)
+Downloading astropy_iers_data-0.2024.6.24.0.31.11-py3-none-any.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.9/1.9 MB</span> <span class=" -Color -Color-Red">36.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>00:01
+?25hUsing cached pyerfa-2.0.1.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (738 kB)
+Installing collected packages: pyerfa, astropy-iers-data, astropy
+Successfully installed astropy-6.1.1 astropy-iers-data-0.2024.6.24.0.31.11 pyerfa-2.0.1.4
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">astropy.coordinates</span><span class="w"> </span><span class="kn">import</span> <span class="n">Angle</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy</span><span class="w"> </span><span class="kn">import</span> <span class="n">units</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Angle</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:d}</span><span class="s1">°</span><span class="si">{:d}</span><span class="s1">′</span><span class="si">{:d}</span><span class="s1">″&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">radian</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.018049613347708025
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="c1">#from scoping import scoping</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">napier</span><span class="p">(</span><span class="n">dms_d</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">7</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">dms_m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:d}</span><span class="s1">°</span><span class="si">{:d}</span><span class="s1">′</span><span class="si">{:d}</span><span class="s1">″&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dms_d</span><span class="p">,</span><span class="n">dms_m</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="k">yield</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span>
+               <span class="s2">&quot;</span><span class="si">{:8.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">radian</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="n">r</span><span class="p">),</span>
+               <span class="s2">&quot;</span><span class="si">{:8.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">radian</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">r</span><span class="p">))</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">radian</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)),</span>
+               <span class="s2">&quot;</span><span class="si">{:8.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">radian</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">r</span><span class="p">))</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">radian</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)),</span>
+               <span class="s2">&quot;</span><span class="si">{:8.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">radian</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">r</span><span class="p">))),</span>
+               <span class="s2">&quot;</span><span class="si">{:8.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">radian</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="n">r</span><span class="p">),</span>
+               <span class="n">Angle</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:d}</span><span class="s1">°</span><span class="si">{:d}</span><span class="s1">′</span><span class="si">{:d}</span><span class="s1">″&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span><span class="o">-</span><span class="n">Angle</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:d}</span><span class="s1">°</span><span class="si">{:d}</span><span class="s1">′</span><span class="si">{:d}</span><span class="s1">″&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dms_d</span><span class="p">,</span><span class="n">dms_m</span><span class="p">,</span><span class="mi">0</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>角度が<span class="math notranslate nohighlight">\(0\degree\)</span>から<span class="math notranslate nohighlight">\(1\degree\)</span>の正弦、余弦とそれらの対数、および正接の対数の値。角度は一分刻み</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">napier</span><span class="p">(</span><span class="n">dms_d</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;sin&#39;</span><span class="p">,</span><span class="s1">&#39;log(sin(d))&#39;</span><span class="p">,</span><span class="s1">&#39;log(tan(d))&#39;</span><span class="p">,</span><span class="s1">&#39;log(cos(d))&#39;</span><span class="p">,</span> <span class="s1">&#39;cos(d)&#39;</span><span class="p">,</span> <span class="s1">&#39;90-d&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>d</th>
+      <th>sin</th>
+      <th>log(sin(d))</th>
+      <th>log(tan(d))</th>
+      <th>log(cos(d))</th>
+      <th>cos(d)</th>
+      <th>90-d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0d00m00s</td>
+      <td>0</td>
+      <td>inf</td>
+      <td>inf</td>
+      <td>-0</td>
+      <td>10000000</td>
+      <td>90d00m00s</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0d01m00s</td>
+      <td>2909</td>
+      <td>81425711</td>
+      <td>81425711</td>
+      <td>0</td>
+      <td>10000000</td>
+      <td>89d59m00s</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0d02m00s</td>
+      <td>5818</td>
+      <td>74494240</td>
+      <td>74494239</td>
+      <td>2</td>
+      <td>9999998</td>
+      <td>89d58m00s</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0d03m00s</td>
+      <td>8727</td>
+      <td>70439590</td>
+      <td>70439586</td>
+      <td>4</td>
+      <td>9999996</td>
+      <td>89d57m00s</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0d04m00s</td>
+      <td>11636</td>
+      <td>67562771</td>
+      <td>67562764</td>
+      <td>7</td>
+      <td>9999993</td>
+      <td>89d56m00s</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0d05m00s</td>
+      <td>14544</td>
+      <td>65331336</td>
+      <td>65331326</td>
+      <td>11</td>
+      <td>9999989</td>
+      <td>89d55m00s</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0d06m00s</td>
+      <td>17453</td>
+      <td>63508123</td>
+      <td>63508107</td>
+      <td>15</td>
+      <td>9999985</td>
+      <td>89d54m00s</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0d07m00s</td>
+      <td>20362</td>
+      <td>61966618</td>
+      <td>61966597</td>
+      <td>21</td>
+      <td>9999979</td>
+      <td>89d53m00s</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0d08m00s</td>
+      <td>23271</td>
+      <td>60631306</td>
+      <td>60631279</td>
+      <td>27</td>
+      <td>9999973</td>
+      <td>89d52m00s</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0d09m00s</td>
+      <td>26180</td>
+      <td>59453478</td>
+      <td>59453444</td>
+      <td>34</td>
+      <td>9999966</td>
+      <td>89d51m00s</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0d10m00s</td>
+      <td>29089</td>
+      <td>58399876</td>
+      <td>58399833</td>
+      <td>42</td>
+      <td>9999958</td>
+      <td>89d50m00s</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0d11m00s</td>
+      <td>31998</td>
+      <td>57446777</td>
+      <td>57446726</td>
+      <td>51</td>
+      <td>9999949</td>
+      <td>89d49m00s</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0d12m00s</td>
+      <td>34907</td>
+      <td>56576666</td>
+      <td>56576605</td>
+      <td>61</td>
+      <td>9999939</td>
+      <td>89d48m00s</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0d13m00s</td>
+      <td>37815</td>
+      <td>55776243</td>
+      <td>55776171</td>
+      <td>72</td>
+      <td>9999928</td>
+      <td>89d47m00s</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0d14m00s</td>
+      <td>40724</td>
+      <td>55035167</td>
+      <td>55035084</td>
+      <td>83</td>
+      <td>9999917</td>
+      <td>89d46m00s</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0d15m00s</td>
+      <td>43633</td>
+      <td>54345242</td>
+      <td>54345147</td>
+      <td>95</td>
+      <td>9999905</td>
+      <td>89d45m00s</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0d16m00s</td>
+      <td>46542</td>
+      <td>53699861</td>
+      <td>53699753</td>
+      <td>108</td>
+      <td>9999892</td>
+      <td>89d44m00s</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0d17m00s</td>
+      <td>49451</td>
+      <td>53093620</td>
+      <td>53093498</td>
+      <td>122</td>
+      <td>9999878</td>
+      <td>89d43m00s</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0d18m00s</td>
+      <td>52360</td>
+      <td>52522041</td>
+      <td>52521904</td>
+      <td>137</td>
+      <td>9999863</td>
+      <td>89d42m00s</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0d19m00s</td>
+      <td>55268</td>
+      <td>51981374</td>
+      <td>51981221</td>
+      <td>153</td>
+      <td>9999847</td>
+      <td>89d41m00s</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0d20m00s</td>
+      <td>58177</td>
+      <td>51468446</td>
+      <td>51468277</td>
+      <td>169</td>
+      <td>9999831</td>
+      <td>89d40m00s</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0d21m00s</td>
+      <td>61086</td>
+      <td>50980551</td>
+      <td>50980364</td>
+      <td>187</td>
+      <td>9999813</td>
+      <td>89d39m00s</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0d22m00s</td>
+      <td>63995</td>
+      <td>50515356</td>
+      <td>50515152</td>
+      <td>205</td>
+      <td>9999795</td>
+      <td>89d38m00s</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0d23m00s</td>
+      <td>66904</td>
+      <td>50070845</td>
+      <td>50070621</td>
+      <td>224</td>
+      <td>9999776</td>
+      <td>89d37m00s</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0d24m00s</td>
+      <td>69813</td>
+      <td>49645256</td>
+      <td>49645012</td>
+      <td>244</td>
+      <td>9999756</td>
+      <td>89d36m00s</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0d25m00s</td>
+      <td>72721</td>
+      <td>49237043</td>
+      <td>49236778</td>
+      <td>264</td>
+      <td>9999736</td>
+      <td>89d35m00s</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0d26m00s</td>
+      <td>75630</td>
+      <td>48844843</td>
+      <td>48844557</td>
+      <td>286</td>
+      <td>9999714</td>
+      <td>89d34m00s</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0d27m00s</td>
+      <td>78539</td>
+      <td>48467447</td>
+      <td>48467139</td>
+      <td>308</td>
+      <td>9999692</td>
+      <td>89d33m00s</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0d28m00s</td>
+      <td>81448</td>
+      <td>48103778</td>
+      <td>48103447</td>
+      <td>332</td>
+      <td>9999668</td>
+      <td>89d32m00s</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0d29m00s</td>
+      <td>84357</td>
+      <td>47752873</td>
+      <td>47752517</td>
+      <td>356</td>
+      <td>9999644</td>
+      <td>89d31m00s</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>0d30m00s</td>
+      <td>87265</td>
+      <td>47413866</td>
+      <td>47413485</td>
+      <td>381</td>
+      <td>9999619</td>
+      <td>89d30m00s</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>0d31m00s</td>
+      <td>90174</td>
+      <td>47085976</td>
+      <td>47085570</td>
+      <td>407</td>
+      <td>9999593</td>
+      <td>89d29m00s</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>0d32m00s</td>
+      <td>93083</td>
+      <td>46768498</td>
+      <td>46768065</td>
+      <td>433</td>
+      <td>9999567</td>
+      <td>89d28m00s</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>0d33m00s</td>
+      <td>95992</td>
+      <td>46460791</td>
+      <td>46460330</td>
+      <td>461</td>
+      <td>9999539</td>
+      <td>89d27m00s</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>0d34m00s</td>
+      <td>98900</td>
+      <td>46162271</td>
+      <td>46161782</td>
+      <td>489</td>
+      <td>9999511</td>
+      <td>89d26m00s</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>0d35m00s</td>
+      <td>101809</td>
+      <td>45872405</td>
+      <td>45871887</td>
+      <td>518</td>
+      <td>9999482</td>
+      <td>89d25m00s</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>0d36m00s</td>
+      <td>104718</td>
+      <td>45590706</td>
+      <td>45590158</td>
+      <td>548</td>
+      <td>9999452</td>
+      <td>89d24m00s</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>0d37m00s</td>
+      <td>107627</td>
+      <td>45316727</td>
+      <td>45316148</td>
+      <td>579</td>
+      <td>9999421</td>
+      <td>89d23m00s</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>0d38m00s</td>
+      <td>110535</td>
+      <td>45050055</td>
+      <td>45049444</td>
+      <td>611</td>
+      <td>9999389</td>
+      <td>89d22m00s</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>0d39m00s</td>
+      <td>113444</td>
+      <td>44790311</td>
+      <td>44789668</td>
+      <td>644</td>
+      <td>9999357</td>
+      <td>89d21m00s</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>0d40m00s</td>
+      <td>116353</td>
+      <td>44537144</td>
+      <td>44536467</td>
+      <td>677</td>
+      <td>9999323</td>
+      <td>89d20m00s</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>0d41m00s</td>
+      <td>119261</td>
+      <td>44290229</td>
+      <td>44289518</td>
+      <td>711</td>
+      <td>9999289</td>
+      <td>89d19m00s</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>0d42m00s</td>
+      <td>122170</td>
+      <td>44049266</td>
+      <td>44048519</td>
+      <td>746</td>
+      <td>9999254</td>
+      <td>89d18m00s</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>0d43m00s</td>
+      <td>125079</td>
+      <td>43813973</td>
+      <td>43813190</td>
+      <td>782</td>
+      <td>9999218</td>
+      <td>89d17m00s</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>0d44m00s</td>
+      <td>127987</td>
+      <td>43584090</td>
+      <td>43583271</td>
+      <td>819</td>
+      <td>9999181</td>
+      <td>89d16m00s</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>0d45m00s</td>
+      <td>130896</td>
+      <td>43359374</td>
+      <td>43358517</td>
+      <td>857</td>
+      <td>9999143</td>
+      <td>89d15m00s</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>0d46m00s</td>
+      <td>133805</td>
+      <td>43139598</td>
+      <td>43138702</td>
+      <td>895</td>
+      <td>9999105</td>
+      <td>89d14m00s</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>0d47m00s</td>
+      <td>136713</td>
+      <td>42924549</td>
+      <td>42923614</td>
+      <td>935</td>
+      <td>9999065</td>
+      <td>89d13m00s</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>0d48m00s</td>
+      <td>139622</td>
+      <td>42714028</td>
+      <td>42713053</td>
+      <td>975</td>
+      <td>9999025</td>
+      <td>89d12m00s</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>0d49m00s</td>
+      <td>142530</td>
+      <td>42507849</td>
+      <td>42506833</td>
+      <td>1016</td>
+      <td>9998984</td>
+      <td>89d11m00s</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>0d50m00s</td>
+      <td>145439</td>
+      <td>42305836</td>
+      <td>42304778</td>
+      <td>1058</td>
+      <td>9998942</td>
+      <td>89d10m00s</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>0d51m00s</td>
+      <td>148348</td>
+      <td>42107824</td>
+      <td>42106723</td>
+      <td>1100</td>
+      <td>9998900</td>
+      <td>89d09m00s</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>0d52m00s</td>
+      <td>151256</td>
+      <td>41913657</td>
+      <td>41912513</td>
+      <td>1144</td>
+      <td>9998856</td>
+      <td>89d08m00s</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>0d53m00s</td>
+      <td>154165</td>
+      <td>41723190</td>
+      <td>41722002</td>
+      <td>1188</td>
+      <td>9998812</td>
+      <td>89d07m00s</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>0d54m00s</td>
+      <td>157073</td>
+      <td>41536284</td>
+      <td>41535050</td>
+      <td>1234</td>
+      <td>9998766</td>
+      <td>89d06m00s</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>0d55m00s</td>
+      <td>159982</td>
+      <td>41352808</td>
+      <td>41351528</td>
+      <td>1280</td>
+      <td>9998720</td>
+      <td>89d05m00s</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>0d56m00s</td>
+      <td>162890</td>
+      <td>41172639</td>
+      <td>41171312</td>
+      <td>1327</td>
+      <td>9998673</td>
+      <td>89d04m00s</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>0d57m00s</td>
+      <td>165799</td>
+      <td>40995659</td>
+      <td>40994284</td>
+      <td>1375</td>
+      <td>9998625</td>
+      <td>89d03m00s</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>0d58m00s</td>
+      <td>168707</td>
+      <td>40821758</td>
+      <td>40820334</td>
+      <td>1423</td>
+      <td>9998577</td>
+      <td>89d02m00s</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>0d59m00s</td>
+      <td>171616</td>
+      <td>40650830</td>
+      <td>40649357</td>
+      <td>1473</td>
+      <td>9998527</td>
+      <td>89d01m00s</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>角度が<span class="math notranslate nohighlight">\(89\degree\)</span>から<span class="math notranslate nohighlight">\(90\degree\)</span>の正弦、余弦とそれらの対数、および正接の対数の値。角度は一分刻み</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">napier</span><span class="p">(</span><span class="n">dms_d</span><span class="o">=</span><span class="mi">89</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;sin&#39;</span><span class="p">,</span><span class="s1">&#39;log(sin(d))&#39;</span><span class="p">,</span><span class="s1">&#39;log(tan(d))&#39;</span><span class="p">,</span><span class="s1">&#39;log(cos(d))&#39;</span><span class="p">,</span> <span class="s1">&#39;cos(d)&#39;</span><span class="p">,</span> <span class="s1">&#39;90-d&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>d</th>
+      <th>sin</th>
+      <th>log(sin(d))</th>
+      <th>log(tan(d))</th>
+      <th>log(cos(d))</th>
+      <th>cos(d)</th>
+      <th>90-d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>89d00m00s</td>
+      <td>9998477</td>
+      <td>1523</td>
+      <td>-40481252</td>
+      <td>40482775</td>
+      <td>174524</td>
+      <td>1d00m00s</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>89d01m00s</td>
+      <td>9998527</td>
+      <td>1473</td>
+      <td>-40649357</td>
+      <td>40650830</td>
+      <td>171616</td>
+      <td>0d59m00s</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>89d02m00s</td>
+      <td>9998577</td>
+      <td>1423</td>
+      <td>-40820334</td>
+      <td>40821758</td>
+      <td>168707</td>
+      <td>0d58m00s</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>89d03m00s</td>
+      <td>9998625</td>
+      <td>1375</td>
+      <td>-40994284</td>
+      <td>40995659</td>
+      <td>165799</td>
+      <td>0d57m00s</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>89d04m00s</td>
+      <td>9998673</td>
+      <td>1327</td>
+      <td>-41171312</td>
+      <td>41172639</td>
+      <td>162890</td>
+      <td>0d56m00s</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>89d05m00s</td>
+      <td>9998720</td>
+      <td>1280</td>
+      <td>-41351528</td>
+      <td>41352808</td>
+      <td>159982</td>
+      <td>0d55m00s</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>89d06m00s</td>
+      <td>9998766</td>
+      <td>1234</td>
+      <td>-41535050</td>
+      <td>41536284</td>
+      <td>157073</td>
+      <td>0d54m00s</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>89d07m00s</td>
+      <td>9998812</td>
+      <td>1188</td>
+      <td>-41722002</td>
+      <td>41723190</td>
+      <td>154165</td>
+      <td>0d53m00s</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>89d08m00s</td>
+      <td>9998856</td>
+      <td>1144</td>
+      <td>-41912513</td>
+      <td>41913657</td>
+      <td>151256</td>
+      <td>0d52m00s</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>89d09m00s</td>
+      <td>9998900</td>
+      <td>1100</td>
+      <td>-42106723</td>
+      <td>42107824</td>
+      <td>148348</td>
+      <td>0d51m00s</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>89d10m00s</td>
+      <td>9998942</td>
+      <td>1058</td>
+      <td>-42304778</td>
+      <td>42305836</td>
+      <td>145439</td>
+      <td>0d50m00s</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>89d11m00s</td>
+      <td>9998984</td>
+      <td>1016</td>
+      <td>-42506833</td>
+      <td>42507849</td>
+      <td>142530</td>
+      <td>0d49m00s</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>89d12m00s</td>
+      <td>9999025</td>
+      <td>975</td>
+      <td>-42713053</td>
+      <td>42714028</td>
+      <td>139622</td>
+      <td>0d48m00s</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>89d13m00s</td>
+      <td>9999065</td>
+      <td>935</td>
+      <td>-42923614</td>
+      <td>42924549</td>
+      <td>136713</td>
+      <td>0d47m00s</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>89d14m00s</td>
+      <td>9999105</td>
+      <td>895</td>
+      <td>-43138702</td>
+      <td>43139598</td>
+      <td>133805</td>
+      <td>0d46m00s</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>89d15m00s</td>
+      <td>9999143</td>
+      <td>857</td>
+      <td>-43358517</td>
+      <td>43359374</td>
+      <td>130896</td>
+      <td>0d45m00s</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>89d16m00s</td>
+      <td>9999181</td>
+      <td>819</td>
+      <td>-43583271</td>
+      <td>43584090</td>
+      <td>127987</td>
+      <td>0d44m00s</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>89d17m00s</td>
+      <td>9999218</td>
+      <td>782</td>
+      <td>-43813190</td>
+      <td>43813973</td>
+      <td>125079</td>
+      <td>0d43m00s</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>89d18m00s</td>
+      <td>9999254</td>
+      <td>746</td>
+      <td>-44048519</td>
+      <td>44049266</td>
+      <td>122170</td>
+      <td>0d42m00s</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>89d19m00s</td>
+      <td>9999289</td>
+      <td>711</td>
+      <td>-44289518</td>
+      <td>44290229</td>
+      <td>119261</td>
+      <td>0d41m00s</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>89d20m00s</td>
+      <td>9999323</td>
+      <td>677</td>
+      <td>-44536467</td>
+      <td>44537144</td>
+      <td>116353</td>
+      <td>0d40m00s</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>89d21m00s</td>
+      <td>9999357</td>
+      <td>644</td>
+      <td>-44789668</td>
+      <td>44790311</td>
+      <td>113444</td>
+      <td>0d39m00s</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>89d22m00s</td>
+      <td>9999389</td>
+      <td>611</td>
+      <td>-45049444</td>
+      <td>45050055</td>
+      <td>110535</td>
+      <td>0d38m00s</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>89d23m00s</td>
+      <td>9999421</td>
+      <td>579</td>
+      <td>-45316148</td>
+      <td>45316727</td>
+      <td>107627</td>
+      <td>0d37m00s</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>89d24m00s</td>
+      <td>9999452</td>
+      <td>548</td>
+      <td>-45590158</td>
+      <td>45590706</td>
+      <td>104718</td>
+      <td>0d36m00s</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>89d25m00s</td>
+      <td>9999482</td>
+      <td>518</td>
+      <td>-45871887</td>
+      <td>45872405</td>
+      <td>101809</td>
+      <td>0d35m00s</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>89d26m00s</td>
+      <td>9999511</td>
+      <td>489</td>
+      <td>-46161782</td>
+      <td>46162271</td>
+      <td>98900</td>
+      <td>0d34m00s</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>89d27m00s</td>
+      <td>9999539</td>
+      <td>461</td>
+      <td>-46460330</td>
+      <td>46460791</td>
+      <td>95992</td>
+      <td>0d33m00s</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>89d28m00s</td>
+      <td>9999567</td>
+      <td>433</td>
+      <td>-46768065</td>
+      <td>46768498</td>
+      <td>93083</td>
+      <td>0d32m00s</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>89d29m00s</td>
+      <td>9999593</td>
+      <td>407</td>
+      <td>-47085570</td>
+      <td>47085976</td>
+      <td>90174</td>
+      <td>0d31m00s</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>89d30m00s</td>
+      <td>9999619</td>
+      <td>381</td>
+      <td>-47413485</td>
+      <td>47413866</td>
+      <td>87265</td>
+      <td>0d30m00s</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>89d31m00s</td>
+      <td>9999644</td>
+      <td>356</td>
+      <td>-47752517</td>
+      <td>47752873</td>
+      <td>84357</td>
+      <td>0d29m00s</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>89d32m00s</td>
+      <td>9999668</td>
+      <td>332</td>
+      <td>-48103447</td>
+      <td>48103778</td>
+      <td>81448</td>
+      <td>0d28m00s</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>89d33m00s</td>
+      <td>9999692</td>
+      <td>308</td>
+      <td>-48467139</td>
+      <td>48467447</td>
+      <td>78539</td>
+      <td>0d27m00s</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>89d34m00s</td>
+      <td>9999714</td>
+      <td>286</td>
+      <td>-48844557</td>
+      <td>48844843</td>
+      <td>75630</td>
+      <td>0d26m00s</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>89d35m00s</td>
+      <td>9999736</td>
+      <td>264</td>
+      <td>-49236778</td>
+      <td>49237043</td>
+      <td>72721</td>
+      <td>0d25m00s</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>89d36m00s</td>
+      <td>9999756</td>
+      <td>244</td>
+      <td>-49645012</td>
+      <td>49645256</td>
+      <td>69813</td>
+      <td>0d24m00s</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>89d37m00s</td>
+      <td>9999776</td>
+      <td>224</td>
+      <td>-50070621</td>
+      <td>50070845</td>
+      <td>66904</td>
+      <td>0d23m00s</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>89d38m00s</td>
+      <td>9999795</td>
+      <td>205</td>
+      <td>-50515152</td>
+      <td>50515356</td>
+      <td>63995</td>
+      <td>0d22m00s</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>89d39m00s</td>
+      <td>9999813</td>
+      <td>187</td>
+      <td>-50980364</td>
+      <td>50980551</td>
+      <td>61086</td>
+      <td>0d21m00s</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>89d40m00s</td>
+      <td>9999831</td>
+      <td>169</td>
+      <td>-51468277</td>
+      <td>51468446</td>
+      <td>58177</td>
+      <td>0d20m00s</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>89d41m00s</td>
+      <td>9999847</td>
+      <td>153</td>
+      <td>-51981221</td>
+      <td>51981374</td>
+      <td>55268</td>
+      <td>0d19m00s</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>89d42m00s</td>
+      <td>9999863</td>
+      <td>137</td>
+      <td>-52521904</td>
+      <td>52522041</td>
+      <td>52360</td>
+      <td>0d18m00s</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>89d43m00s</td>
+      <td>9999878</td>
+      <td>122</td>
+      <td>-53093498</td>
+      <td>53093620</td>
+      <td>49451</td>
+      <td>0d17m00s</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>89d44m00s</td>
+      <td>9999892</td>
+      <td>108</td>
+      <td>-53699753</td>
+      <td>53699861</td>
+      <td>46542</td>
+      <td>0d16m00s</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>89d45m00s</td>
+      <td>9999905</td>
+      <td>95</td>
+      <td>-54345147</td>
+      <td>54345242</td>
+      <td>43633</td>
+      <td>0d15m00s</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>89d46m00s</td>
+      <td>9999917</td>
+      <td>83</td>
+      <td>-55035084</td>
+      <td>55035167</td>
+      <td>40724</td>
+      <td>0d14m00s</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>89d47m00s</td>
+      <td>9999928</td>
+      <td>72</td>
+      <td>-55776171</td>
+      <td>55776243</td>
+      <td>37815</td>
+      <td>0d13m00s</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>89d48m00s</td>
+      <td>9999939</td>
+      <td>61</td>
+      <td>-56576605</td>
+      <td>56576666</td>
+      <td>34907</td>
+      <td>0d12m00s</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>89d49m00s</td>
+      <td>9999949</td>
+      <td>51</td>
+      <td>-57446726</td>
+      <td>57446777</td>
+      <td>31998</td>
+      <td>0d11m00s</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>89d50m00s</td>
+      <td>9999958</td>
+      <td>42</td>
+      <td>-58399833</td>
+      <td>58399876</td>
+      <td>29089</td>
+      <td>0d10m00s</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>89d51m00s</td>
+      <td>9999966</td>
+      <td>34</td>
+      <td>-59453444</td>
+      <td>59453478</td>
+      <td>26180</td>
+      <td>0d09m00s</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>89d52m00s</td>
+      <td>9999973</td>
+      <td>27</td>
+      <td>-60631279</td>
+      <td>60631306</td>
+      <td>23271</td>
+      <td>0d08m00s</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>89d53m00s</td>
+      <td>9999979</td>
+      <td>21</td>
+      <td>-61966597</td>
+      <td>61966618</td>
+      <td>20362</td>
+      <td>0d07m00s</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>89d54m00s</td>
+      <td>9999985</td>
+      <td>15</td>
+      <td>-63508107</td>
+      <td>63508123</td>
+      <td>17453</td>
+      <td>0d06m00s</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>89d55m00s</td>
+      <td>9999989</td>
+      <td>11</td>
+      <td>-65331326</td>
+      <td>65331336</td>
+      <td>14544</td>
+      <td>0d05m00s</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>89d56m00s</td>
+      <td>9999993</td>
+      <td>7</td>
+      <td>-67562764</td>
+      <td>67562771</td>
+      <td>11636</td>
+      <td>0d04m00s</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>89d57m00s</td>
+      <td>9999996</td>
+      <td>4</td>
+      <td>-70439586</td>
+      <td>70439590</td>
+      <td>8727</td>
+      <td>0d03m00s</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>89d58m00s</td>
+      <td>9999998</td>
+      <td>2</td>
+      <td>-74494239</td>
+      <td>74494240</td>
+      <td>5818</td>
+      <td>0d02m00s</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>89d59m00s</td>
+      <td>10000000</td>
+      <td>0</td>
+      <td>-81425711</td>
+      <td>81425711</td>
+      <td>2909</td>
+      <td>0d01m00s</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/14"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#napier">Napierの定義</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r-5"><span class="math notranslate nohighlight">\(R=5\)</span>のとき</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">出版された表を再現する</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
