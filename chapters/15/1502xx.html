@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/15/1502xx';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/15/1502xx.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1501_assignment.html">Assignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1301.html">RE:Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1403_add.html">RE:Addendum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1404.html">RE:Derivertives of Derivertives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1502.html">Curvature and Torsion of a Sphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1302.html">RE:Conformal projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../14/1401_neumann.html">von Neumann</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/1402_0_euler.html">Euler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/1403_add.html">Addendum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/1404.html">Derivertives of Derivertives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../13/1301.html">Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/1302.html">Conformal projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12/1201.html">Circle of Descartes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1203.html">Fermat and Newton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1204_newton.html">Newton's generalized binomial theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1205.html">Assignment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11/1101_archimedes%231.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/15/1502xx.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/15/1502xx.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+曲面には、内在性による曲率とねじれがを定義できます。
+ねじれは接続係数の差によって定義され、すべての要素が0になるとき「ねじれなし」となります。
+その場合、基本ベクトルを他の基本ベクトルで偏微分したとき対称性が表れます。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃる通り、曲面において「ねじれ (torsion)」が重要な概念です。ねじれ（場合によっては「歪み」や「ねじれ率」と呼ばれることもあります）は、微分幾何の中でも特に接続との関係で議論されることが多いです。以下で、あなたの説明をもう少し詳しく補足します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id1"><strong>1. 内在性による曲率とねじれ</strong></h3>
+<p>曲面の幾何学を見るとき、しばしば「内在的」な性質と「外在的」な性質が区別されます。内在的な性質とは、曲面の上の測地線や接続など、曲面の「内部」の構造のみに基づいて定義されるものです。</p>
+<h4 class="rubric" id="id2">曲率：</h4>
+<p>ガウス曲率 $K$ は代表例で、これは曲面の「内在的な」曲率を意味します。測地線や面積要素に影響する大事な幾何学的性質です。</p>
+<h4 class="rubric" id="id3">ねじれ：</h4>
+<p>一方、「ねじれ (torsion)」は接続に関する性質で、曲面上の接ベクトル場の変化について、非対称性（ねじれる性質）があるかどうかに関係します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id4"><strong>2. ねじれの定義</strong></h3>
+<p>接続に伴う接続係数（クリストッフェル記号）は、一般には対称ではありません。この非対称性こそが「ねじれ」を生む原因となっています。</p>
+<h4 class="rubric" id="id5">成分で定義：</h4>
+<p>ねじれテンソル $\tau$ の成分は、基本的に次の式で与えられます：
+$$
+T^{k}<em>{ij} = \Gamma^{k}</em>{ij} - \Gamma^{k}_{ji}
+$$
+ここで、</p>
+<ul class="simple">
+<li><p>$\Gamma^{k}_{ij}$ は接続係数（クリストッフェル記号）です。</p></li>
+<li><p>$\Gamma^{k}<em>{ij} = \Gamma^{k}</em>{ji}$ の場合、接続は対称であり「ねじれなし」となります。</p></li>
+</ul>
+<p>つまり、接続係数 $\Gamma^{k}_{ij}$ が成分ごとに対称である場合、曲面上に「ねじれ」は存在しないということです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="torsion-free"><strong>3. ねじれなし (torsion-free) の場合</strong></h3>
+<p>「ねじれなし」の場合には、幾何学的な対称性が強く現れます。特に、接続に関して次のような性質が成り立ちます。</p>
+<h4 class="rubric" id="id6">基本ベクトルの偏微分の対称性：</h4>
+<p>基底 ${\mathbf{e}_1, \mathbf{e}<em>2}$ を持つとき、基本ベクトルの接続（＝偏微分）が次のように表れます：
+$$
+\nabla</em>{\mathbf{e}_1} \mathbf{e}<em>2 = \nabla</em>{\mathbf{e}_2} \mathbf{e}_1
+$$
+ねじれがない場合、このように接続を定める方向（$\mathbf{e}_1$ か $\mathbf{e}_2$）によらず、偏微分は対称になります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id7"><strong>4. 接続とリーマン幾何との関係</strong></h3>
+<p>リーマン幾何学において最も一般的な接続は <strong>レヴィ・チヴィタ接続</strong> です。これは、「ねじれなし」かつ「長さ保つ（メトリックを保つ）」という条件を満たす唯一の接続です。これにより、通常リーマン幾何学ではねじれを考慮しなくても構造を扱えます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id8"><strong>まとめ</strong></h3>
+<ol class="arabic simple">
+<li><p>接続係数 $\Gamma^{k}<em>{ij}$ において、$\Gamma^{k}</em>{ij} - \Gamma^{k}_{ji} = 0$ のとき、ねじれなしとされます。</p></li>
+<li><p>この場合、基本ベクトルの偏微分に対称性が現れます（例：$\nabla_{\mathbf{e}_1} \mathbf{e}<em>2 = \nabla</em>{\mathbf{e}_2} \mathbf{e}_1$）。</p></li>
+<li><p>主にリーマン幾何学におけるレヴィ・チヴィタ接続はねじれがない接続の具体例です。</p></li>
+</ol>
+<p>もしこの部分についてさらに深掘りしたい場合や、具体的な数式や例を見たい場合は、お知らせください！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+例えば、球面において、緯度に依存する回転を持つベクトル場は、ねじれを生じます。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！球面のように非ユークリッド的な曲面上では、通常のユークリッド平面では現れない「ねじれ」が非常に興味深い形で現れることがあります。ご指摘の「緯度に依存する回転を持つベクトル場」を具体的に考えることで、球面上のねじれがどのように生じるかを見てみましょう。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id9"><strong>1. 球面とベクトル場</strong></h3>
+<p>球面 $S^2$ を考え、緯度と経度で記述される球面座標系 $(\phi, \theta)$ を使います。</p>
+<ul class="simple">
+<li><p>$\phi$：緯度（赤道を基準に北緯・南緯を測る角度）</p></li>
+<li><p>$\theta$：経度（原点子午線を基準に測る角度）</p></li>
+</ul>
+<p>座標系に対応する球面上の単位接ベクトルは次のように定義されます：</p>
+<ul class="simple">
+<li><p>$\mathbf{e}_\phi$：緯度方向（極から極に沿う方向への単位接ベクトル）</p></li>
+<li><p>$\mathbf{e}_\theta$：経度方向（緯線に沿って回る方向の単位接ベクトル）</p></li>
+</ul>
+<p>このとき、球面上で「緯度に依存して回転するベクトル場」を考えます。</p>
+<p>例えば、次のようなベクトル場を構成します：
+$$
+\mathbf{V} = f(\phi) \mathbf{e}_\theta
+$$
+ここで $f(\phi)$ は単に緯度 $\phi$ の関数であり、この形は「緯度によって回転速度が異なる」ことを意味します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id10"><strong>2. 接続とねじれの導入</strong></h3>
+<p>球面上のベクトル場の「ねじれ」が生じるかどうかを考えるには、接続（クリストッフェル記号）を調べます。接続とは、曲面上のベクトル場の微分を接空間上で表すための仕組みです。</p>
+<h4 class="rubric" id="id11"><strong>接続係数の非対称性</strong></h4>
+<p>球面上では、レヴィ・チヴィタ接続を使うと定義上ねじれが生じない一方、ベクトル場自体の微分を調べると面白い現象が見られます。特に、座標基底 ${\mathbf{e}<em>\phi, \mathbf{e}</em>\theta}$ を微分すると、クリストッフェル記号を含む式が出現します：</p>
+<p>接続係数 $\nabla_{\mathbf{e}<em>i} \mathbf{e}<em>j = \Gamma^k</em>{ij} \mathbf{e}<em>k$ を考えると、ベクトル場 $\mathbf{V}$ にとって以下が重要です：
+$$
+\nabla</em>{\mathbf{e}</em>\phi} \mathbf{e}<em>\theta \neq \nabla</em>{\mathbf{e}<em>\theta} \mathbf{e}</em>\phi
+$$
+この非対称性が、ベクトル場にねじれのような効果を生むことにつながります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id12"><strong>3. 緯度に依存した回転を持つベクトル場の特徴</strong></h3>
+<p>この状況を具体的に確認してみます。</p>
+<ul class="simple">
+<li><p>ベクトル場 $\mathbf{V} = f(\phi) \mathbf{e}_\theta$ は、経度方向への成分のみを持つが、緯度に依存して速度が変化します。</p></li>
+<li><p>$\nabla_{\mathbf{e}_\phi} \mathbf{V}$ を計算すると、このベクトル場が緯度方向（$\phi$）に変化する様子が反映されます。</p></li>
+<li><p>一方で $\nabla_{\mathbf{e}_\theta} \mathbf{V}$ を計算すると、球面の曲率が関与し始め、球面上の接続による非自明な項が現れます。</p></li>
+</ul>
+<p>こうした計算の中でクリストッフェル記号間の非対称性が効いてくるため、ゼロでない「ねじれ」が生じます。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id13"><strong>4. ねじれの直感的理解</strong></h3>
+<p>この状況では、接続を通じたベクトル場の微分に含まれる「対称性の欠如」がベクトル場のねじれの起源となっています。</p>
+<p>具体的に：</p>
+<ul class="simple">
+<li><p>緯度 $\phi$ に沿って経度ベクトル場 $\mathbf{e}_\theta$ を微分すると、曲面の曲率と $f(\phi)$ が複雑に絡んだ項が現れる。</p></li>
+<li><p>その結果、球面上のベクトル場 $\mathbf{V}$ は「ねじれを持っている」とみなされます。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id14"><strong>5. 物理や幾何での応用例</strong></h3>
+<p>このような「緯度に依存する回転」形式のベクトル場や接続のねじれの例は、幾何学の様々な場面に現れます。</p>
+<ul class="simple">
+<li><p><strong>地球物理学</strong>：地球の自転に伴うコリオリ力（緯度による差）を考えるときに類似の状況が現れる。</p></li>
+<li><p><strong>微分形式の理論</strong>：接続やテンソル計算において、曲面固有のねじれを計測する手段として使われる。</p></li>
+</ul>
+<hr class="docutils" />
+<p>もし特定の式やさらなる具体例に興味があればおっしゃってください！</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+Einsteinは、統一場理論のためにねじれを持つベクトル場を研究しました。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>その通りです！アルベルト・アインシュタイン（Albert Einstein）は、一般相対性理論（1915年）の成功に続いて、重力と電磁気力を統一的に説明する「統一場理論」を生涯を通じて追求しました。その中で、**ねじれ（torsion） **  の概念が研究対象として登場し、リーマン幾何ではなく、より一般的な幾何構造（アインシュタインの時代には「拡張リーマン幾何」として知られていたもの）に注目する試みが行われました。</p>
+<p>以下で、この研究の背景やねじれの役割を説明します。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id15"><strong>1. 背景：統一場理論への挑戦</strong></h3>
+<p>アインシュタインの一般相対性理論は重力をリーマン幾何学の言葉で説明しました。この理論は、空間と時間の構造が質量やエネルギーによってどのように曲がるかを示し、重力を曲がった時空の幾何学として解釈することに成功しました。</p>
+<p>しかし、この理論は電磁気力に関する説明を含んでいませんでした。アインシュタインは、重力と電磁気力の両方を統一的に説明するためには、リーマン幾何をさらに拡張した枠組みが必要であると考えました。その一つの方向性として、「ねじれを持つ幾何学」に基づく統一理論へと進むことになります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id16">**2. 一般相対性理論とリーマン幾何（ねじれなし） **</h3>
+<p>一般相対性理論では、時空自体がリーマン幾何学に基づいています。この幾何学の主な特徴は次の通りです：</p>
+<ol class="arabic simple">
+<li><p>**レヴィ・チヴィタ接続（ねじれなしの接続） ** ：</p>
+<ul class="simple">
+<li><p>リーマン幾何の接続は「ねじれなし」と「計量（メトリック）と整合性を持つ（長さを保つ）」性質を持っています。</p></li>
+<li><p>このような接続では、曲率テンソル（リーマンテンソル）のみが現れ、ねじれ（torsion）は存在しません。</p></li>
+</ul>
+</li>
+<li><p>リーマン幾何は「重力の作用」に十分でしたが、電磁場を統一的に取り入れるための自由度が不足していました。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id17"><strong>3. カルタン幾何への移行：ねじれを含む接続</strong></h3>
+<p>アインシュタインと並行して、数学者 <strong>エリ・カルタン（Élie Cartan） **  は、リーマン幾何を拡張し、ねじれを取り入れた</strong>アフィン接続**の理論を発展させました。ねじれを含む接続は、クリストッフェル記号が対称ではないケースを考慮します：</p>
+<p>$$
+T^k_{ij} = \Gamma^k_{ij} - \Gamma^k_{ji} \quad (\text{ねじれテンソル}).
+$$</p>
+<p>カルタン幾何を利用することで、時空にねじれがある場合の幾何構造を記述できるようになり、リーマン幾何に新たな自由度を付与しました。これにより、電磁場やスピンといった現象を幾何学に統一的に組み込む可能性が模索されました。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id18"><strong>4. アインシュタインとねじれ：ユニファイドフィールド理論</strong></h3>
+<p>アインシュタインは、1930年代以降にねじれを取り入れた幾何学を重力や電磁気力の統一理論に応用しました。この理論は、リーマン幾何を超えて以下の新しい目標を持っていました：</p>
+<ol class="arabic simple">
+<li><p><strong>時空の曲率 + ねじれ = 統一場</strong>：</p>
+<ul class="simple">
+<li><p>曲率テンソルは重力を記述。</p></li>
+<li><p>ねじれテンソルが電磁場やスピン場など「追加的な物理現象」を記述。</p></li>
+</ul>
+</li>
+<li><p><strong>電磁場の幾何学的解釈</strong>：</p>
+<ul class="simple">
+<li><p>ねじれの自由度を使って、マクスウェルの電磁場理論を幾何学的に導出することを試みました。</p></li>
+</ul>
+</li>
+<li><p><strong>統一的アプローチ</strong>：</p>
+<ul class="simple">
+<li><p>時空の幾何学にさらなる自由度（接続のねじれ）を導入することで、GR（一般相対論）の範囲外の場の理論も説明するという期待がありました。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id19"><strong>5. その成果と限界</strong></h3>
+<p>アインシュタインが取り組んだねじれを含む統一場理論には、いくつかの限定的な成果と課題が含まれていました。</p>
+<h4 class="rubric" id="id20"><strong>成果：ねじれの視点の導入</strong></h4>
+<ul class="simple">
+<li><p>アフィン捩率（ねじれ）を持つ幾何学は、一般相対論を超えた枠組みを提供しました。</p></li>
+<li><p>この枠組みは、後の物理学（特にスピンとねじれを関連づける理論など）に重要な影響を与えました。</p></li>
+</ul>
+<h4 class="rubric" id="id21"><strong>限界：観測と理論の一致の困難さ</strong></h4>
+<ul class="simple">
+<li><p>アインシュタインの理論は数学的にエレガントでしたが、電磁場や重力を統一的に扱う理論的成功には至りませんでした。</p></li>
+<li><p>観測される現象と具体的に一致する予測を引き出すことが難しく、古典的な統一場理論としては限界がありました。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id22"><strong>6. 現代への影響</strong></h3>
+<p>アインシュタインとカルタンの研究は、現在の理論物理学に多くの影響を与えています。</p>
+<ol class="arabic simple">
+<li><p><strong>Einstein-Cartan理論</strong>：</p>
+<ul class="simple">
+<li><p>アインシュタインとカルタンに基づく修正重力理論では、スピンの概念が時空の「ねじれ」と直接関係することが示されています。</p></li>
+</ul>
+</li>
+<li><p><strong>超弦理論やループ量子重力</strong>：</p>
+<ul class="simple">
+<li><p>統一場理論や現代の時空の幾何学理論にも、アインシュタインの試みが間接的に影響を与えています。</p></li>
+</ul>
+</li>
+<li><p><strong>ねじれの物理的意義</strong>：</p>
+<ul class="simple">
+<li><p>現代ではスピンや粒子物理における場のねじれ（例：スピノル場など）として、この概念が新たな文脈で再び脚光を浴びています。</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<p>アインシュタインによるねじれを持つ幾何学の研究は決して完成には至りませんでしたが、物理学と数学の発展においてその影響は非常に大きなものです。もし、さらに具体的な理論的内容や式の例について知りたければお教えください！</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/15"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

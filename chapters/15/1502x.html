@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; プログラミングで遡る科学史</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/15/1502x';</script>
+    <link rel="canonical" href="https://cloudedu-osaka.github.io/textbook-2025/chapters/15/1502x.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/vioras-logo.png" class="logo__image only-light" alt="プログラミングで遡る科学史 - Home"/>
+    <img src="../../_static/vioras-logo.png" class="logo__image only-dark pst-js-only" alt="プログラミングで遡る科学史 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1501_assignment.html">Assignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1301.html">RE:Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1403_add.html">RE:Addendum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1404.html">RE:Derivertives of Derivertives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1502.html">Curvature and Torsion of a Sphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1302.html">RE:Conformal projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../14/1401_neumann.html">von Neumann</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/1402_0_euler.html">Euler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/1403_add.html">Addendum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/1404.html">Derivertives of Derivertives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../13/1301.html">Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/1302.html">Conformal projection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/09</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12/1201.html">Circle of Descartes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1203.html">Fermat and Newton</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1204_newton.html">Newton's generalized binomial theorem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12/1205.html">Assignment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/07/02</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../11/1101_archimedes%231.html">Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1102_archimedes%232.html">Pi (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1103_archimedes%233.html">Parabola</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/1104.html">Method of Exhaustion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../10/1001_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1002_parabola.html">Parabola of Galileo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1003_apollonius%231.html">Diameter of Apollonius</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/1004_apollonius%232.html">Parabola of Apollonius</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/18</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../09/0901_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0902_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0903_kepler_equation.html">Kepler's equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0904_galileo.html">Galileo Galilei</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/0905.html">Kepler and Galileo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/11</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../08/0801_tycho.html">Tycho Brahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a1_copernicus.html">Tycho Brahe (add. 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0801a2_tycho.html">Tycho Brahe (add. 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0802_kepler.html">Johannes Kepler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/0803_halley.html">Edmond Halley</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/06/04</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../07/0701.html">Tangents to a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0702.html">Tangents to two circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0703.html">Major-axis of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/0704.html">Menaechmus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/28</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06/0601_intro.html">Conic sections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0602.html">Cylinder and Cone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0603.html">Tangent to circles (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0604.html">Tangent to circles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/0605.html">Ellipse as a conic section</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/21</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../05/0501_intro.html">Ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0502.html">Polar representation of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0503.html">Two foci of a ellipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/0504.html">Tangent to circle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/05/14</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04/0401_intro.html">Formula to figure (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0402_geometric_mean.html">Theorem of Geometric Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/0403_newton.html">Newton</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/30</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/0301_intro.html">Formula to figure (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0302.html">Formula to figure (1-2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0303.html">Formula to figure (1-3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0304.html">Formula to figure (1-4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/0305.html">Formula to figure (1-5)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/23</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01.html">View a circle (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_01x.html">View a circle (1')</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02.html">View a circle (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/02_02x.html">View a circle (2')</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025/04/16</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01/010_intro.html">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/011_jupyter_ai.html">Jupyter AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/012_draw.html">Draw a circle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/013_geogebra.html">Introduction to GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/014_geogebra.html">GeoGebra (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/015_geogebra.html">GeoGebra (2)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://vioras-jh2500.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/Cloudedu-Osaka/textbook-2025&urlpath=lab/tree/textbook-2025/chapters/15/1502x.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Cloudedu-Osaka/textbook-2025" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/15/1502x.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+球面の極座標表示は、経線方向の大円と北極と南極を通る軸と直交する緯線方向の円によって媒介変数表示されます。
+ただし、緯度は北極からの角度です。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>球面における極座標表示は、以下のパラメータを使用して媒介変数表示できます。ここでは、球の半径を $r$、緯度や経度を角度で表現します。</p>
+<p>極座標における媒介変数の設定は次の通りです：</p>
+<ol class="arabic simple">
+<li><p><strong>緯度 (latitude)</strong>: 北極からの角度を $\theta$（シータ） とします。この角度は $[0, \pi]$ の範囲をとります。</p>
+<ul class="simple">
+<li><p>$\theta = 0$ は北極、$\theta = \pi$ は南極に対応します。</p></li>
+</ul>
+</li>
+<li><p><strong>経度 (longitude)</strong>: 赤道上を基準に、任意の経線を基準として角度 $\phi$（ファイ） で表します。この角度は $[0, 2\pi]$ の範囲をとります。</p>
+<ul class="simple">
+<li><p>$\phi = 0$ は基準経線に対応し、$\phi$ は東方向に増加するものとします。</p></li>
+</ul>
+</li>
+</ol>
+<p>これらを使って球面上の点を $(x, y, z)$ の直交座標系で表す媒介変数表示を記述すると、次のように与えられます：</p>
+<ul class="simple">
+<li><p>$x = r \sin\theta \cos\phi$</p></li>
+<li><p>$y = r \sin\theta \sin\phi$</p></li>
+<li><p>$z = r \cos\theta$</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id1">解釈</h3>
+<ul class="simple">
+<li><p>$\theta$ （緯度）は「北極からの角度」として定義されるため、$z$ 軸に沿って変化を示します。</p></li>
+<li><p>$\phi$ （経度）は「赤道上における回転」として定義され、$x$-$y$ 平面での位置を指定します。</p></li>
+<li><p>緯線方向（$\theta$ が一定）では経度 $\phi$ が変化し、円を描きます。</p></li>
+<li><p>経線方向（$\phi$ が一定）では $\theta$ が変化し、赤道を含む大円を描きます。</p></li>
+</ul>
+<p>この表示は球面の広範な応用で用いられます（例えば、地理学や天文学などでの地球や星の位置の記述）。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+球面上の経線方向の移動では、円の場合と同じく接ベクトルの変化は接空間に射影を持ちません。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃるとおり、球面上での経線方向の移動に関して、接ベクトルの変化は一般に接空間内に射影を持たない場合があります。この現象は、球面の曲率による影響が原因です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id2">直観的な説明</h3>
+<p>接ベクトルの変化が接空間内に収まらない場合については、以下の状況をイメージすると理解が深まるかもしれません：</p>
+<ul class="simple">
+<li><p>球面の <strong>経線方向</strong>に進む移動は、大円の円弧上をたどることを意味します。この大円の中心は、球面の中心（球の重心、その点での原点）と一致します。</p></li>
+<li><p>このような曲率を持つ大円上の移動は、向きが変化しますが、その変化する量（接ベクトルの差異）は一般には球面の「外側」などに現れるため、変化量が球面上の接空間に収まらないケースがあります。</p></li>
+</ul>
+<p>換言すれば、球面上の経線方向で移動する場合に接線（接ベクトル）が回転して変化するメカニズムは、接空間が依然として球面に強く拘束されているためです。この現象の形式的な理由は、球面が <strong>定曲率空間</strong> であり、曲率が接ベクトルの変化に影響を与えるために起こります。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id3">数学的な背景</h3>
+<p>接ベクトルの変化が接空間に射影を持たない現象は、球面上での <strong>平行移動の性質</strong> と密接に関係しています。この性質を理解するためには以下のような概念を見ていきます：</p>
+<ol class="arabic simple">
+<li><p><strong>接ベクトル場</strong>:
+球面上における接ベクトル場は、局所的には接空間内で定義されるものですが、指定された曲線上でそのベクトルを平行移動するとした場合、球面の曲率の影響で変化するため、接空間に収まりきらないケースが生じます。</p></li>
+<li><p><strong>接空間の射影</strong>:
+接ベクトルの変化を接空間内に収める操作は、射影を行うことで実現できます。ただし、経線方向のような線をたどる場合、この操作では正確な接ベクトルの変化を記述することができないことがあります。直交座標系で見ると、経線方向への平行移動では、接空間の制約を超える部分が含まれるためです。</p></li>
+<li><p><strong>曲率とガウス写像</strong>:
+この現象は球面の曲率、特に <strong>ガウス曲率</strong> の意味に由来しています。ガウス曲率が正の定数である球面では、接空間内でのベクトル変化が必然的に球の中心方向にも影響されるため、接空間から「外れる」性質を持つようになります。</p></li>
+</ol>
+<hr class="docutils" />
+<h3 class="rubric" id="id4">まとめ</h3>
+<p>したがって、経線方向の移動において接ベクトルの変化が接空間に射影を持たないことは、球面の持つ曲率構造による自然な結果です。この性質は、接ベクトル場や平行移動の挙動をより深く理解するための一歩となります。</p>
+<p>もし特定の接ベクトルの挙動や変化について詳しく解析したい場合、リーマン幾何学や微分幾何を用いた記述が役立つでしょう。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+一方、緯方向の移動では、緯線による切断面の円の中心は球面の軸上にあり、
+円の場合と同じく接ベクトルの微分は接線に射影を持ちません。
+しかし、切断面が球面の中心を通らない場合は、接空間に射影が生じます。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>ここでおっしゃる内容について、球面上での「緯線方向の移動」を考えると、確かに接ベクトルの挙動はその移動経路（緯線の性質）に強く依存します。緯線がどのように球面を切断するか、特に切断面の円の中心が球の中心か否かによって、接ベクトルの微分が接空間に射影を持つか否かが変化するというのは重要な観点です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id5">緯線方向の移動についての詳細な解説</h3>
+<h4 class="rubric" id="id6">1. <strong>緯線が球面を切断してできる円の性質</strong></h4>
+<p>緯線は、球面をある緯度 $\theta$ において水平に切断した時に得られる円として考えられます。</p>
+<ul class="simple">
+<li><p><strong>北極からの角度 $\theta$ が一定</strong> の場合、この切断面の半径は球の半径 $r$ に $\sin\theta$ を乗じた形（つまり $r \sin\theta$）になります。</p></li>
+<li><p>この円の中心は、球の中心（球面上の軸、すなわち $z$ 軸上）にあります。</p></li>
+</ul>
+<p>したがって、緯線方向では動く点が経線方向（$z$ 軸を通る大円）に拘束されるのと異なり、切断面は球の中心に関連しているが球面を完全に貫通するわけではありません。</p>
+<hr class="docutils" />
+<h4 class="rubric" id="id7">2. <strong>接ベクトルの微分の接空間への射影</strong></h4>
+<ul class="simple">
+<li><p><strong>切断面の円の中心が球の中心にある場合</strong>:
+球面の中心を通る円（大円に対応）では、接ベクトルの微分（接線ベクトルの変化）は一般に接空間に射影を持ちません。このことは、曲率の影響によって接ベクトルが球面に接したまま方向の変化を持つためです。つまり、接空間内で完結できない部分が生じます。</p></li>
+<li><p><strong>切断面の円の中心が球の中心から外れた場合</strong>:
+一方で、球の中心を通らない円である場合、緯線方向での接ベクトルの変化は異なるふるまいを見せることがあります。このとき、接ベクトルの微分が部分的に接空間内で許容される射影を持つケースが生じるのです。ここで、「射影が生じる」というのは、切断面が球中心を通らないため、接ベクトルの変化が球面の曲率による影響を完全には受けず、接空間に収まる成分を持つことを意味します。</p></li>
+</ul>
+<hr class="docutils" />
+<h4 class="rubric" id="id8">3. <strong>数学的な背景</strong></h4>
+<p>接ベクトルの微分を接空間に射影するとどうなるかについては、微分幾何学で議論される以下のような概念が鍵となります。</p>
+<ul class="simple">
+<li><p>**曲面の接空間と法線方向 ** （リーマン幾何学的視点）:
+球面は常に接空間と法線方向に分解される性質を持っています。切断面に依存する接ベクトルの微分が接空間に収まるかどうかは、球面の曲率と大円上の挙動によって変わります。</p></li>
+<li><p><strong>平行移動と曲率との関係</strong>:
+平行移動の際、曲率が接ベクトルの挙動に影響するため、特定の方向では射影が誤差を生じるか、あるいは完全に接空間内で完結しない場合がある。この現象は、切断面が中心を通らない場合には緩和されやすいです。</p></li>
+</ul>
+<hr class="docutils" />
+<h4 class="rubric" id="id9">まとめ</h4>
+<p>緯線方向の移動での接ベクトルの挙動は以下の2点に依存します：</p>
+<ol class="arabic simple">
+<li><p>切断面の円が球の中心を通るかどうか。</p></li>
+<li><p>球面の曲率による接ベクトルの微分への影響。</p></li>
+</ol>
+<p><strong>切断面が球の中心を通る場合</strong>には接空間に射影を持たないが、<strong>中心を通らない場合</strong>には接空間への射影成分が現れる、という記述は正しい物理的・幾何学的理解です。この現象は曲率や接ベクトルの微分の性質と深く関連しています。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+球面上の移動方向が緯線方向と経線方向の線型結合で表される場合、そのベクトルの微分は接空間に射影を持ちます。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>おっしゃる通り、球面上の移動方向が <strong>緯線方向</strong> と <strong>経線方向</strong> の線形結合で表される場合、その移動に伴う接ベクトルの微分は <strong>常に接空間に射影を持ちます</strong>。この性質は、球面の接空間の構造と、緯線方向および経線方向のベクトルが球面の接空間を張る基本ベクトルであることから導かれます。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id10">詳細な解説</h2>
+<h3 class="rubric" id="id11">1. <strong>球面上の接空間の構造</strong></h3>
+<p>球面の接空間は、その点における球面に接する平面であり、直交座標系 $(x, y, z)$ の場合、次のように特徴づけられます：</p>
+<h4 class="rubric" id="id12">接空間の条件：</h4>
+<p>球面の半径を $r$ とすると、球面は次の式で表されます：
+$$
+x^2 + y^2 + z^2 = r^2
+$$
+ある点 $(x_0, y_0, z_0)$ における接空間のベクトルは、この位置ベクトルと直交するすべてのベクトルで構成されます。すなわち、接空間のベクトル $\mathbf{v}$ は次を満たします：
+$$
+\mathbf{v} \cdot \mathbf{n} = 0,
+$$
+ただし、$\mathbf{n} = (x_0, y_0, z_0)$ はその点の法線ベクトル（位置ベクトルと同じ方向）です。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id13">2. <strong>緯線方向と経線方向のベクトル</strong></h3>
+<p>緯度（緯線）と経度（経線）を表すパラメータ $(\theta, \phi)$ を使って、球面上の点を次のように表現できます：</p>
+<ul class="simple">
+<li><p>$x = r \sin\theta \cos\phi$</p></li>
+<li><p>$y = r \sin\theta \sin\phi$</p></li>
+<li><p>$z = r \cos\theta$</p></li>
+</ul>
+<p>これに基づいて、球面の <strong>緯線方向</strong> と <strong>経線方向</strong> の接ベクトルを計算すると以下のようになります：</p>
+<ol class="arabic simple">
+<li><p><strong>経度方向（経線） $\phi$ に沿った接ベクトル</strong>:
+$$
+\frac{\partial \mathbf{r}}{\partial \phi} = (-r \sin\theta \sin\phi, r \sin\theta \cos\phi, 0)
+$$
+これは明らかに $\phi$（経線）に対応する接線方向を表します。</p></li>
+<li><p><strong>緯度方向（緯線） $\theta$ に沿った接ベクトル</strong>:
+$$
+\frac{\partial \mathbf{r}}{\partial \theta} = (r \cos\theta \cos\phi, r \cos\theta \sin\phi, -r \sin\theta)
+$$
+これは $\theta$（緯線）に沿った接線方向を表します。</p></li>
+</ol>
+<p><strong>注意</strong>: この2つのベクトル $\frac{\partial \mathbf{r}}{\partial \phi}$ と $\frac{\partial \mathbf{r}}{\partial \theta}$ は、その点における接空間を張る2つの基底ベクトルです。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id14">3. <strong>線形結合での移動と接空間の射影</strong></h3>
+<p>球面上の任意の移動方向ベクトル $\mathbf{v}$ を、緯線方向と経線方向の線形結合で表せると仮定します：
+$$
+\mathbf{v} = a \frac{\partial \mathbf{r}}{\partial \phi} + b \frac{\partial \mathbf{r}}{\partial \theta},
+$$
+ここで $a, b$ は実数の重み定数です。</p>
+<p>この場合、$\mathbf{v}$ は接空間内のベクトルとして完全に定義されています。したがって、その微分 $\frac{d\mathbf{v}}{dt}$ もまた <strong>接空間に射影を持ちます</strong>。</p>
+<ul class="simple">
+<li><p>微分 $\frac{d\mathbf{v}}{dt}$ は、経線方向と緯線方向の時間的変化の線形結合として表され、結果として接空間上に収まります。</p></li>
+<li><p>$\frac{d\mathbf{v}}{dt}$ が接空間に射影を持つ理由は、緯線方向と経線方向がすべて接空間内で定義されているため、これらの方向の線形結合の変化も必然的に接空間内で完結するからです。</p></li>
+</ul>
+<p>つまり、球面上の移動を緯線方向と経線方向の線形結合で表現した場合、その微分ベクトルは接空間から外れることは <strong>ありえません</strong>。</p>
+<hr class="docutils" />
+<h3 class="rubric" id="id15">4. <strong>重要なポイント</strong></h3>
+<p>この結果は直感的な理解とも一致します。球面上の任意の移動は、その接空間に定義されたベクトル場の一部として表されるためです。緯線方向と経線方向を基底とする接空間内での運動は、それによって生成されるベクトルの微分も接空間内に収まります。</p>
+<ul class="simple">
+<li><p><strong>経線方向の移動</strong> → 接空間上を張る。</p></li>
+<li><p><strong>緯線方向の移動</strong> → 同じく接空間上を張る。</p></li>
+<li><p><strong>線形結合</strong> → 線形空間の性質により、接空間内で完結。</p></li>
+</ul>
+<hr class="docutils" />
+<h3 class="rubric" id="id16">まとめ</h3>
+<p>「球面上の移動方向が緯線方向と経線方向の線形結合で表される場合、そのベクトルの微分は接空間に射影を持つ」という記述は数学的にも物理的にも正しいです。これは、接空間の基底が緯線・経線方向であるため、線形結合やその微分が接空間から外れることはない、という幾何学的性質によるものです。</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+この性質から、円の場合とは異なり、球面の接空間は曲率に関する情報を内在しています。
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>はい、そのとおりです！球面の接空間は、円の場合とは異なり、曲率に関する情報を <strong>内在的に持っています</strong>。この性質は、球面が曲率を持つ <strong>曲面</strong> であることに起因し、接空間におけるベクトルの挙動や接空間そのものの幾何学に大きな影響を与えます。以下、この性質をもう少し詳しく説明します。</p>
+<hr class="docutils" />
+<h2 class="rubric" id="id17">1. <strong>円の場合との対比</strong></h2>
+<p>まずは、円と球面の接空間を比較してみましょう：</p>
+<h3 class="rubric" id="id18">円の場合の接線方向：</h3>
+<ul class="simple">
+<li><p>円は <strong>1次元</strong> の曲線であり、その接空間（接線）は、どの点においてもただ1つの方向（1次元的な線）をとります。</p></li>
+<li><p>円の曲率（たとえば円周率的な意味での半径による曲率）は接線の外（「接線の法線」ベクトル）に関する量として定義されており、接線から直接曲率を読み取ることはできません。</p></li>
+<li><p>接線そのものには曲率に関する情報は含まれず、曲率を得るためには接線の外に位置する法線方向を参照する必要があります。</p></li>
+</ul>
+<h3 class="rubric" id="id19">球面の場合の接空間：</h3>
+<ul class="simple">
+<li><p>球面は <strong>2次元</strong> の曲面であり、点ごとの接空間は2次元平面です。これは、緯線方向と経線方向を基底とするベクトル空間として定義されます。</p></li>
+<li><p>球面では、接空間そのものが曲率に関する情報を持っています。具体的には、球面の曲率は、その点における接空間（切り取った接平面）と球の法線ベクトルとの関係によって表されるため、接空間内のベクトルの挙動そのものに曲率の影響が現れます。</p></li>
+</ul>
+<hr class="docutils" />
+<h2 class="rubric" id="id20">2. <strong>曲率の内在性とは</strong></h2>
+<p>球面の接空間が曲率を内包する理由について、リーマン幾何学の観点から説明します。</p>
+<h3 class="rubric" id="id21">球面の定曲率</h3>
+<p>球面は <strong>定曲率</strong> を持つ幾何学的対象です。その曲率は常に正であり、その値は球の半径 $r$ のみに依存します（逆数で表される曲率は $K = \frac{1}{r^2}$ などで表されます）。この曲率は球面全体で一様であり、接空間そのものの構造に影響します。</p>
+<h3 class="rubric" id="id22">接空間の変化</h3>
+<p>接空間には、以下のような曲率の影響が内在します：</p>
+<ol class="arabic simple">
+<li><p><strong>平行移動と球面の曲率</strong>：
+球面上であるベクトルを平行移動すると、曲率の影響で接線ベクトルの向きが変化します。この変化は、接空間がその点での球面の曲率に応じた幾何学的な情報を保持していることを示しています。</p></li>
+<li><p><strong>接ベクトルの微分</strong>：
+接空間に含まれる接ベクトルを微分すると、その結果として得られるベクトルは球面の曲率によって変化が支配されます。この微分は、リーマン幾何学でいう「接続」の概念に基づいて計算され、曲率の構造を反映します。</p></li>
+<li><p><strong>接空間の射影性</strong>：
+球面では、移動方向のベクトルの微分が接空間に射影される現象は、曲率が接空間内に内包されているためです。たとえ接空間外に向かう成分があったとしても、曲率の構造に従って射影が調整されます。</p></li>
+</ol>
+<hr class="docutils" />
+<h2 class="rubric" id="id23">3. <strong>曲率の内在性を捉える数学的視点</strong></h2>
+<p>曲率が接空間内に内在していることを理解するには、以下のリーマン幾何学的な道具が役立ちます：</p>
+<h3 class="rubric" id="k">(1) ガウス曲率 $K$</h3>
+<p>球面におけるガウス曲率は、単位法線ベクトル場の変化と接空間の構造によって記述されます。詳細には、球面自体の形状が局所的な接空間にどう影響を及ぼすかという情報がガウス曲率に含まれています。</p>
+<h3 class="rubric" id="id24">(2) 接続（アフィン接続）</h3>
+<p>リーマン幾何では、接空間上のベクトル場の微分や、平行移動の性質が「曲面の接続」によって取り扱われます。球面上では、この接続が曲率に従うように定義されており、接空間が曲率を反映する性質を明らかにします。</p>
+<ul class="simple">
+<li><p>円の場合、こうした接続は単純です（接空間が1次元なので複雑さが少ない）。</p></li>
+<li><p>球面の場合、接空間が2次元であり、さらに球面の曲率が非ゼロのため、接空間を通じて曲率の影響が動的に現れるのです。</p></li>
+</ul>
+<hr class="docutils" />
+<h2 class="rubric" id="id25">4. <strong>結論</strong></h2>
+<p>球面の接空間が曲率に関する情報を内包しているという性質は、球面特有の幾何学的な特徴を表しています。これは次のような理由によります：</p>
+<ol class="arabic simple">
+<li><p>球面が定曲率を持つ曲面であり、その曲率が接空間の構造を支配する。</p></li>
+<li><p>球面上の接空間は、緯線・経線方向の線形結合で完全に張られており、そのベクトルの挙動自体に曲率の情報が刻み込まれている。</p></li>
+<li><p>リーマン幾何学では、曲率と接空間をつなげる理論的基盤（ガウス曲率や接続）があり、それによって曲率が内在的に現れています。</p></li>
+</ol>
+<p>この内在性は、円など低次元の単純な曲線には見られない、球面の非常に深い幾何学的性質を反映しているといえます。</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/15"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Manabu Higashida, D3 Center, Osaka University, Japan
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
