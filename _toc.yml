@@ -9,16 +9,16 @@ parts:
   chapters:
   - file: chapters/15/1501_assignment.ipynb
     title: Assignment
-  - file: chapters/13/1301.ipynb
+  - file: chapters/15/1301.ipynb
     title: RE:Projection
-  - file: chapters/13/1302.ipynb
-    title: RE:Conformal projection
-  - file: chapters/14/1403_add.ipynb
+  - file: chapters/15/1403_add.ipynb
     title: RE:Addendum
-  - file: chapters/14/1404.ipynb
+  - file: chapters/15/1404.ipynb
     title: RE:Derivertives of Derivertives
   - file: chapters/15/1502.ipynb
     title: Curvature and Torsion of a Sphere
+  - file: chapters/15/1302.ipynb
+    title: RE:Conformal projection
 - caption: 2025/07/23
   numbered: false
   chapters:
